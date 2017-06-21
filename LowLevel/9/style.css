@@ -1,0 +1,41 @@
+body {
+    font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+    background: #fff; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+}
+h2 {
+    font-size: 1.1em; /* Размер шрифта */
+    color: #752641; /* Цвет текста */
+    margin-bottom: 0; /* Отступ снизу */
+}
+article {
+    width: 500px; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+    position: relative; /* Относительное позиционирование */
+}
+header {
+    background: #8fa09b; /* Цвет фона */
+    font-size: 24pt; /* Размер текста */
+    font-weight: bold; /* Жирное начертание */
+    color: #edeed5; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+}
+section {
+    margin-right: 130px; /* Отступ справа */
+    padding: 10px; /* Поля вокруг текста */
+    border-right: 1px dashed #183533; /* Линия справа */
+}
+section p {
+    margin-top: 0.3em /* Отступ сверху */
+}
+aside {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0; /* Положение от правого края */
+    top: 60px; /* Положение от верхнего края */
+    width: 120px; /* Ширина */
+}
+footer {
+    background: #8fa09b; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+}

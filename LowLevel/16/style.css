@@ -1,0 +1,15 @@
+sub{
+    color: blue;
+}
+sup {
+    color: red;
+}
+.formula {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+sub, sup {
+    font-style: normal;
+    font-size: 0.5em;
+}

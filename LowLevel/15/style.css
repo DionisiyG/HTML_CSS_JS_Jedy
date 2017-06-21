@@ -1,0 +1,19 @@
+.pika:before{
+    content: '\2660';
+}
+.trefa:before{
+    content: '\2663';
+}
+
+.bubna:before {
+    content: '\2665';
+    color: red;
+}
+.chirva:before{
+    content: '\2666';
+    color: red;
+}
+.card:before {
+    margin-right:10px;
+}
+

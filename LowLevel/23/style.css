@@ -1,0 +1,11 @@
+.rama {
+    border-style: solid;
+    border-width: 26px 30px 29px;
+    -moz-border-image: url(border.png) 26 30 29 repeat;
+    -webkit-border-image: url(border.png) 26 30 29 repeat;
+    -o-border-image: url(border.png) 26 30 29 repeat;
+    border-image: url(border.png) 26 30 29 repeat;
+    height: 80px;
+    width: 220px;
+    background: yellow;
+}

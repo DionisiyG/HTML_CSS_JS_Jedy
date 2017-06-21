@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+
+}
+div {
+    background-color: red;
+    height: 140px;
+}
+p {
+    margin: 0;
+    font: 60px Impact, sans-serif;
+    color: white;
+    padding-top: 80px;
+    padding-left: 20px;
+}
