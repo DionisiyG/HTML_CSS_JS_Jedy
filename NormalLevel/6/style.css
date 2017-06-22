@@ -1,0 +1,12 @@
+body{
+    background: #90f592
+;
+}
+.border{
+    width: 300px;
+    background: white;
+    color: black;
+    padding: 20px 20px;
+    border: 2px solid #E9B700;
+    box-shadow:  0 0 0 3px #E9C02B, inset 4px 4px 0 1px #eb8639, 4px 3px 0 5px #eb5d0e;;
+}

@@ -1,0 +1,9 @@
+input:valid + span:after{
+  content: url("ok.png");
+    margin-left: 10px;
+}
+
+input:invalid + span:after{
+    content: url("nook.png");
+    margin-left: 10px;
+}

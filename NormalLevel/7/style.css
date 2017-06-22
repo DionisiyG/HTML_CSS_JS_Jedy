@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 3px;
+    display: inline-block;
+    background-color: black;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+li:hover{
+    box-shadow: 0 0 6px 3px white;
+    cursor: pointer;
+}
+li:nth-child(2){
+    background: red;
+    box-shadow: 0 0 6px 3px white;
+    cursor: default;
+}
+.img{
+    background: url("river.jpg");
+    width: 600px;
+    height: 380px;
+    position: relative;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 16px;
+    left: 230px;
+}

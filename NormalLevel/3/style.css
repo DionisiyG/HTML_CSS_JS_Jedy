@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+}
+.container{
+    background: linear-gradient(to bottom, palevioletred 0%, mistyrose 50%, palevioletred 100%);
+    width: 150px;
+    height: 50px;
+    position: relative;
+    color: black;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 1px palevioletred;
+}

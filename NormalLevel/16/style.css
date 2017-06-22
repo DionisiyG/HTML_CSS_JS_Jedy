@@ -1,0 +1,22 @@
+.links {
+    background: #F6967D;
+}
+.links a {
+    color: #FFFDEB;
+    display: inline-block;
+    border-right: 1px solid #B62025;
+    padding: 5px 10px;
+}
+
+/*
+.links a:last-child{
+    border: none;          способ 1
+}*/
+/*
+a[href="4.html"]{
+    border: none;           способо 2
+}*/
+/*
+.links a:nth-child(4){
+    border: none;           способо 3
+}*/

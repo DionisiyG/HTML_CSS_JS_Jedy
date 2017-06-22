@@ -1,0 +1,31 @@
+body {
+    background: #333;
+
+}
+
+div {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    border: 2px solid #28a028;
+    background: #fff;
+   /* line-height: 10px;  способ 7*/
+    /*height: 120px; способ 2*/
+}
+/*img {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    border: 2px solid #28a028;
+    background: #fff;                       способ 5
+}*/
+img{
+    /*vertical-align: bottom;  способ 6*/
+    /*display: block; способ 3*/
+    /*float: left;  способ 4*/
+
+}
+/*
+img {
+    margin-bottom: -4px;  !*способ 1*!
+}*/

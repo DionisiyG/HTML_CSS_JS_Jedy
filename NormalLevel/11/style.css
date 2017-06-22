@@ -1,0 +1,14 @@
+.diagram{
+    border: 25px solid #58e67c;
+    border-right: 25px solid #90f592;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+span{
+    font-size: 25px;
+    line-height: 90px;
+}

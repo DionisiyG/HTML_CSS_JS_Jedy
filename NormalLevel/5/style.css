@@ -1,0 +1,42 @@
+legend{
+    font: bold 15px Arial;
+    color: #C67033;
+}
+form{
+    width:450px;
+    display: inline-block;
+    position: relative;
+}
+fieldset{
+    background: #98ffbc;
+    height: 300px;
+}
+img, span{
+    position: absolute;
+}
+.radios{
+    float: right;
+    padding-top: 30px;
+    margin-right: 30px;
+}
+.radios input {
+    margin-top: 20px;
+}
+
+.answer{
+    background: #C67033;
+    border: 1px solid white;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    color: white;
+    position: absolute;
+    top: 280px;
+    left:180px;
+}
+
+span {
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
