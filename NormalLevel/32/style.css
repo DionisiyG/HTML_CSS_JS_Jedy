@@ -1,0 +1,77 @@
+.container{
+    position: relative;
+}
+
+div{
+    text-align: center;
+    line-height: 42px;
+}
+
+.line{
+    width: 400px;
+    height: 5px;
+    background: #cccccc;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.first, .second, .third{
+    background: #b2d235;
+}
+
+.first{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+   /* -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;*/
+    border-radius: 50px;
+    top:-20px;
+    left:30px;
+
+}
+
+.second{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* -moz-border-radius: 30px;
+     -webkit-border-radius: 30px;*/
+    border-radius: 50px;
+    top:-20px;
+    left:130px;
+}
+
+.third{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* -moz-border-radius: 30px;
+     -webkit-border-radius: 30px;*/
+    border-radius: 50px;
+    top:-20px;
+    left:230px;
+}
+
+.fourth {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ab4a9c;
+    /* -moz-border-radius: 30px;
+     -webkit-border-radius: 30px;*/
+    border-radius: 50px;
+    top: -20px;
+    left: 330px;
+}
+
+.fifth {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #cccccc;
+    /* -moz-border-radius: 30px;
+     -webkit-border-radius: 30px;*/
+    border-radius: 50px;
+    top: -20px;
+    left: 430px;
+}

@@ -1,0 +1,37 @@
+
+.container{
+    position: relative;
+    background: black;
+    width: 500px;
+    height: 260px;
+}
+
+
+.text{
+    position: absolute;
+    background: linear-gradient(#fefefe, #eeeeee, #dfdfdf);
+    width: 400px;
+    bottom: 30px;
+    left: 30px;
+    padding: 40px 25px 15px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.block{
+    position: absolute;
+    color: #ffb163;
+    font-size: 22px;
+    top: -4px;
+    left:-1px;
+    padding: 10px;
+    width: 80px;
+    border-top: 40px solid black;
+    border-right: 20px solid transparent;
+}
+span{
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    font-weight: bold;
+    font-family: Arial;
+}
