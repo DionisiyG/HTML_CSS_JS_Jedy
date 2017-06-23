@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 1px solid black;
+    width:400px;
+    background: #0690cf;
+    color: white;
+}
+h2{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: normal;
+}
+label{
+    display: block;
+    margin-top: 20px;
+}
+form{
+    padding-left: 20px;
+}
+.pass{
+    float: left;
+}
+.pass-again{
+    float: right;
+   padding-right: 30px;
+}
+
+.submit{
+    clear: both;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+input[type="submit"]{
+    background: #ffdf7f;
+    padding: 5px;
+    border: 1px solid #ffdf7f;
+    font-size: 12px;
+}

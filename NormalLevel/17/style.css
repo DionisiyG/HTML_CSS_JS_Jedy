@@ -1,0 +1,24 @@
+div{
+    display: inline-block;
+    width:140px;
+}
+
+.date{
+    background: #5a9cff;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.temp{
+    font-size: 28px;
+    text-align: center;
+}
+
+div:hover{
+    box-shadow: 0 0 10px 0 grey;
+}
+p{
+    margin: 0;
+    padding: 0;
+}

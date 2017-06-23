@@ -1,0 +1,21 @@
+.container {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.black, .white{
+    display: inline-block;
+    font-size: 40px;
+    padding-top:10px;
+}
+.black{
+    color: black;
+    padding-left: 10px;
+}
+
+.white{
+    background: black;
+    color: white;
+    padding-right: 10px;
+    border: 1px solid white;
+}
