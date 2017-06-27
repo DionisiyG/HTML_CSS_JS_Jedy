@@ -1,36 +1,42 @@
-button {
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: 1px solid black;
-    padding: 5px 5px;
+button
+{
+	padding: 5px 5px;
+
+	border: 1px solid black;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
 }
 
-.b1 {
-    background: linear-gradient(to bottom, #7292ff 0%, lightblue 60%, white 100%);
+.b1
+{
+	background: linear-gradient(to bottom, #7292ff 0%, lightblue 60%, white 100%);
 }
 
-.b2 {
-    background: linear-gradient(to bottom, lightgreen 0%, #509f3a 50%, lightgreen 100%);
+.b2
+{
+	background: linear-gradient(to bottom, lightgreen 0%, #509f3a 50%, lightgreen 100%);
 }
 
-.b3 {
-    background: linear-gradient(to top, #7292ff 0%, lightblue 70%, white 100%);
-    color: white;
+.b3
+{
+	color: white;
+	background: linear-gradient(to top, #7292ff 0%, lightblue 70%, white 100%);
 }
 
-.b4 {
-    background: linear-gradient(to top, #535353 50%, white 100%);
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#1d1d1d), color-stop(0.6, #6f6f6f), color-stop(0.6, #333333));
-    background: -moz-linear-gradient(#f2f2f2, #6f6f6f, #414141, #1d1d1d);
-    border: 2px solid #5b5b5b;
-    color: white;
+.b4
+{
+	color: white;
+	border: 2px solid #5b5b5b;
+	background:      linear-gradient(to top, #535353 50%, white 100%);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#1d1d1d), color-stop(0.6, #6f6f6f), color-stop(0.6, #333333));
+	background: -moz-linear-gradient(#f2f2f2, #6f6f6f, #414141, #1d1d1d);
 }
 
-.b5 {
-    border: 2px inset grey;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e3e4e5), to(#b9bbbd), color-stop(50%, #ededee));
-     background: -moz-linear-gradient(#e6e7e8, #e9e9ea, #bec0c2);
-     background: linear-gradient(to top, #b9bbbd 0%, #ededee 20%, #e3e4e5 100%);
-
+.b5
+{
+	border: 2px inset grey;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#e3e4e5), to(#b9bbbd), color-stop(50%, #ededee));
+	background: -moz-linear-gradient(#e6e7e8, #e9e9ea, #bec0c2);
+	background:      linear-gradient(to top, #b9bbbd 0%, #ededee 20%, #e3e4e5 100%);
 }

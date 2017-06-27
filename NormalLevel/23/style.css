@@ -1,18 +1,20 @@
-.lux {
-    width: 300px;
-    border: 1px solid #a52a2a;
-    border-collapse: collapse;
-    border-spacing: 0;
+.lux{
+	width: 300px;
+
+	border-spacing: 0;
+	border-collapse: collapse;
+
+	border: 1px solid #a52a2a;
 }
-.lux th {
-    background: #a52a2a;
-    color: white;
+.lux th{
+	color: white;
+	background: #a52a2a;
 }
-.lux td {
-    border-bottom: 1px solid black;
+.lux td{
+	border-bottom: 1px solid black;
 }
-.lux td, .lux th {
-    padding: 4px;
+.lux td, .lux th{
+	padding: 4px;
 }
 /*
 .lux tr:nth-child(2n){
@@ -20,6 +22,6 @@
 }*/
 
 
-.lux tr:nth-child(2n-1) {
-    background: #FFF8DC;
+.lux tr:nth-child(2n-1){
+	background: #fff8dc;
 }

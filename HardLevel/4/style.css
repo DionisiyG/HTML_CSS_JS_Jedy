@@ -1,0 +1,72 @@
+/*_____________________1_____________________________*/
+.circle1{
+	width: 250px;
+	height: 250px;
+	margin:50px;
+	border-radius: 50%;
+	background: radial-gradient(#000e5e 40px, white 40px, white 90px, #c70102 90px);
+}
+/*______________________2_____________________________*/
+
+.circle-2-1, .circle-2-2, .circle-2-3{
+	border-radius: 50%;
+}
+.circle-2-1{
+	width: 250px;
+	height: 250px;
+	margin:50px;
+	position: relative;
+	background: #c70102;
+}
+
+.circle-2-2{
+	width: 180px;
+	height: 180px;
+	background: white;
+	position: absolute;
+	top: 35px;
+	left: 35px;
+}
+
+.circle-2-3{
+	width:80px;
+	height: 80px;
+	background: #000e5e;
+	position: absolute;
+	left:50px;
+	top:50px;
+}
+
+/*_______________________3___________________________*/
+
+.circle3{
+	width: 250px;
+	height: 250px;
+	margin:50px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0  35px #c70102, inset 0 0 0 85px white, inset 0 0 0 130px #000e5e;
+}
+/*_______________________4___________________________*/
+
+.circle4{
+	background: white;
+	border-radius: 50%;
+	width:180px;
+	height:180px;
+	border:35px solid #c70102;
+	position: relative;
+	margin: 50px;
+}
+
+.circle4::before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #000e5e;
+	z-index: 1;
+	left:50px;
+	top:50px;
+}

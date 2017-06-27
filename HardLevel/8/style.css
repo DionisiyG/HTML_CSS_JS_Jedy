@@ -1,0 +1,16 @@
+ol{
+	list-style-type: none;
+}
+.first{
+	counter-reset: item;
+}
+
+.second{
+	counter-reset:item 5;
+}
+
+ li::before{
+	content: '0' counter(item)'. ';
+	counter-increment: item;
+}
+

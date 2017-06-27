@@ -1,77 +1,83 @@
 .container{
-    position: relative;
+	position: relative;
 }
 
 div{
-    text-align: center;
-    line-height: 42px;
+	line-height: 42px;
+
+	text-align: center;
 }
 
 .line{
-    width: 400px;
-    height: 5px;
-    background: #cccccc;
-    margin-top: 50px;
-    margin-left: 50px;
+	width: 400px;
+	height: 5px;
+	margin-top: 50px;
+	margin-left: 50px;
+
+	background: #cccccc;
 }
 .first, .second, .third{
-    background: #b2d235;
+	background: #b2d235;
 }
 
 .first{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-   /* -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;*/
-    border-radius: 50px;
-    top:-20px;
-    left:30px;
+	position: absolute;
+	top: -20px;
+	left: 30px;
 
+	width: 40px;
+	height: 40px;	/* -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;*/
+
+	border-radius: 50px;
 }
 
 .second{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    /* -moz-border-radius: 30px;
+	position: absolute;
+	top: -20px;
+	left: 130px;
+
+	width: 40px;
+	height: 40px;	/* -moz-border-radius: 30px;
      -webkit-border-radius: 30px;*/
-    border-radius: 50px;
-    top:-20px;
-    left:130px;
+
+	border-radius: 50px;
 }
 
 .third{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    /* -moz-border-radius: 30px;
+	position: absolute;
+	top: -20px;
+	left: 230px;
+
+	width: 40px;
+	height: 40px;	/* -moz-border-radius: 30px;
      -webkit-border-radius: 30px;*/
-    border-radius: 50px;
-    top:-20px;
-    left:230px;
+
+	border-radius: 50px;
 }
 
-.fourth {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #ab4a9c;
-    /* -moz-border-radius: 30px;
+.fourth{
+	position: absolute;
+	top: -20px;
+	left: 330px;
+
+	width: 40px;
+	height: 40px;	/* -moz-border-radius: 30px;
      -webkit-border-radius: 30px;*/
-    border-radius: 50px;
-    top: -20px;
-    left: 330px;
+
+	border-radius: 50px;
+	background: #ab4a9c;
 }
 
-.fifth {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #cccccc;
-    /* -moz-border-radius: 30px;
+.fifth{
+	position: absolute;
+	top: -20px;
+	left: 430px;
+
+	width: 40px;
+	height: 40px;	/* -moz-border-radius: 30px;
      -webkit-border-radius: 30px;*/
-    border-radius: 50px;
-    top: -20px;
-    left: 430px;
+
+	border-radius: 50px;
+	background: #cccccc;
 }
