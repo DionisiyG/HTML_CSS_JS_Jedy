@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding-right: 10px;
+}
+
+.feedback{
+	width: 300px;
+	min-height: 100px;
+	padding: 10px;
+	background: #333333;
+	color: white;
+	position: fixed;
+	top:200px;
+	border-right: 20px solid #fc0;
+	left: -320px;
+
+	border-radius: 0 10px 10px 0;
+	-o-border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+
+
+	transition: left 1.5s;
+	-o-transition: left 1.5s;
+	-moz-transition: left 1.5s;
+	-webkit-transition: left 1.5s;
+}
+.feedback::after{
+	content: 'Обратная связь';
+	color: black;
+	position: absolute;
+	right: -60px;
+	bottom: 50px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-webkit-transform: rotate(-90deg);
+	-moz-webkit-transform: rotate(-90deg);
+}
+
+.feedback:hover{
+	left: 0;
+}

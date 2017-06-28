@@ -11,10 +11,10 @@
 
 }
 .content, .title::after{
-    box-shadow: 0 0 5px darkgreen;
-    -webkit-box-shadow: 0 0 5px darkgreen;
-    -o-box-shadow: 0 0 5px darkgreen;
-    -moz-box-shadow: 0 0 5px darkgreen;
+	box-shadow: 0 0 5px darkgreen;
+	-webkit-box-shadow: 0 0 5px darkgreen;
+	-o-box-shadow: 0 0 5px darkgreen;
+	-moz-box-shadow: 0 0 5px darkgreen;
 }
 .content{
 	min-height: 120px;
@@ -37,10 +37,10 @@
 }
 
 .title, .title::after{
-    border-radius: 10px 10px 0 0;
-    -o-border-radius: 10px 10px 0 0;
-    -moz-border-radius: 10px 10px 0 0;
-    -webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
 }
 
 .title::after{
