@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+.container{
+	width: 380px;
+	height: 200px;
+	margin-left: 50px;
+}
 blockquote{
 	margin-top: 30px;
 }
@@ -14,18 +19,15 @@ blockquote::before, blockquote::after{
 
 blockquote::before{
 	float: left;
-
 	margin-top: -20px;
-
 	content: '«';
 }
 
 blockquote::after{
 	float: right;
-
 	margin-top: -40px;
-
 	content: '»';
+	margin-right: -40px;
 }
 
 p{

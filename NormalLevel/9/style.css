@@ -1,17 +1,13 @@
 .container{
-    border: 1px solid yellowgreen;
+    border: 1px solid #9acd32;
     width: 250px;
     height: 100px;
     margin-top: 20px;
     font: italic 30px serif;
     text-align: center;
 }
+
 .number{
-   border-top: 1px solid blue;
+   border-top: 1px solid #0000ff;
     line-height: 100px;
 }
-
-/*
-span{
-    vertical-align: -35px;
-}*/

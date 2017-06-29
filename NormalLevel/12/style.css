@@ -1,11 +1,11 @@
 li{
     list-style: none;
     display:inline-block;
-    border: 1px solid black;
+    border: 1px solid #000000;
     width: 20px;
     text-align: center;
     margin-left: 10px;
-    box-shadow: 0 0 5px  grey;
+    box-shadow: 0 0 5px #808080;
     background: linear-gradient(to bottom, #ffffff, #ccc6c0);
     border-radius: 3px;
 }

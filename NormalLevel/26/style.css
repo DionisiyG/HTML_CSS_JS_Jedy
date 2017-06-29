@@ -19,7 +19,7 @@
     height: 10px;
     position: relative;
     transform: skewX(-150deg);
-    background: white;
+    background: #ffffff;
 }
 .container::after{
     bottom: 4px;
@@ -35,7 +35,7 @@ p{
      top:10px;
      font-weight: normal;
      transform: skewX(-150deg);
-     color: white;
+     color: #ffffff;
 }
 
 .sq{
@@ -45,7 +45,7 @@ p{
     width:20px;
     height: 20px;
     margin-right: 15px;
-    background: lightgray;
+    background: #d3d3d3;
 }
 .green{
     background: #51dbb3;
@@ -54,5 +54,5 @@ p{
     background: #dbd651;
 }
 .red{
-    background: peru;
+    background: #cd853f;
 }

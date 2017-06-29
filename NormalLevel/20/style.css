@@ -1,13 +1,13 @@
-.menu li {
-    list-style: none;
+.menu li{
+	list-style: none;
 }
 
-.menu {
-    background: #4df587;
-    width: 200px;
-    margin-left: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 7px 6px 0 -2px brown;
+.menu{
+	width: 200px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background: #4df587;
+	box-shadow: 7px 6px 0 -2px #a52a2a;
 }

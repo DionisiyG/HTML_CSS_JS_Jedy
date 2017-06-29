@@ -6,3 +6,42 @@ img{
 .num{
    float: right;
 }
+/*-----------------------------*/
+
+.formula{
+    width: 250px;
+    margin: auto;
+}
+.in-block{
+    display: inline-block;
+}
+
+.sum, .brackets{
+    font-size: 2.3em;
+    position: relative;
+}
+
+.sum-top, .sum-bot{
+    font-size: 0.35em;
+    position: absolute;
+}
+.sum-top{
+    top:-6px;
+    left: 10px;
+}
+
+.brackets-bot,.brackets-top{
+    position: absolute;
+    font-size: 0.4em;
+    margin: -8px;
+}
+.brackets-top {
+    top:10px;
+}
+.brackets-bot{
+    top:40px
+}
+
+.ital{
+    font-style: italic;
+}

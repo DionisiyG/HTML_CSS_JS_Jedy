@@ -5,7 +5,7 @@ div{
 
 .date{
     background: #5a9cff;
-    color: white;
+    color: #ffffff;
     font-size: 25px;
     text-align: center;
 }
@@ -16,8 +16,9 @@ div{
 }
 
 div:hover{
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 #808080;
 }
+
 p{
     margin: 0;
     padding: 0;

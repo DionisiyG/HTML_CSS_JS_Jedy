@@ -4,7 +4,6 @@
 
 div{
 	line-height: 42px;
-
 	text-align: center;
 }
 
@@ -13,7 +12,6 @@ div{
 	height: 5px;
 	margin-top: 50px;
 	margin-left: 50px;
-
 	background: #cccccc;
 }
 .first, .second, .third{
@@ -24,11 +22,8 @@ div{
 	position: absolute;
 	top: -20px;
 	left: 30px;
-
 	width: 40px;
-	height: 40px;	/* -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;*/
-
+	height: 40px;
 	border-radius: 50px;
 }
 
@@ -36,11 +31,8 @@ div{
 	position: absolute;
 	top: -20px;
 	left: 130px;
-
 	width: 40px;
-	height: 40px;	/* -moz-border-radius: 30px;
-     -webkit-border-radius: 30px;*/
-
+	height: 40px;
 	border-radius: 50px;
 }
 
@@ -48,11 +40,8 @@ div{
 	position: absolute;
 	top: -20px;
 	left: 230px;
-
 	width: 40px;
-	height: 40px;	/* -moz-border-radius: 30px;
-     -webkit-border-radius: 30px;*/
-
+	height: 40px;
 	border-radius: 50px;
 }
 
@@ -60,11 +49,8 @@ div{
 	position: absolute;
 	top: -20px;
 	left: 330px;
-
 	width: 40px;
-	height: 40px;	/* -moz-border-radius: 30px;
-     -webkit-border-radius: 30px;*/
-
+	height: 40px;
 	border-radius: 50px;
 	background: #ab4a9c;
 }
@@ -73,11 +59,8 @@ div{
 	position: absolute;
 	top: -20px;
 	left: 430px;
-
 	width: 40px;
-	height: 40px;	/* -moz-border-radius: 30px;
-     -webkit-border-radius: 30px;*/
-
+	height: 40px;
 	border-radius: 50px;
 	background: #cccccc;
 }

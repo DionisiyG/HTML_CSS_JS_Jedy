@@ -24,11 +24,5 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
-
-/* .pager li:hover{
-     background: #ffb5bd;
-     border-bottom: 4px solid #ff5d5f;
- }*/
-

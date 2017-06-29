@@ -1,4 +1,4 @@
  input[type="checkbox"]:checked + span{
 
-     background: yellow;
+     background: #ffff00;
 }

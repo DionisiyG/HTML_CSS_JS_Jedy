@@ -1,7 +1,7 @@
 .battery{
     width: 100px;
     height: 40px;
-    border:2px solid black;
+    border:2px solid #000000;
     margin-bottom: 10px;
     position: relative;
 }
@@ -23,14 +23,14 @@
 
 .low::before {
     width:30px;
-    background-color: red;
+    background-color: #ff0000;
 }
 
 .mid:before{
     width: 50px;
-    background: yellow;
+    background: #ffff00;
 }
 .high:before{
     width: 100px;
-    background: green;
+    background: #008000;
 }
