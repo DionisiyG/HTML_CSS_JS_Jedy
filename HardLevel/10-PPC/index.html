@@ -7,7 +7,30 @@
 </head>
 <body>
 	<div class="container">
-
+		<header>
+			<ul class="menu">
+				<li><a href="#">Описание</a></li>
+				<li><a href="#">Ингредиенты</a></li>
+				<li><a href="#">Параметры</a></li>
+				<li><a href="#">Бокалы</a></li>
+			</ul>
+		</header>
+		<div class="description">
+			<p>Описание</p>
+			<div class="border-img">
+				<div class="img-goblet">
+					<img src="./img/bokal.png">
+					<input type="submit" value="Загрузить" name="download">
+				</div>
+			</div>
+			<form>
+				<textarea cols="45" maxlengh="30" placeholder="Название коктейля"></textarea>
+				<textarea cols="45" maxlengh="50" placeholder="Альтернативное навание через запятую"></textarea>
+				<textarea cols="45" rows="5" maxlengh="150" placeholder="Краткое описание"></textarea>
+				<textarea cols="65" rows="7" maxlengh="150" placeholder="Инструкция для приготовления"></textarea>
+			</form>
+			<p class="ingredients"><a href="">Ингредиенты</a></p>
+		</div>
 	</div>
 </body>
 </html>
