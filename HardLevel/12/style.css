@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.avatar{
+	border-radius: 50%;
+	border:3px solid #ccc;
+}
+
+.person{
+	position: relative;
+	float: left;
+	margin: 20px;
+}
+.person a{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.icon{
+	background: url("img/social_icons.png");
+}
+
+a.vk{
+	background-position: -60px 30px;
+	top: 3px;
+	left: 18px;
+}
+
+a.tw{
+	background-position:  -30px 30px;
+	top: 30px;
+	left: 0px;
+}
+
+a.fb{
+	background-position:  0px 30px;
+	top: 60px;
+	left: -10px;
+}
+
+a.email{
+	background-position: -90px 30px;
+	top: 150px;
+	left: 70px;
+}
+
+a.vk:hover{
+	background-position: -60px 0px;
+	top: 3px;
+	left: 18px;
+}
+
+a.tw:hover{
+	background-position:  -30px 0px;
+	top: 30px;
+	left: 0px;
+}
+
+a.fb:hover{
+	background-position:  0px 0px;
+	top: 60px;
+	left: -10px;
+}
+
+.email:hover{
+	background-position: -90px 0px;
+	top: 150px;
+	left: 70px;
+}

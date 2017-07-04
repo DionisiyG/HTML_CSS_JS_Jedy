@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+form{
+	min-width: 450px;
+	margin: 10px 10px 0 10px;
+	overflow: hidden;
+}
+
+p{
+	margin: 10px 0 10px 10px;
+	font-weight: bold;
+}
+
+.field {
+	width: 210px;
+	height: 20px;
+	position: absolute;
+	left: 130px;
+	border: 1px solid #808080;
+	outline: none;
+	padding-left: 5px;
+}
+
+.email, .captcha{
+	margin-top: 30px;
+}
+
+.captcha + img{
+	position: relative;
+	width:190px;
+	height: 50px;
+	left: 10px;
+	bottom: 3px;
+}
+
+.register{
+	background: #e3e3e3;
+	border-radius: 5px;
+	margin-top: 10px;
+
+}
+button{
+	padding: 5px 10px 5px 10px;
+	margin:10px 0 10px 120px;
+	color: #FFF;
+	border-radius: 20px;
+	border: 1px solid #099609;
+	background:radial-gradient(ellipse at center 25px,  #00e400 40%, #009100 80%);
+	position: relative;
+	height:2em;
+	width:150px;
+}
+
+button:before{
+	content:'Зарегистрироваться';
+	position: absolute;
+	display: block;
+	border-radius: 20px;
+	width: 93%;
+	height: 10px;
+	background: rgba(58, 182, 58, 0.8);
+	top: 2px;
+	left: 5px;
+}
+
+input:valid + span:after{
+	content: url("ok.png");
+	position: absolute;
+	left: 390px;
+}
+
+input:invalid + span:after{
+	content: url("nook.png");
+	position: absolute;
+	left: 360px;
+}

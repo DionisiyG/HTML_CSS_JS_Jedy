@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hosting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form>
+            <fieldset>
+                <label><p>Имя<input type="text" class="field" name="name" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required><span></span></p></label>
+                <label><p>Фамилия<input type="text" class="field" name="surname" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required><span></span></p></label>
+                <label><p>Город<input type="text" class="field" name="city" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required><span></span></p></label>
+
+                <label><p class="email">Эл.почта<input type="email" class="field " required><span></span></p></label>
+                <label><p>Пароль<input type="password" class="field" required><span></span></p></label>
+                <label><p>Повторите<input type="password" class="field" required><span></span></p></label>
+                <p class="captcha">Введите число с картинки</p>
+                <img src="captcha.png"><input type="text" class="field" name="captcha" pattern="53255" required><span></span>
+            </fieldset>
+            <div class="register">
+                <button type="submit"></button>
+            </div>
+        </form>
+</body>
+</html>

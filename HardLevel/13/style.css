@@ -1,0 +1,85 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 614px;
+	margin: 0 auto;
+	height: inherit;
+}
+
+.container{
+	background: #568;
+	padding: 50px;
+}
+
+.host{
+	border:1px solid #000000;
+	min-height: 160px;
+	border-radius: 5px;
+	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
+	background: #fff;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+}
+
+.icon{
+	background-image: url("hosting.png") ;
+	margin: 0 auto;
+	width: 60px; height: 42px;
+}
+
+.item{
+	float: left;
+	width: 200px;
+	border-right: 1px solid black;
+	height: 140px;
+	margin: 10px 0px;
+
+}
+
+.item:last-child{
+	border: none;
+}
+
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	background: #f56332;
+	border-radius: 2px;
+	padding: 5px 10px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	color: #ffffff;
+	margin: 0 auto;
+
+}
+
+h3{
+	color: #f56332;
+	font: 15px  Arial ;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+
+}
+
+p{
+	font: 13px Arial;
+	text-align: center;
+	margin: 10px;
+}
+
+.v-host{
+	background-position: 0 0px;
+
+}
+.c-host{
+	background-position: 0 -42px;
+}
+
+.d-server{
+	background-position: 0 -84px;
+}
+

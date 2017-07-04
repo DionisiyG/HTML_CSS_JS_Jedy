@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cocktail</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="description">
+			<form action="">
+				<fieldset class="fieldset-descr background-gradient">
+					<legend>Описание</legend>
+					<label><p>Название коктейля:</p>
+						<input type="text" class="coctail-name coctail"></label>
+					<label><p>Альтернативное название (через запятую):</p>
+						<input type="text" class="coctail-alt coctail"></label>
+					<label><p>Краткое описание:</p>
+						<textarea class="coctail-short coctail"></textarea></label>
+					<label><p>Инструкция для приготовления:</p>
+						<textarea class="coctail-instuction coctail"></textarea></label>
+					<div class="tastes-message">
+						<h1 class="about-tastes">О ВКУСАХ НЕ СПОРЯТ</h1>
+						<h3>Выбери свой напиток</h3>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="param-ingred-wrapper">
+			<div class="ingredients ">
+				<fieldset class="fieldset-ingredients bg-gradient">
+					<legend>Ингредиенты</legend>
+					<span class="ingredients-title">Название:</span>
+					<span class="ingredients-title">Кол-во:</span>
+					<span class="ingredients-title">Единица:</span>
+					<span class="ingredients-title">Украшение:</span><br>
+					<div class="ingredients-line">
+						<div class="select-ingr-name">
+							<input type="text" name="line1" placeholder="Bitter Lemon">
+							<div class="arrows">
+								<a href="#" class="arrow-up"><span class="arrow-triangle"></span></a>
+								<a href="#" class="arrow-down"><span class="arrow-triangle"></span></a>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div class="parameters ">
+				<fieldset class="fieldset-parameters bg-gradient">
+					<legend>Параметры</legend>
+					<span class="parameters-title">Название:</span>
+					<div class="parameters-line">
+						<div class="select-parameter-name">
+							<input type="text" name="line1" placeholder="123">
+							<div class="arrows">
+								<a href="#" class="arrow-up"><span class="arrow-triangle"></span></a>
+								<a href="#" class="arrow-down"><span class="arrow-triangle"></span></a>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="photo-dwnld bg-gradient">
+			<p class="photo">Фотография:</p>
+			<div class="photo-preview"><img src="img-desc/Inside%20photo.png"></div>
+			<a href="#" class="click-to-view">Щелкните, чтобы посмотреть в полный размер</a>
+			<span class="dotted"></span>
+			<div class="photo-upload">
+				<!--<button type="button">Загрузить фото</button>-->
+				<!--<input type="file">-->
+				<input type="file" name="loadImage" id="loadImage">
+				<label class="button" for="loadImage"><span></span></label>
+
+			</div>
+		</div>
+
+		<div class="cocktail-type-wrapper">
+			<div class="type-square square">
+				<span>ТИП КОКТЕЙЛЯ</span>
+			</div>
+			<div class="strength">
+				<fieldset class="fieldset-general bg-gradient">
+					<legend class="legend-types">По крепости</legend>
+
+					<input id="rad-nonalco" type="radio" name="strengths">
+					<label for="rad-nonalco" class="label-types">Безалкогольные</label>
+					<input id="rad-soft" type="radio" name="strengths">
+					<label for="rad-soft" class="label-types">Слабоалкогольные(6-15%)</label>
+					<input id="rad-middle" type="radio" name="strengths">
+					<label for="rad-middle" class="label-types">Полукрепкие(16-22%)</label>
+					<input id="rad-strong" type="radio" name="strengths">
+					<label for="rad-strong" class="label-types">Крепкие(более 22%)</label>
+				</fieldset>
+			</div>
+			<div class="basis">
+				<fieldset class="fieldset-general bg-gradient">
+					<legend class="legend-types">На основе:</legend>
+
+					<input id="bas4" type="radio" name="basises">
+					<label for="bas4" class="label-types1"><span class="radio-title">Виски</span><span class="radio-circle"></span></label>
+					<input id="bas5" type="radio" name="basises">
+					<label for="bas5" class="label-types1"><span class="radio-title">Бренди</span><span class="radio-circle"></span></label>
+					<!--<input id="bas1" type="radio" name="basises">
+					<label for="bas1" class="label-types">Абсента</label>
+					<input id="bas2" type="radio" name="basises">
+					<label for="bas2" class="label-types">Водки</label>
+					<input id="bas3" type="radio" name="basises">
+					<label for="bas3" class="label-types">Джина</label>
+					<input id="bas4" type="radio" name="basises">
+					<label for="bas4" class="label-types">Виски</label>
+					<input id="bas5" type="radio" name="basises">
+					<label for="bas5" class="label-types">Бренди</label>
+					<input id="bas6" type="radio" name="basises">
+					<label for="bas6" class="label-types">Ликера</label>
+					<input id="bas7" type="radio" name="basises">
+					<label for="bas7" class="label-types">Кальвадоса</label>
+					<input id="bas8" type="radio" name="basises">
+					<label for="bas8" class="label-types">Текилы</label>
+					<input id="bas9" type="radio" name="basises">
+					<label for="bas9" class="label-types">Рома</label>
+					<input id="bas10" type="radio" name="basises">
+					<label for="bas10" class="label-types">Вина</label>
+					<input id="bas11" type="radio" name="basises">
+					<label for="bas11" class="label-types">Пива</label>-->
+				</fieldset>
+				<div class="slider">
+					<div class="prev-arrow-block">
+						<a class="prevArrow" href="#">
+							<img src="img-desc/left-slider.png" alt="">
+						</a>
+					</div>
+					<div class="next-arrow-block">
+						<a class="nextArrow" href="#">
+							<img src="img-desc/right-slider.png" alt="">
+						</a>
+					</div>
+					<div class="slider-zone">
+						<div class="slider-thumb"></div>
+					</div>
+					<div class="list">
+						<span class="list-title">Показать списком</span>
+					</div>
+				</div>
+			</div>
+			<div class="type">
+				<fieldset class="fieldset-general bg-gradient">
+					<legend class="legend-types">По типу:</legend>
+					<input id="type1" type="radio" name="basises">
+					<label for="type1" class="label-types">Аперитивы</label>
+					<input id="type2" type="radio" name="basises">
+					<label for="type2" class="label-types">Диджестивы</label>
+					<input id="type3" type="radio" name="basises">
+					<label for="type3" class="label-types">Горячие</label>
+					<input id="type4" type="radio" name="basises">
+					<label for="type4" class="label-types">Молочные</label>
+					<input id="type5" type="radio" name="basises">
+					<label for="type5" class="label-types">Десертные</label>
+					<input id="type6" type="radio" name="basises">
+					<label for="type6" class="label-types">Солистые</label>
+					<input id="type7" type="radio" name="basises">
+					<label for="type7" class="label-types">Дейзи</label>
+					<input id="type8" type="radio" name="basises">
+					<label for="type8" class="label-types">Джулепы</label>
+					<input id="type9" type="radio" name="basises">
+					<label for="type9" class="label-types">Кардиналы</label>
+					<input id="type10" type="radio" name="basises">
+				</fieldset>
+				<div class="slider">
+					<div class="prev-arrow-block">
+						<a class="prevArrow" href="#">
+							<img src="img-desc/left-slider.png" alt="">
+						</a>
+					</div>
+					<div class="next-arrow-block">
+						<a class="nextArrow" href="#">
+							<img src="img-desc/right-slider.png" alt="">
+						</a>
+					</div>
+					<div class="slider-zone">
+						<div class="slider-thumb"></div>
+					</div>
+					<div class="list">
+						<span class="list-title">Показать списком</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cocktail-tags-wrapper">
+			<div class="tag-square square">
+				<span>ТЕГИ</span>
+			</div>
+			<div class="tags">
+				<fieldset class="fieldset-general bg-gradient">
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-1" name="tag-checkbox1">
+					<label class="tag-checkbox-label" for="tag-checkbox-1">
+						Бодрящие<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-2" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-2">
+						Горькие<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-3" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-3">
+						Для компании<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-4" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-4">
+						Кислые<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-5" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-5">
+						Лонгдринк<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-6" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-6">
+						Необычные по употреблению<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-7" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-7">
+						Овощные<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-8" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-8">
+						Огненные<span class="checkboxStyle"></span>
+					</label>
+					<input type="checkbox" class="radioStyle" id="tag-checkbox-9" name="tag-checkbox2">
+					<label class="tag-checkbox-label" for="tag-checkbox-9">
+						Освежающие<span class="checkboxStyle"></span>
+					</label>
+				</fieldset>
+				<div class="slider">
+					<div class="prev-arrow-block">
+						<a class="prevArrow" href="#">
+							<img src="img-desc/left-slider.png" alt="">
+						</a>
+					</div>
+					<div class="next-arrow-block">
+						<a class="nextArrow" href="#">
+							<img src="img-desc/right-slider.png" alt="">
+						</a>
+					</div>
+					<div class="slider-zone">
+						<div class="slider-thumb"></div>
+					</div>
+					<div class="list">
+						<span class="list-title">Показать списком</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cocktail-goblets-wrapper">
+			<div class="goblet-square square">
+				<span>БОКАЛЫ</span>
+			</div>
+			<div class="gobelets">
+				<fieldset class="fieldset-general bg-gradient">
+					<input id="gob1" type="radio" name="gobelets">
+					<label for="gob1" class="label-types">Бокал для белог вина</label>
+					<input id="gob2" type="radio" name="gobelets">
+					<label for="gob2" class="label-types">Бокал для красного вина</label>
+					<input id="gob3" type="radio" name="gobelets">
+					<label for="gob3" class="label-types">Бокал для слоистых коктейлей</label>
+					<input id="gob4" type="radio" name="gobelets">
+					<label for="gob4" class="label-types">Бокал сауэр</label>
+					<input id="gob5" type="radio" name="gobelets">
+					<label for="gob5" class="label-types">Бокад харикейн</label>
+					<input id="gob6" type="radio" name="gobelets">
+					<label for="gob6" class="label-types">Граненный стакан</label>
+				</fieldset>
+				<div class="slider">
+					<div class="prev-arrow-block">
+						<a class="prevArrow" href="#">
+							<img src="img-desc/left-slider.png" alt="">
+						</a>
+					</div>
+					<div class="next-arrow-block">
+						<a class="nextArrow" href="#">
+							<img src="img-desc/right-slider.png" alt="">
+						</a>
+					</div>
+					<div class="slider-zone">
+						<div class="slider-thumb"></div>
+					</div>
+					<div class="list">
+						<span class="list-title">Показать списком</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cocktail-decorations-wrapper">
+			<div class="decoration-square square">
+				<span>УКРАШЕНИЯ</span>
+			</div>
+			<div class="decorations ">
+				<fieldset class="fieldset-general bg-gradient">
+					<input id="dec1" type="radio" name="decorations">
+					<label for="dec1" class="label-types">Апельсин на бокале</label>
+					<input id="dec2" type="radio" name="decorations">
+					<label for="dec2" class="label-types">Веточка мяты</label>
+					<input id="dec3" type="radio" name="decorations">
+					<label for="dec3" class="label-types">Взбитые сливки с вишней</label>
+					<input id="dec4" type="radio" name="decorations">
+					<label for="dec4" class="label-types">Виноград на шпажке</label>
+					<input id="dec5" type="radio" name="decorations">
+					<label for="dec5" class="label-types">Долька мандарина</label>
+				</fieldset>
+				<div class="slider">
+					<div class="prev-arrow-block">
+						<a class="prevArrow" href="#">
+							<img src="img-desc/left-slider.png" alt="">
+						</a>
+					</div>
+					<div class="next-arrow-block">
+						<a class="nextArrow" href="#">
+							<img src="img-desc/right-slider.png" alt="">
+						</a>
+					</div>
+					<div class="slider-zone">
+						<div class="slider-thumb"></div>
+					</div>
+					<div class="list">
+						<span class="list-title">Показать списком</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<label class="button" for="submitButton"><span></span></label>
+			<input id="submitButton" type="submit" name="submit">
+			<label class="button" for="resetButton"><span></span></label>
+			<input id="resetButton" type="reset" name="reset">
+		</footer>
+	</div>
+</body>
+</html>
