@@ -6,31 +6,76 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<header>
-			<ul class="menu">
-				<li><a href="#">Описание</a></li>
-				<li><a href="#">Ингредиенты</a></li>
-				<li><a href="#">Параметры</a></li>
-				<li><a href="#">Бокалы</a></li>
-			</ul>
-		</header>
-		<div class="description">
-			<p>Описание</p>
-			<div class="border-img">
-				<div class="img-goblet">
-					<img src="./img/bokal.png">
-					<input type="submit" value="Загрузить" name="download">
-				</div>
+<!--<div class="container">
+	<header>
+		<ul class="menu">
+			<li><a href="#">Описание</a></li>
+			<li><a href="#">Ингредиенты</a></li>
+			<li><a href="#">Параметры</a></li>
+			<li><a href="#">Бокалы</a></li>
+		</ul>
+	</header>
+	<div class="description">
+		<p>Описание</p>
+		<div class="border-img">
+			<div class="img-goblet">
+				<img src="./img/bokal.png">
+				<input type="submit" value="Загрузить" name="download">
 			</div>
-			<form>
-				<textarea cols="45" maxlengh="30" placeholder="Название коктейля"></textarea>
-				<textarea cols="45" maxlengh="50" placeholder="Альтернативное навание через запятую"></textarea>
-				<textarea cols="45" rows="5" maxlengh="150" placeholder="Краткое описание"></textarea>
-				<textarea cols="65" rows="7" maxlengh="150" placeholder="Инструкция для приготовления"></textarea>
-			</form>
-			<p class="ingredients"><a href="">Ингредиенты</a></p>
 		</div>
+		<form>
+			<textarea cols="45" maxlengh="30" placeholder="Название коктейля"></textarea>
+			<textarea cols="45" maxlengh="50" placeholder="Альтернативное навание через запятую"></textarea>
+			<textarea cols="45" rows="5" maxlengh="150" placeholder="Краткое описание"></textarea>
+			<textarea cols="65" rows="7" maxlengh="150" placeholder="Инструкция для приготовления"></textarea>
+		</form>
+		<p class="ingredients"><a href="">Ингредиенты</a></p>
 	</div>
+</div>-->
+
+<form>
+	<fieldset>
+		<div class="container">
+			<ul class="menu">
+				<li class="descriptino"><a href="#">Описание</a></li>
+				<li class="ingrediens"><a href="#">Ингридиенты</a></li>
+				<li class="parameters"><a href="#">Параметры</a></li>
+				<li class="cups"><a href="">Бокалы</a></li>
+				<div class="cont non-active in">
+					<div class="inner"></div>
+				</div>
+				<div class="cont sec non-active">
+					<div class="inner"></div>
+				</div>
+				<div class="cont first">
+					<div class="inner"></div>
+				</div>
+			</ul>
+			<div class="shadow"></div>
+		</div>
+		<h1>Описание</h1>
+		<div class="form-container">
+			<div class="vert">
+				<img src="#" alt="">
+				<button type="button" class="download">Загрузить</button>
+			</div>
+			<div class="hor">
+				<input type="text" value="Название коктейля" onclick="this.value='';"
+					   onKeyDown="this.style.color='#000';">
+				<input type="text" value="Альтернативное название через запятую" onclick="this.value='';"
+					   onKeyDown="this.style.color='#000';">
+				<textarea class="short-description" placeholder="Краткое описание"
+						  onclick="this.setAttribute('placeholder', '');"
+						  onKeyDown="this.style.color='#000';"></textarea>
+			</div>
+			<textarea class="wide" placeholder="Инструкция по приготовлению"
+					  onclick="this.setAttribute('placeholder', '');" onKeyDown="this.style.color='#000';"></textarea>
+			<button type="button" class="next">Ингридиенты</button>
+			<div class="cont first">
+				<div class="inner"></div>
+			</div>
+		</div>
+	</fieldset>
+</form>
 </body>
 </html>
