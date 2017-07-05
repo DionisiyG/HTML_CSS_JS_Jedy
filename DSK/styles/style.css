@@ -73,7 +73,6 @@ ul.sub-menu{
     left: -1px;
     background: #ffffff;
     z-index: 1;
-    /*top: 50px;*/
 }
 ul.menu li{
     display: inline-block;
@@ -176,7 +175,7 @@ table.calendar {
     padding: 3px;
 }
 
-/* Панель сетки календаря */
+/* Calendar net */
 td.in_month, table.calendar th {
     text-align: center;
     font-weight: bold;
@@ -188,7 +187,7 @@ td.in_month, table.calendar th {
 
 }
 
-/* Панель выбора месяца и года */
+/* Choose month and year panel */
 table.calendar caption {
     border-bottom: none;
     font-size: 19px;
@@ -199,14 +198,14 @@ table.calendar caption {
     text-shadow: 0 1px 1px #fff;
 }
 
-/* Дни недели */
+/* Days of week */
 table.calendar th{
     color: #ffffff;
     line-height: 30px;
     font-size: 15px;
 }
 
-/* Выделенная дата */
+/* Selected date */
 table.calendar td.selected {
     background: #00c400;
     background: linear-gradient(270deg, #f96100 0, #ff6c54 100%);
@@ -214,7 +213,7 @@ table.calendar td.selected {
     font-size: 10px;
 }
 
-/* Ссылки сетки дат календаря */
+/* Date net */
 table.calendar a {
     display: block;
     font-weight: bold;
@@ -224,7 +223,7 @@ table.calendar a {
     font-size: 15px;
 }
 
-/* Ссылки навигации календаря */
+/* Calendar navigation*/
 table.calendar caption a {
     display: inline;
     font-weight: bold;
