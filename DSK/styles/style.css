@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*___________________________________________________________________________________________________*/
+.wrapper{
+    position: relative;
+    max-width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+}
+.main .wrapper::after, footer .wrapper::after{
+    content: '.';
+    display: block;
+    clear: both;
+}
+.main-section-wrapper{
+    max-width: 890px;
+    float: right;
+}
+
+nav, header, section.main, footer{
+    max-width: 1920px;
+    height: 100%;
+}
+header {
+    height: 415px;
+    background: url("../img/header-img/bg-city.png") no-repeat;
+}
+
+nav{
+    background: #5690b6;
+}
+footer{
+    background: url("../img/footer-img/footer.png") no-repeat;
+}
+/*_____________________________Header__________________________________________________*/
+.logo{
+    display: block;
+    position: absolute;
+    left: 0;  right: 0;
+    top:20px;
+    margin: auto;
+}
+/*________________________________Navigation_____________________________________________________*/
+ul.menu{
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav::before, nav::after{
+    display: block;
+    content: '';
+    height: 5px;
+    max-width: 1920px;
+    box-shadow: 0 3px 5px 1px #575757;
+}
+
+nav::after {
+    background: linear-gradient(-90deg, #ff9a95, #b94900, #f58789, #f9babf);
+}
+
+nav::before{
+    background: linear-gradient(-90deg, #14af4a, #114d14, #22c12b, #49ffa9);
+}
+
+ul.sub-menu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    border:1px solid #7daacd;
+    border-top: none;
+    left: -1px;
+    background: #ffffff;
+    z-index: 1;
+    /*top: 50px;*/
+}
+ul.menu li{
+    display: inline-block;
+    margin-left: -4px;
+}
+
+ul.sub-menu li{
+    border: none;
+}
+
+ul.menu a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ul.sub-menu a{
+    color: #000000;
+}
+
+ul.menu a:hover {
+    background: #60d1ff;
+}
+
+ul.menu > li:hover .sub-menu{
+    display: block;
+}
+
+ul.sub-menu a{
+    width: 150px;
+    margin-left: 4px;
+    font-weight: bold;
+    padding: 8px 17px;
+}
+
+ul.menu > li{
+    position: relative;
+    display: inline-block;
+    margin-right: -1px;
+}
+
+ul.menu > li > a{
+    text-shadow: 1px 1px 2px #000000;
+    text-transform: uppercase;
+    padding: 14px 15px;
+    color: #fff;
+}
+/*________________________________Main Section_____________________________________________________*/
+h1{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+}
+ p{
+    margin: 20px 80px 20px 0;
+     color: #6d6d6d;
+}
+
+.second-part h1, .third-part h1{
+    margin-top: 50px;
+}
+/*________________________________Main Section Left Part_____________________________________________________*/
+.left-side{
+    width: 300px;
+    margin: 25px 0px 0 20px;
+}
+.left-side p{
+    margin-top: 0;
+    margin-right: 30px;
+}
+.left-side h2{
+    margin-bottom: 10px;
+}
+time{
+    color: #3bb1ff;
+    font-weight: bold;
+}
+
+.watch{
+    margin-left: 50px;
+}
+
+.weather{
+    margin-left: 20px;
+}
+img .weather{
+    width:220px;
+    height:200px;
+    border: 0;
+}
+/*________________________________Calendar_____________________________________________________*/
+table.calendar {
+    width:250px;
+    height: 250px;
+    margin:15px 30px 20px 5px;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 3px;
+}
+
+/* Панель сетки календаря */
+td.in_month, table.calendar th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    background: #393939;
+    background: linear-gradient(90deg, #464646 0, #87837f 100%);
+
+}
+
+/* Панель выбора месяца и года */
+table.calendar caption {
+    border-bottom: none;
+    font-size: 19px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 2.2;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 1px #fff;
+}
+
+/* Дни недели */
+table.calendar th{
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+/* Выделенная дата */
+table.calendar td.selected {
+    background: #00c400;
+    background: linear-gradient(270deg, #f96100 0, #ff6c54 100%);
+    font-weight: normal;
+    font-size: 10px;
+}
+
+/* Ссылки сетки дат календаря */
+table.calendar a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Ссылки навигации календаря */
+table.calendar caption a {
+    display: inline;
+    font-weight: bold;
+    font-size: 15px;
+    color: #898989;
+    text-shadow: 0 1px 1px #fff;
+    position: relative;
+}
+/*________________________________Footer___________________________________________________*/
+.foot{
+   margin: 190px  0 0 20px;
+    vertical-align: top;
+    color: #6d6d6d;
+}
+
+.phones-office span:nth-child(3),
+.salesdep-email span:nth-child(4){
+    margin-bottom: 20px;
+}
+
+footer img{
+    position: absolute;
+    max-width: 1200px;
+}
+
+footer address{
+    display: inline-block;
+    font-style: normal;
+    float: left;
+}
+
+footer span{
+    display: block;
+}
+
+
