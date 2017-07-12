@@ -1,0 +1,1819 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    height: inherit;
+    position: relative;
+}
+.wrapper::after{
+    content: '.';
+    display: block;
+    clear: both;
+}
+p{
+    color: #676767;
+}
+a{
+    text-decoration: none;
+    color: #676767;
+}
+span.color-ending{
+    color: #9f449b;
+}
+.title-with-corners{
+    font-size: 65px;
+    text-align: center;
+    position: relative;
+    margin: 155px 0 160px 0 ;
+}
+.title-with-corners::before, .title-with-corners::after{
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+}
+.title-with-corners::after{
+    right: 410px;
+    bottom: 60px;
+    border-right: 2px solid #b78fb4;
+    border-top: 2px solid #b78fb4;
+}
+.title-with-corners::before{
+    left: 420px;
+    top: 70px;
+    border-left: 2px solid #b78fb4;
+    border-bottom: 2px solid #b78fb4;
+}
+.shape-white{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+.shape-gray{
+    position: relative;
+    margin: 0 auto;
+}
+.avatar{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #aaaaaa;
+}
+header, nav, .main-section, .about-us, .section-hat-on-bg, .team-section, .section-textcloud-on-bg,
+.statistics,.white-block, .portfolio-section, .contacts, footer{
+    max-width: 2000px;
+    width: 100%;
+}
+/*___________________________________Buttons___________________________________________*/
+.btn{
+    padding: 25px 60px 25px 65px;
+    background: #9f449b;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: inset 0px -5px 2px 0px rgb(50, 50, 50);
+    -moz-box-shadow:    inset 0px -5px 2px 0px rgb(50, 50, 50);
+    box-shadow:         inset 0px -5px 2px 0px rgb(50, 50, 50);
+    white-space: nowrap;
+    font-size: 23px;
+}
+.learn-more-btn, .btn-send-email{
+    line-height: 120px;
+}
+.watch-more-btn{
+    margin: 55px auto 250px auto;
+    display: block;
+    width: 120px;
+    height: 20px;
+}
+.btn-send-email{
+    margin-left: 40px;
+}
+.portfolio-btn{
+    padding: 10px 25px 12px 25px;
+    margin-right: 15px;
+    font-size: 23px;
+    border: 2px solid #404040;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    white-space: nowrap;
+}
+/*___________________________________Social icons___________________________________________*/
+.fb:hover,.google:hover, .twitter:hover{
+    background: #9f449b;
+}
+.fb:hover span,.google:hover span, .twitter:hover span{
+    color: #ffffff;
+}
+.fb, .google, .twitter{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid #b1b1b1;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.fb span, .google span, .twitter span{
+    font-size: 30px;
+    line-height: 45px;
+    color: #3f3f3f;
+}
+/*___________________________________Header___________________________________________*/
+header{
+    background: url("../img/header/base.png") no-repeat;
+    height: 1100px;
+}
+header p{
+    text-align: center;
+    color: #ffffff;
+}
+header .header-title + p{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+header .header-title + p + p{
+    font-size: 30px;
+}
+header .arrow1:hover{
+    background: url("../img/header/arrow1-hover.png") no-repeat;
+}
+.header-title{
+    font: 90px Arial, sans-serif;
+    margin-bottom: 105px;
+    color: #ffffff;
+}
+/*_______________Header icons________________*/
+header .service, .portfolio, .about, .team, .blog, .contact{
+    position: absolute;
+    top:40px;
+    left: 50px;
+}
+.icon-figcaption{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+.right-side .shape-white:last-child{
+    margin-left: 30px;
+}
+.left-side .shape-white:first-child{
+    margin-right: 30px;
+}
+.left-side{
+    float: left;
+    margin-left: 15px;
+}
+.right-side{
+    float: right;
+    margin-right: 15px;
+}
+.first-line-icons-wrapper::after{
+    content: '.';
+    display: block;
+    clear: both;
+}
+.hover:hover{
+    background: url("../img/header/hover-shape.png") no-repeat;
+    height: 181px;
+    width: 167px;
+}
+.first-line-icons-wrapper{
+    text-align: center;
+    margin-top: 170px;
+}
+.arrow1{
+    position: absolute;
+    bottom: 75px;
+    left: 542px;
+}
+/*___________________________________________Nav______________________________________*/
+nav{
+    background: #ffffff;
+}
+nav a{
+    font-size: 20px;
+    display: inline-block;
+    margin: 65px 15px 35px 2px;
+
+}
+nav a:hover{
+    color: #9f449b;
+}
+.nav-items{
+    float: right;
+}
+.nav-title{
+    font: 38px Arial, sans-serif;
+    float: left;
+    clear: right;
+    margin: 55px 15px 35px 15px;
+    color: #676767;
+}
+/*_______________________________________Main section____________________________________*/
+.main-section{
+    background: #eeeeee;
+}
+.main-section a{
+    display: inline-block;
+    width: 257px;
+    text-align: center;
+    margin: 160px 15px 200px 15px;
+}
+.main-section-title{
+    font-size: 27px;
+    margin: 50px 0 40px 0;
+}
+.main-section-title + p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.gray{
+    position: relative;
+    display: inline-block;
+}
+.heart, .diamond,.cup, .phone{
+    position: absolute;
+    top:35%;
+    left: 50px;
+}
+.cup {
+    left: 60px;
+}
+.phone{
+    left: 65px;
+}
+.blue{
+    position: absolute;
+    top:2px;
+    display: none;
+}
+.gray:hover .blue{
+    display: block;
+}
+/*________________________________Main section_About us____________________________________*/
+ .about-us{
+    background: #ffffff;
+}
+.about-us img{
+    margin: 0 30px 230px 15px;
+    float: left;
+}
+.about-us .about-text{
+    font-size: 25px;
+    margin-right: 15px;
+    margin-bottom: 120px;
+}
+ /*__________________________Main background section with hat and textcloud________________*/
+.section-hat-on-bg, .section-textcloud-on-bg{
+    background: url("../img/main/main-after-aboutus-bg.png");
+}
+.section-hat-on-bg p, .section-textcloud-on-bg p{
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+    margin: 200px 0 165px 0;
+}
+.section-hat-on-bg  .study, .section-textcloud-on-bg .bubble{
+    position: absolute;
+    left: 50px;
+    top:60px;
+}
+.section-hat-on-bg .shape-white, .section-textcloud-on-bg .shape-white{
+    top:150px;
+    bottom: 0;
+    left: 505px;
+    right: 0;
+}
+/*____________________________________Team section________________________________________*/
+.team-section .first-man, .second-man, .third-man, .arrow-left,.arrow-right, .fb, .google, .twitter{
+    display: inline-block;
+}
+.team-section .title-with-corners{
+    margin-top: 175px;
+}
+.team-section .name{
+    color: #484848;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.team-section .position{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.team-section .arrows{
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 140px;
+}
+.avatar-in-teams{
+    margin-bottom: 80px;
+}
+.first-man, .second-man,.third-man{
+    text-align: center;
+    margin: 0px 71px  0px 60px;
+}
+.left-block, .right-block{
+    margin-top: 250px;
+    margin-bottom: 200px;
+    text-align: right;
+}
+.left-block{
+    float: left;
+    margin-left: 115px;
+ }
+.right-block{
+    float: right;
+    margin-right: 115px;
+}
+.lefter-span{
+    float: left;
+    font-size: 30px;
+}
+.progress-data{
+    color: #676767;
+    font-size: 30px;
+    margin-top: 50px;
+   }
+.progress-bar{
+    width: 420px;
+    height: 20px;
+    margin-top: 20px;
+    position: relative;
+   background: #d3d3d3;
+}
+.progress-bar::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: #9f449b;
+}
+.seventy-five:after{
+    width: 75%;
+}
+.eighty-five:after{
+    width: 85%;
+}
+.seventy:after{
+    width: 70%;
+}
+/*_____________________________________Statistics______________________________________*/
+.statistics{
+    background: #ececec;
+}
+.statistics .wrapper p{
+    font-size: 60px;
+    color: #000000;
+}
+.statistics .wrapper span{
+    color: #676767;
+    font-size: 15px;
+}
+.stat{
+    display: inline-block;
+    text-align: center;
+    margin: 165px 30px 150px 130px;
+}
+.statistics .wrapper .avatar{
+    margin: 0 auto 50px auto;
+}
+.statistics .wrapper .citate{
+    text-align: center;
+    font-size: 40px;
+    color: #967293;
+    margin: 0 130px 45px 160px;
+}
+.statistics .wrapper .citate-author{
+    text-align: center;
+    font-size: 25px;
+    color: #684d65;
+    margin-bottom: 60px;
+}
+.statistics a{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid #684d65;
+    margin-right: 8px;
+}
+.statistics a:hover{
+    background: #684d65;
+}
+.circles-nav{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 170px;
+    height: 100%;
+}
+/*____________________________________White-block_______________________________________*/
+.white-block{
+    width: 1290px;
+    height: 60px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+/*_____________________________________Portfolio______________________________________*/
+.portfolio-section{
+    background: #ffffff;
+}
+.portfolio-nav{
+    display: inline-block;
+    border:2px solid #808080;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.portfolio-nav-wrapper{
+    width: 510px;
+    height: 70px;
+    margin: 0 auto;
+}
+.portfolio-section .title-with-corners{
+    margin-top: 175px;
+    margin-bottom: 100px;
+}
+.portfolio-section .title-with-corners::after{
+    right: 365px;
+    bottom: 60px;
+}
+.portfolio-section .title-with-corners::before{
+    left: 370px;
+    top: 70px;
+}
+.portfolio-img{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+    position: relative;
+}
+.portfolio-img:hover{
+    opacity: 0.8;
+}
+.plus{
+    display: none;
+    position: absolute;
+    font-size: 300px;
+    font-family: "Times New Roman";
+    color: #e0e0e0;
+    opacity: 0.8;
+    left: 25%;
+}
+.portfolio-img:hover .plus{
+    display:block;
+}
+figcaption{
+    text-align: center;
+}
+.name{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.tag{
+    color: #888888;
+    font-size: 25px;
+}
+.portfolio-btn:hover{
+    background: #9f449b;
+    color: #ffffff;
+}
+/*____________________________Contacts_________________________________________________________*/
+.contacts .title-with-corners{
+    margin: 0px 0 160px 0 ;
+}
+.contacts .title-with-corners::after{
+    right: 360px;
+}
+.contacts .title-with-corners::before{
+    left: 365px;
+    top:65px
+}
+textarea, .input-name, .input-email{
+    font-size: 30px;
+    padding: 25px 0 23px 30px;
+    margin: 0 65px 40px 40px;
+    width: 500px;
+}
+textarea{
+    max-height: 280px;
+    height: 200px;
+    min-height: 200px;
+}
+.input-name::-webkit-input-placeholder,
+.input-email::-webkit-input-placeholder,
+.email-message::-webkit-input-placeholder{
+    color: #000000;
+    font: 30px Arial;
+}
+.input-part{
+    float: left;
+}
+.text-part{
+    float: right;
+    margin-right: 15px;
+    width: 512px;
+}
+.text-part p{
+    font-size: 30px;
+    color: #000000;
+}
+.address, .telephone, .mobile-phone{
+    font-weight: bold;
+}
+.telephone{
+    margin-top: 40px;
+}
+.address{
+    margin-top: 60px;
+}
+.contacts .fb{
+    margin-left: 0;
+}
+.contacts .fb, .contacts .google, .contacts .twitter{
+    display: inline-block;
+}
+.social-icons{
+    margin-top: 65px;
+}
+.clearfix{
+    clear: both;
+}
+/*____________________________________Footer_________________________*/
+footer .footer-title{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 80px;
+}
+/*____________________________________Media________________________________*/
+@media screen  and (max-width:768px){
+    .wrapper {
+        max-width: 768px;
+    }
+    header, nav, .main-section, .about-us, .section-hat-on-bg, .team-section, .section-textcloud-on-bg,
+    .statistics,.white-block, .portfolio-section, .contacts, footer{
+        max-width: 768px;
+        height: auto;
+    }
+    .icon-figcaption,
+    .section-hat-on-bg p,
+    .section-textcloud-on-bg p,
+    .team-section .name,
+    .fb span,
+    .google span,
+    .twitter span,
+    .lefter-span,
+    .statistics .wrapper .citate,
+    .main-section-title,
+    .about-us .about-text,
+    .text-part p{
+        font-size: 26px;
+    }
+    .progress-data,
+    .team-section .position,
+    .statistics .wrapper .citate-author,
+    .portfolio-btn,
+    .name,
+    textarea,
+    .input-name,
+    .input-email,
+    .input-name::-webkit-input-placeholder,
+    .input-email::-webkit-input-placeholder,
+    .email-message::-webkit-input-placeholder,
+    .main-section-title + p,
+    .btn{
+        font-size: 20px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    .header-title{
+        font-size:45px;
+        margin-bottom: 40px;
+    }
+    header img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    header .header-title + p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    header .header-title + p + p{
+        font-size: 18px;
+    }
+    header .service, .portfolio, .about, .team, .blog, .contact{
+        top:20px;
+        left: 50px;
+    }
+    .about, .team, .blog{
+        margin-left: 5px;
+    }
+    .portfolio,  .service, .contact{
+        margin-left: -10px;
+    }
+    .left-side{
+        margin-left: 170px;
+    }
+    .left-side .shape-white:first-child{
+        margin-right:100px;
+        margin-bottom: 20px;
+    }
+    .right-side{
+        margin-right: 200px;
+    }
+    .right-side .shape-white:first-child{
+        margin: 0;
+    }
+    .first-line-icons-wrapper{
+        margin-top: 30px;
+    }
+    .arrow1{
+        position: static;
+        margin-left: 350px;
+        margin-top: 200px;
+    }
+    .arrow1 img{
+        width: 20%;
+    }
+    .icon-figcaption{
+        margin-top: 10px;
+    }
+    .nav-title{
+        margin: 10px 15px;
+    }
+    .nav-items{
+        text-align: center;
+    }
+    .nav-items a{
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-section a{
+        margin: 10px;
+        width: auto;
+    }
+    .diamond img{
+        margin-left:-3px;
+    }
+    .title-with-corners{
+        font-size: 30px;
+        margin:30px;
+    }
+    .title-with-corners::before, .title-with-corners::after{
+        height: 20px;
+        width: 20px;
+    }
+    .title-with-corners::before{
+        left: 180px;
+        top:30px;
+    }
+    .title-with-corners::after{
+        right: 180px;
+        bottom:30px;
+    }
+    .about-us img{
+        width: 80%;
+        height: 40%;
+        margin-left: 90px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .learn-more-btn{
+        line-height: 80px;
+    }
+    .main-section-title{
+        margin: 0;
+    }
+    .main-section-title + p{
+        margin: 10px 25px;
+    }
+
+    .about-us .about-text{
+        margin: 0 20px;
+        text-align: justify;
+    }
+    .btn{
+        padding: 10px;
+        margin-left: 320px;
+    }
+    .main-section img,
+    .section-hat-on-bg img,
+    .section-textcloud-on-bg img,
+    .team-section img{
+        width: 50%;;
+        height: 50%;
+    }
+    .section-hat-on-bg p, .section-textcloud-on-bg p{
+        margin: 0;
+    }
+    .section-hat-on-bg .study, .section-textcloud-on-bg .bubble{
+        top: 30px;
+    }
+    .section-textcloud-on-bg .bubble{
+        left: 50px;
+    }
+    .section-hat-on-bg .shape-white, .section-textcloud-on-bg .shape-white{
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+    .team-section .name{
+        margin-bottom: 10px;
+    }
+    .team-section .position{
+        margin-bottom: 10px;
+    }
+    .fb span, .google span, .twitter span{
+        line-height: 25px;
+    }
+    .statistics .wrapper p{
+        font-size: 20px;
+    }
+    .statistics .wrapper .citate{
+        margin: 0 30px 15px 30px;
+    }
+    .portfolio-btn{
+        padding: 5px 15px 6px 15px;;
+        margin-right: 5px;
+    }
+    .first-man, .second-man, .third-man{
+        margin-left: 270px;
+    }
+    .name{
+        margin-top: 5px;
+    }
+    .tag{
+        font-size: 12px;
+    }
+    .team-section .title-with-corners{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .avatar{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .team-section .arrows{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .avatar-in-teams{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .fb, .google, .twitter{
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .team-section .title-with-corners{
+        margin-top: 50px;
+    }
+    .left-block, .right-block{
+        margin: 30px 0px 30px 270px;
+    }
+    .left-block .lefter-span, .right-block .lefter-span{
+        font-size: 15px;
+    }
+    .right-block{
+        float: left;
+    }
+    .progress-bar{
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .stat{
+        margin: 30px 25px 30px 70px;
+        text-align: center;
+    }
+    .circles-nav{
+        margin-bottom: 20px;
+    }
+    .portfolio-section img{
+        width: 60%;
+        height: 60%;
+    }
+    .portfolio-section .title-with-corners::after{
+        left:450px;
+        bottom:30px
+    }
+    .portfolio-section .title-with-corners::before{
+        left:230px;
+        top: 30px;
+    }
+    .portfolio-section .title-with-corners{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .portfolio-nav-wrapper{
+        width: 390px;
+    }
+    figcaption{
+        width: 100%;
+    }
+    .portfolio-img p{
+        text-align: center;
+    }
+    .portfolio-img{
+        display: inline-block;
+    }
+    .watch-more-btn{
+        margin: 30px auto 100px auto;
+        text-align: center;
+    }
+    .contacts .title-with-corners{
+        margin-bottom: 50px;
+    }
+    .contacts .title-with-corners::after{
+        left:480px;
+        bottom:30px
+    }
+    .contacts .title-with-corners::before{
+        left:270px;
+        top: 30px;
+    }
+    .input-part{
+        margin-left: 160px;
+    }
+    .text-part{
+        width: 500px;
+        margin-right: 90px;
+    }
+    .address,.telephone{
+        margin-top: 20px;
+    }
+    .social-icons{
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 70px;
+    }
+
+    textarea, .input-name, .input-email{
+        padding: 5px 0 10px 12px;
+        width: 430px;
+        margin:10px 5px 5px 20px;
+    }
+    footer .footer-title{
+        font-size: 40px;
+        margin: 0;
+    }
+}
+@media screen  and (max-width:600px){
+    .wrapper {
+        max-width: 600px;
+    }
+    header, nav, .main-section, .about-us, .section-hat-on-bg, .team-section, .section-textcloud-on-bg,
+    .statistics,.white-block, .portfolio-section, .contacts, footer{
+        max-width: 600px;
+        height: auto;
+    }
+    .icon-figcaption,
+    .section-hat-on-bg p,
+    .section-textcloud-on-bg p,
+    .team-section .name,
+    .fb span,
+    .google span,
+    .twitter span,
+    .lefter-span,
+    .statistics .wrapper .citate,
+    .main-section-title,
+    .about-us .about-text,
+    .text-part p{
+        font-size: 23px;
+    }
+    .progress-data,
+    .team-section .position,
+    .statistics .wrapper .citate-author,
+    .portfolio-btn,
+    .name,
+    textarea,
+    .input-name,
+    .input-email,
+    .input-name::-webkit-input-placeholder,
+    .input-email::-webkit-input-placeholder,
+    .email-message::-webkit-input-placeholder,
+    .main-section-title + p,
+    .btn{
+        font-size: 18px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+    .header-title{
+        font-size:42px;
+        margin-bottom: 40px;
+    }
+    header img{
+        max-width: 75%;
+        max-height: 75%;
+    }
+    header .header-title + p{
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    header .header-title + p + p{
+        font-size: 16px;
+    }
+    header .service, .portfolio, .about, .team, .blog, .contact{
+        top:20px;
+        left: 50px;
+    }
+    .about, .team, .blog{
+        margin-left: 5px;
+    }
+    .portfolio,  .service, .contact{
+        margin-left: -5px;
+    }
+    .left-side{
+        margin-left: 130px;
+    }
+    .left-side .shape-white:first-child{
+        margin-right:1px;
+        margin-bottom: 15px;
+    }
+    .right-side{
+        margin-right: 130px;
+    }
+    .right-side .shape-white:first-child{
+        margin: 0;
+    }
+    .first-line-icons-wrapper{
+        margin-top: 30px;
+    }
+    .arrow1{
+        position: static;
+        margin-left: 270px;
+        margin-top: 200px;
+    }
+    .arrow1 img{
+        width: 20%;
+    }
+    .icon-figcaption{
+        margin-top: 10px;
+    }
+    .nav-title{
+        margin: 10px 15px;
+    }
+    .nav-items{
+        text-align: center;
+    }
+    .nav-items a{
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-section a{
+        margin: 10px;
+        width: auto;
+    }
+    .diamond img{
+        margin-left:-3px;
+    }
+    .title-with-corners{
+        font-size: 30px;
+        margin:30px;
+    }
+    .title-with-corners::before, .title-with-corners::after{
+        height: 20px;
+        width: 20px;
+    }
+    .title-with-corners::before{
+        left: 180px;
+        top:30px;
+    }
+    .title-with-corners::after{
+        right: 180px;
+        bottom:30px;
+    }
+    .about-us img{
+        width: 75%;
+        height: 40%;
+        margin-left: 70px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .learn-more-btn{
+        line-height: 80px;
+    }
+    .main-section-title{
+        margin: 0;
+    }
+    .main-section-title + p{
+        margin: 10px 25px;
+    }
+
+    .about-us .about-text{
+        margin: 0 20px;
+        text-align: justify;
+    }
+    .btn{
+        padding: 10px;
+        margin-left: 230px;
+    }
+    .main-section img,
+    .section-hat-on-bg img,
+    .section-textcloud-on-bg img,
+    .team-section img{
+        width: 50%;;
+        height: 50%;
+    }
+    .section-hat-on-bg p, .section-textcloud-on-bg p{
+        margin: 0;
+    }
+    .section-hat-on-bg .study, .section-textcloud-on-bg .bubble{
+        top: 30px;
+    }
+    .section-textcloud-on-bg .bubble{
+        left: 50px;
+    }
+    .section-hat-on-bg .shape-white, .section-textcloud-on-bg .shape-white{
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .team-section .name{
+        margin-bottom: 10px;
+    }
+    .team-section .position{
+        margin-bottom: 10px;
+    }
+    .fb span, .google span, .twitter span{
+        line-height: 25px;
+    }
+    .statistics .wrapper p{
+        font-size: 20px;
+    }
+    .statistics .wrapper .citate{
+        margin: 0 30px 15px 30px;
+    }
+    .portfolio-btn{
+        padding: 5px 15px 6px 15px;;
+        margin-right: 5px;
+    }
+    .first-man, .second-man, .third-man{
+        margin-left: 200px;
+    }
+    .name{
+        margin-top: 5px;
+    }
+    .tag{
+        font-size: 12px;
+    }
+    .team-section .title-with-corners{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .avatar{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .team-section .arrows{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .avatar-in-teams{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .fb, .google, .twitter{
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .team-section .title-with-corners{
+        margin-top: 50px;
+    }
+    .left-block, .right-block{
+        margin: 30px 0px 30px 180px;
+    }
+    .right-block{
+        float: left;
+    }
+    .progress-bar{
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .stat{
+        margin: 30px 25px 30px 30px;
+        text-align: center;
+    }
+    .circles-nav{
+        margin-bottom: 20px;
+    }
+    .portfolio-section img{
+        width: 60%;
+        height: 60%;
+    }
+    .portfolio-section .title-with-corners::after{
+        left:350px;
+        bottom:30px
+    }
+    .portfolio-section .title-with-corners::before{
+        left:160px;
+        top: 30px;
+    }
+    .portfolio-section .title-with-corners{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .portfolio-nav-wrapper{
+        width: 390px;
+    }
+    figcaption{
+        width: 100%;
+    }
+    .portfolio-img p{
+        text-align: center;
+    }
+    .portfolio-img{
+        margin-left: 100px;
+    }
+    .watch-more-btn{
+        margin: 30px auto 100px auto;
+        text-align: center;
+    }
+    .contacts .title-with-corners{
+        margin-bottom: 50px;
+    }
+    .contacts .title-with-corners::after{
+        left:370px;
+        bottom:30px
+    }
+    .contacts .title-with-corners::before{
+        left:200px;
+        top: 30px;
+    }
+    .input-part{
+        margin-left: 160px;
+    }
+    .text-part{
+        width: 300px;
+        margin-right: 120px;
+    }
+    .address,.telephone{
+        margin-top: 20px;
+    }
+    .social-icons{
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 70px;
+    }
+
+    textarea, .input-name, .input-email{
+        padding: 5px 0 10px 12px;
+        width: 230px;
+        margin:10px 5px 5px 20px;
+    }
+    footer .footer-title{
+        font-size: 40px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .wrapper {
+        max-width: 480px;
+    }
+    header, nav, .main-section, .about-us, .section-hat-on-bg, .team-section, .section-textcloud-on-bg,
+    .statistics,.white-block, .portfolio-section, .contacts, footer{
+        max-width: 480px;
+        height: auto;
+    }
+        .icon-figcaption,
+        .section-hat-on-bg p,
+        .section-textcloud-on-bg p,
+        .team-section .name,
+        .fb span,
+        .google span,
+        .twitter span,
+        .lefter-span,
+        .statistics .wrapper .citate,
+        .main-section-title,
+        .about-us .about-text,
+        .text-part p{
+            font-size: 20px;
+        }
+        .progress-data,
+        .team-section .position,
+        .statistics .wrapper .citate-author,
+        .portfolio-btn,
+        .name,
+        textarea,
+        .input-name,
+        .input-email,
+        .input-name::-webkit-input-placeholder,
+        .input-email::-webkit-input-placeholder,
+        .email-message::-webkit-input-placeholder,
+        .main-section-title + p,
+        .btn{
+            font-size: 15px;
+        }
+        nav a{
+            font-size: 17px;
+        }
+        .header-title{
+            font-size:40px;
+            margin-bottom: 40px;
+        }
+        header img{
+            max-width: 70%;
+            max-height: 70%;
+        }
+        header .header-title + p{
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        header .header-title + p + p{
+            font-size: 14px;
+        }
+        header .service, .portfolio, .about, .team, .blog, .contact{
+            top:20px;
+            left: 50px;
+        }
+    .service, .portfolio, .about, .team, .blog{
+        margin-left: 2px;
+    }
+        .left-side{
+            margin-left: 70px;
+        }
+        .left-side .shape-white:first-child{
+            margin-right:0;
+            margin-bottom: 15px;
+        }
+        .right-side .shape-white:last-child{
+            margin: 0;
+        }
+        .right-side{
+            margin-right: 70px;
+        }
+        .first-line-icons-wrapper{
+            margin-top: 30px;
+        }
+        .arrow1{
+            position: static;
+            margin-left: 210px;
+            margin-top: 200px;
+        }
+        .arrow1 img{
+            width: 20%;
+        }
+        .icon-figcaption{
+            margin-top: 10px;
+        }
+        .nav-title{
+            margin: 10px 15px;
+        }
+        .nav-items{
+            text-align: center;
+        }
+        .nav-items a{
+            margin-right: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .main-section a{
+            margin: 10px;
+            width: auto;
+        }
+        .diamond img{
+            margin-left:-3px;
+        }
+        .title-with-corners{
+            font-size: 30px;
+            margin:30px;
+        }
+        .title-with-corners::before, .title-with-corners::after{
+            height: 20px;
+            width: 20px;
+        }
+        .title-with-corners::before{
+            left: 80px;
+            top:30px;
+        }
+        .title-with-corners::after{
+            right: 80px;
+            bottom:30px;
+        }
+        .about-us img{
+            width: 75%;
+            height: 40%;
+            margin-left: 70px;
+            margin-bottom: 30px;
+            margin-top: 40px;
+        }
+        .learn-more-btn{
+            line-height: 80px;
+        }
+        .main-section-title{
+            margin: 0;
+        }
+        .main-section-title + p{
+            margin: 10px 25px;
+        }
+
+        .about-us .about-text{
+            margin: 0 20px;
+            text-align: justify;
+        }
+        .btn{
+            padding: 10px;
+            margin-left: 190px;
+        }
+        .main-section img,
+        .section-hat-on-bg img,
+        .section-textcloud-on-bg img,
+        .team-section img{
+            width: 50%;;
+            height: 50%;
+        }
+        .section-hat-on-bg p, .section-textcloud-on-bg p{
+            margin: 0;
+        }
+        .team-section .name{
+            margin-bottom: 10px;
+        }
+        .team-section .position{
+            margin-bottom: 10px;
+        }
+        .fb span, .google span, .twitter span{
+            line-height: 25px;
+        }
+        .statistics .wrapper p{
+            font-size: 20px;
+        }
+        .statistics .wrapper .citate{
+            margin: 0 30px 15px 30px;
+        }
+        .portfolio-btn{
+            padding: 5px 15px 6px 15px;;
+            margin-right: 5px;
+        }
+        .first-man, .second-man, .third-man{
+            margin-left: 160px;
+        }
+        .name{
+            margin-top: 5px;
+        }
+        .tag{
+            font-size: 12px;
+        }
+        .section-hat-on-bg .study, .section-textcloud-on-bg .bubble{
+            top: 30px;
+        }
+        .section-textcloud-on-bg .bubble{
+            left: 55px;
+        }
+        .section-hat-on-bg .shape-white, .section-textcloud-on-bg .shape-white{
+            top: 0px;
+            bottom: 0;
+            left: 30%;
+            right: 0;
+            margin-top: 30px;
+        }
+        .team-section .title-with-corners{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .avatar{
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        .team-section .arrows{
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .avatar-in-teams{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .fb, .google, .twitter{
+            height: 30px;
+            width: 30px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .team-section .title-with-corners{
+            margin-top: 50px;
+        }
+        .left-block, .right-block{
+            margin: 30px 0px 30px 150px;
+        }
+        .right-block{
+            float: left;
+        }
+        .progress-bar{
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .stat{
+            margin: 30px 25px 30px 10px;
+            text-align: center;
+        }
+        .circles-nav{
+            margin-bottom: 20px;
+        }
+        .portfolio-section img{
+            width: 60%;
+            height: 60%;
+        }
+        .portfolio-section .title-with-corners::after{
+            left:290px;
+            bottom:30px
+        }
+        .portfolio-section .title-with-corners::before{
+            left:90px;
+            top: 30px;
+        }
+        .portfolio-section .title-with-corners{
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .portfolio-nav-wrapper{
+            width: 320px;
+        }
+        figcaption{
+            width: 100%;
+        }
+        .portfolio-img p{
+            text-align: center;
+        }
+        .portfolio-img{
+            margin-left: 60px;
+        }
+        .watch-more-btn{
+            margin: 30px auto 100px auto;
+            text-align: center;
+        }
+        .contacts .title-with-corners{
+            margin-bottom: 50px;
+        }
+        .contacts .title-with-corners::after{
+            left:320px;
+            bottom:30px
+        }
+        .contacts .title-with-corners::before{
+            left:130px;
+            top: 30px;
+        }
+        .input-part{
+            margin-left: 100px;
+        }
+        .text-part{
+            width: 300px;
+            margin-right: 60px;
+        }
+        .address,.telephone{
+            margin-top: 20px;
+        }
+        .social-icons{
+            text-align: center;
+            margin-top: 30px;
+            margin-right: 70px;
+        }
+
+        textarea, .input-name, .input-email{
+            padding: 5px 0 10px 12px;
+            width: 230px;
+            margin:10px 5px 5px 20px;
+        }
+        footer .footer-title{
+        font-size: 40px;
+        margin: 0;
+        }
+}
+@media screen and (max-width: 360px){
+    .wrapper {
+        max-width: 360px;
+    }
+    header, nav, .main-section, .about-us, .section-hat-on-bg, .team-section, .section-textcloud-on-bg,
+    .statistics,.white-block, .portfolio-section, .contacts, footer{
+        max-width: 360px;
+        height: auto;
+    }
+    .icon-figcaption,
+    .section-hat-on-bg p,
+    .section-textcloud-on-bg p,
+    .team-section .name,
+    .fb span,
+    .google span,
+    .twitter span,
+    .lefter-span,
+    .statistics .wrapper .citate,
+    .main-section-title,
+    .about-us .about-text,
+    .text-part p{
+        font-size: 15px;
+    }
+    .progress-data,
+    .team-section .position,
+    .statistics .wrapper .citate-author,
+    .portfolio-btn,
+    .name,
+    textarea,
+    .input-name,
+    .input-email,
+    .input-name::-webkit-input-placeholder,
+    .input-email::-webkit-input-placeholder,
+    .email-message::-webkit-input-placeholder,
+    .main-section-title + p,
+    .btn{
+        font-size: 12px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    .header-title{
+        font-size:35px;
+        margin-bottom: 40px;
+    }
+    header img{
+        max-width: 60%;
+        max-height: 60%;
+    }
+    header .header-title + p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    header .header-title + p + p{
+        font-size: 10px;
+    }
+    header .service, .portfolio, .about, .team, .blog, .contact{
+        top:20px;
+        left: 50px;
+    }
+    .left-side{
+        margin-left: 10px;
+    }
+    .left-side .shape-white:first-child{
+        margin-right:0;
+        margin-bottom: 15px;
+    }
+    .right-side .shape-white:last-child{
+        margin: 0;
+    }
+    .right-side{
+        margin-right: 10px;
+    }
+    .first-line-icons-wrapper{
+        margin-top: 30px;
+    }
+    .arrow1{
+        position: static;
+        margin-left: 160px;
+    }
+    .arrow1 img{
+        width: 20%;
+    }
+    .icon-figcaption{
+        margin-top: 5px;
+    }
+    .service, .portfolio, .about, .team, .blog{
+        margin-left: 5px;
+    }
+    .nav-title{
+          margin: 10px 15px;
+      }
+    .nav-items{
+        text-align: center;
+    }
+    .nav-items a{
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-section a{
+        margin: 0;
+        width: auto;
+    }
+    .diamond img{
+        margin-left:-3px;
+    }
+    .learn-more-btn{
+        line-height: 80px;
+    }
+    .about-us img{
+        width: 70%;
+        height: 40%;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .main-section-title{
+        margin: 0;
+    }
+    .main-section-title + p{
+        margin: 10px 25px;
+    }
+    .title-with-corners{
+        font-size: 30px;
+        margin: 20px;
+    }
+    .about-us .about-text{
+        margin: 0 20px;
+        text-align: justify;
+    }
+    .btn{
+        padding: 10px;
+        margin-left: 150px;
+    }
+    .title-with-corners::before, .title-with-corners::after{
+        height: 20px;
+        width: 20px;
+    }
+    .title-with-corners::before{
+        left: 80px;
+        top:30px;
+    }
+    .title-with-corners::after{
+        right: 80px;
+        bottom:30px;
+    }
+    .main-section img,
+    .section-hat-on-bg img,
+    .section-textcloud-on-bg img,
+    .team-section img{
+        width: 50%;;
+        height: 50%;
+    }
+    .section-hat-on-bg p, .section-textcloud-on-bg p{
+        margin: 0;
+    }
+    .team-section .name{
+        margin-bottom: 10px;
+    }
+    .team-section .position{
+        margin-bottom: 10px;
+    }
+    .fb span, .google span, .twitter span{
+        line-height: 25px;
+    }
+    .statistics .wrapper p{
+        font-size: 20px;
+    }
+    .statistics .wrapper .citate{
+        margin: 0 30px 15px 30px;
+    }
+    .portfolio-btn{
+        padding: 5px 15px 6px 15px;;
+        margin-right: 5px;
+    }
+    .name{
+        margin-top: 5px;
+    }
+    .tag{
+        font-size: 12px;
+    }
+    .section-hat-on-bg .study, .section-textcloud-on-bg .bubble{
+        top: 30px;
+    }
+    .section-textcloud-on-bg .bubble{
+        left: 55px;
+    }
+    .section-hat-on-bg .shape-white, .section-textcloud-on-bg .shape-white{
+        top: 0px;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        margin-top: 30px;
+    }
+    .team-section .title-with-corners{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .avatar{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .team-section .arrows{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .avatar-in-teams{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .first-man, .second-man, .third-man{
+        margin-left: 100px;
+    }
+    .fb, .google, .twitter{
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .team-section .title-with-corners{
+        margin-top: 50px;
+    }
+    .left-block, .right-block{
+        margin: 30px 0px 30px 90px;
+    }
+    .right-block{
+        float: left;
+    }
+    .progress-bar{
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .stat{
+        margin: 30px 25px 30px 40px;
+        text-align: center;
+    }
+    .circles-nav{
+        margin-bottom: 20px;
+    }
+    .portfolio-section img{
+        width: 60%;
+        height: 60%;
+    }
+    .portfolio-section .title-with-corners::after{
+        left:240px;
+        bottom:30px
+    }
+    .portfolio-section .title-with-corners::before{
+        left:50px;
+        top: 30px;
+    }
+    .portfolio-section .title-with-corners{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .portfolio-nav-wrapper{
+        width: 320px;
+    }
+    figcaption{
+        width: 100%;
+    }
+    .portfolio-img p{
+        text-align: center;
+        margin-right: 30px;
+    }
+    .watch-more-btn{
+        margin: 30px auto 100px auto;
+        text-align: center;
+    }
+    .contacts .title-with-corners{
+        margin-bottom: 50px;
+    }
+    .contacts .title-with-corners::after{
+        left:260px;
+        bottom:30px
+    }
+    .contacts .title-with-corners::before{
+        left:80px;
+        top: 30px;
+    }
+    .text-part{
+        width: 300px;
+        margin-right: 10px;
+    }
+    .address,.telephone{
+        margin-top: 20px;
+    }
+    .social-icons{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .input-part{
+        margin-left: 50px;
+    }
+    textarea, .input-name, .input-email{
+        padding: 5px 0 10px 12px;
+        width: 230px;
+        margin:10px 5px 5px 20px;
+    }
+    footer .footer-title{
+        font-size: 40px;
+        margin: 0;
+    }
+}
