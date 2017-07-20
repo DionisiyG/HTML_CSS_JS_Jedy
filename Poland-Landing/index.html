@@ -2,24 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/jquery.scrollify.min.js"></script>
+
+    <script src="scripts/libs/jquery-3.2.1.min.js"></script>
+    <script src="scripts/libs/jquery.scrollify.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-   <!-- <script src="scripts/scrolling.js"></script>-->
+    <script src="scripts/libs/jquery.fancybox.min.js"></script>
+    <!--<script src="scripts/scrolling.js"></script>-->
     <!--<script src="scripts/nav-menu-fixer.js"></script>-->
+
+    <!--<script src="scripts/libs/jquery.fullPage.min.js"></script>
+    <link href="styles/jquery.fullPage.css" rel="stylesheet" type="text/css">
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+    </script>-->
+
+    <script src="scripts/fancy-img.js"></script>
+    <script src="scripts/dropdown-phones.js"></script>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
     <title>Poland Landing</title>
+
 </head>
 <body>
-    <div class="first-block scroll">
+<div id="fullpage">
+    <section class="section"><div class="first-block scroll">
         <div class="centerer">
-            <div class="top-section">
+            <div class="top-section" id="top">
                 <div class="banner">
-                    <img src="img/first-block/wrld-emig-banner.png" alt="banner">
+                    <a href="#"><img src="img/first-block/wrld-emig-banner.png" alt="banner"></a>
                 </div>
                 <div class="phone-vk">
                     <div class="phone">
                         <span>+38 (050) 266 26 56</span>
+                            <div class="phone-list">
+                                <ul>
+                                    <li><a href="#">+38 (050) 266 26 56</a></li>
+                                    <li><a href="#">+38 (050) 266 26 57</a></li>
+                                    <li><a href="#">+38 (050) 266 26 58</a></li>
+                                </ul>
+                            </div>
                     </div>
                     <a href="#">
                         <div class="vk-logo">В</div>
@@ -37,8 +60,8 @@
                 <a href="#"></a>
             </div>
         </div>
-    </div>
-    <nav id="nav-menu" class="default">
+    </div></section>
+    <!--<nav id="nav-menu" class="default">
         <div class="centerer">
             <ul>
                 <li><a href="#services">Услуги</a></li>
@@ -50,8 +73,8 @@
                 <a href="#" class="request-btn">Оставить заявку</a>
             </ul>
         </div>
-    </nav>
-    <div class="services scroll">
+    </nav>-->
+    <section class="section"><div class="services scroll">
         <a href="" id="services"></a>
         <div class="centerer">
             <div class="title">
@@ -73,173 +96,116 @@
                                 <li>рекомендации по оформлению документов для консульства</li>
                                 <li>заполнение анкеты, медстраховка и другие документы</li>
                             </ul>
-                            <a href="#" class="more-btn">Подробнее  <span>&#8594;</span>
+                            <a href="#" class="more-btn">Подробнее<span>&#8594;</span></a>
                         </div>
                 </div>
                 <div class="second-block">
                     <img src="img/services/2nd-img.png" alt="second">
-                    <div>
+                    <div class="sb-content">
                         <span class="block-title">Годовое разрешение на работу</span>
-                        <a href="#" class="">Подробнее <span>&#8594;</span></a>
+                        <div class="div-button"> <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a></div>
                     </div>
                 </div>
                 <div class="third-block">
                     <img src="img/services/3nd-img.png" alt="third">
-                    <div>
+                    <div class="tb-content">
                         <span class="block-title">Трудоустройство в Польшу</span>
-                        <a href="#" class="">Подробнее  <span>&#8594;</span></a>
+                        <div class="div-button"> <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="vacancies scroll">
+    </div></section>
+    <section class="section"><div class="vacancies scroll">
         <a id="vacancy"></a>
         <div class="bigger-ceneterer">
             <div class="title">
-                <span>ВАКАНСИИ</span>
-            </div>
+                    <span>ВАКАНСИИ</span>
+                </div>
             <div class="text">
-                <span>Выбирайте лучшее предложения для себя</span>
-            </div>
-            <div class="vacancies-blocks">
-                <div class="vacancies-first-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/1.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Разнорабочие
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 450-750$
-                            </div>
-                            <div class="vacancy-content">
-                                Наша компания работает с заводами SAMSUNG (производство холодильников ,стиральных машин),
-                                Electrolux (стиральные машинки), LG (телевизоры, холодильники), AUDI (производство запчастей
-                                к легковым авто) BMW (автозапчасти) McDonald’ s (общественное питание) и другие
-                            </div>
+                    <span>Выбирайте лучшее предложения для себя</span>
+                </div>
+            <div class="vacancy-block-wrapper">
+                <div class="vac-1 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Разнорабочие</a>
+                            <span class="vac-salary">ЗП 450-750$</span>
+                        </div>
+                        <div class="vac-content">
+                            Наша компания работает с заводами SAMSUNG (производство холодильников ,стиральных машин),
+                            Electrolux (стиральные машинки), LG (телевизоры, холодильники), AUDI (производство запчастей
+                            к легковым авто) BMW (автозапчасти) McDonald’ s (общественное питание) и другие
                         </div>
                     </div>
-                </div>
-                <div class="vacancies-second-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/2.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Швеи
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 500-800$
-                            </div>
-                            <div class="vacancy-content">
-                                Возможно с минимальным опытом работы , а также без опыта,но с желанием обучится швейному делу
-                            </div>
+                <div class="vac-2 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Швеи</a>
+                            <span class="vac-salary">ЗП 500-800$</span>
+                        </div>
+                        <div class="vac-content">
+                            Возможно с минимальным опытом работы , а также без опыта,но с желанием обучится швейному делу
                         </div>
                     </div>
-                </div>
-                <div class="vacancies-third-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/3.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Сельхоз
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 450-7000$
-                            </div>
-                            <div class="vacancy-content">
-                                Сбор урожая, трактористы. Выращивание грибов, овощей, цветов (теплицы), дойка коров,
-                                уход за скотом, и т.д.
-                            </div>
+                <div class="vac-3 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Сельхоз</a>
+                            <span class="vac-salary">ЗП  450-700$</span>
+                        </div>
+                        <div class="vac-content">
+                            Сбор урожая, трактористы. Выращивание грибов, овощей, цветов (теплицы), дойка коров, уход за скотом, и т.д.
                         </div>
                     </div>
-                </div>
-                <div class="vacancies-fourth-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/4.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Общепит
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 450-700$
-                            </div>
-                            <div class="vacancy-content">
-                                Общественное питание и отели (официанты, повара, кондитеры, пекари, горничные)
-                            </div>
+                <div class="vac-4 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Общепит</a>
+                            <span class="vac-salary">ЗП 450-700$</span>
+                        </div>
+                        <div class="vac-content">
+                            Общественное питание и отели (официанты, повара, кондитеры, пекари, горничные)
                         </div>
                     </div>
-                </div>
-                <div class="vacancies-fifth-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/5.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Водители
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 600-1000$
-                            </div>
-                            <div class="vacancy-content">
-                                Водители на автокар, а также водители категории С, возможно без опыта
-                            </div>
+                <div class="vac-5 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Водители</a>
+                            <span class="vac-salary">ЗП 600-1000$</span>
+                        </div>
+                        <div class="vac-content">
+                            Водители на автокар, а также водители категории С, возможно без опыта
                         </div>
                     </div>
-                </div>
-                <div class="vacancies-sixth-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/6.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Сиделки
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 500-800$
-                            </div>
-                            <div class="vacancy-content">
-                                Девушки и женщины. Желательно с опытом работы и медицинским образованием
-                            </div>
+                <div class="vac-6 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Сиделки</a>
+                            <span class="vac-salary">ЗП 500-800$</span>
+                        </div>
+                        <div class="vac-content">
+                            Девушки и женщины. Желательно с опытом работы и медицинским образованием
                         </div>
                     </div>
-                </div>
-                <div class="vacancies-seventh-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/7.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Мастера
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 600-1500$
-                            </div>
-                            <div class="vacancy-content">
-                                Квалифицированные специалисты на производство (токари, сварщики, мебельщики, столяры,
-                                слесари, электрики, инженеры)
-                            </div>
+                <div class="vac-7 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Мастера</a>
+                            <span class="vac-salary">ЗП 600-1500$</span>
+                        </div>
+                        <div class="vac-content">
+                            Квалифицированные специалисты на производство (токари, сварщики, мебельщики, столяры,
+                            слесари, электрики, инженеры)
                         </div>
                     </div>
-                </div>
-                <div class="vacancies-eighth-content vacancy-ib">
-                    <div class="vacancy-block">
-                        <img src="img/vacancies/8.png" alt="vacancy image">
-                        <div class="vacancy-wrapper">
-                            <div class="vacancy-title">
-                                Строители
-                            </div>
-                            <div class="vacancy-salary">
-                                ЗП 500-1000$
-                            </div>
-                            <div class="vacancy-content">
-                                Плотники-опалубщики, арматурщики, бетонщики, каменщики, плиточники,
-                                гипсокартонщики, электромонтажники, жестянщики, сантехники, столяры
-                            </div>
+                <div class="vac-8 vac-ib">
+                        <div class="vac-info">
+                            <a href="#" class="vac-title">Строители</a>
+                            <span class="vac-salary">ЗП 500-1000$</span>
+                        </div>
+                        <div class="vac-content">
+                            Плотники-опалубщики, арматурщики, бетонщики, каменщики, плиточники,
+                            гипсокартонщики, электромонтажники, жестянщики, сантехники, столяры
                         </div>
                     </div>
-                </div>
             </div>
         </div>
-    </div>
-    <div class="execution scroll">
+    </div></section>
+    <section class="section"><div class="execution scroll">
         <a id="execution"></a>
         <div class="centerer">
             <div class="title">
@@ -297,8 +263,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="feedbacks scroll">
+    </div></section>
+    <section class="section"><div class="feedbacks scroll">
         <a id="feedback"></a>
         <div class="centerer">
             <div class="title">
@@ -323,8 +289,8 @@
                 <div class="arrow-right"><a href="#"><span>&#8594;</span></a></div>
             </div>
         </div>
-    </div>
-    <div class="about-us scroll">
+    </div></section>
+    <section class="section"><div class="about-us scroll">
         <a id="about-us"></a>
         <div class="centerer">
             <div class="title">
@@ -334,10 +300,14 @@
                 <span>Несколько слов о нашей компании</span>
             </div>
             <div class="license1">
-                <img src="img/about-us/license1.png" alt="licence1">
+                <a href="img/about-us/license1-big.png"class="docs">
+                    <img src="img/about-us/license1.png" alt="licence1">
+                </a>
             </div>
             <div class="license2">
-                <img src="img/about-us/license2.png" alt="license2">
+                <a href="img/about-us/license2-big.png" class="docs">
+                    <img src="img/about-us/license2.png" alt="licence2">
+                </a>
             </div>
             <div class="about-us-text">
                 <div class="found">
@@ -360,8 +330,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="contacts scroll">
+    </div></section>
+    <section class="section"><div class="contacts scroll">
         <a id="contacts"></a>
             <div class="title">
                 <span>КОНТАКТЫ</span>
@@ -384,6 +354,16 @@
                     </div>
                 </div>
             </div>
-    </div>
+    </div></section>
+    <footer>
+        <a href="#top"><div class="to-top">
+            &uarr;
+        </div></a>
+        <div class="all-rights">
+            Все права защищены <span>&copy;</span> 2017
+        </div>
+    </footer>
+</div>
+
 </body>
 </html>

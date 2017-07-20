@@ -1,0 +1,356 @@
+%vacancy-block{
+    position: relative;
+}
+%vacancy-wrapper{
+     position: absolute;
+     top: 0;
+     width: 450px;
+     margin: 20px 20px;
+ }
+%vacancy-title{
+     display: inline-block;
+     font-weight: bold;
+     font-size: 25px;
+     color: #ffffff;
+a{
+    color: #ffffff;
+}
+}
+%vacancy-salary{
+     display: inline-block;
+     background: #eff3f6;
+     padding: 10px;
+     float: right;
+     font-weight: bold;
+ }
+%vacancy-content{
+     color: #ffffff;
+     margin-top: 30px;
+ }
+.vacancies{
+.title {
+@extend %title
+}
+.text {
+@extend  %text
+}
+.vacancy-block{
+    margin-left: -4px;
+    margin-top:-4px;
+}
+.vacancies-blocks{
+    letter-spacing: -4px;
+}
+.vacancy-ib{
+    display: inline-block;
+    letter-spacing: normal;
+}
+.vacancies-first-content {
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+.vacancy-title {
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+}
+.vacancy-content {
+@extend %vacancy-content;
+}
+}
+}
+}
+.vacancies-second-content {
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+    width: 250px;
+.vacancy-title {
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+    background: #252525;
+    color: #ffffff;
+}
+.vacancy-content {
+@extend %vacancy-content;
+}
+}
+}
+}
+.vacancies-third-content{
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+    width: 250px;
+.vacancy-title {
+a{
+    color: #000000;
+}
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+    background: #f93a26;
+    color: #ffffff;
+}
+.vacancy-content {
+@extend %vacancy-content;
+    color: #000000;
+}
+}
+}
+}
+.vacancies-fourth-content{
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+    width: 250px;
+.vacancy-title {
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+    background: #252525;
+    color: #ffffff;
+}
+.vacancy-content {
+@extend %vacancy-content;
+}
+}
+}
+}
+.vacancies-fifth-content{
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+    width: 250px;
+.vacancy-title {
+a{
+    color: #000000;
+}
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+    background: #f93a26;
+    color: #ffffff;
+}
+.vacancy-content {
+@extend %vacancy-content;
+    color: #000000;
+}
+}
+}
+}
+.vacancies-sixth-content {
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+    width: 250px;
+.vacancy-title {
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+    background: #252525;
+    color: #ffffff;
+}
+.vacancy-content {
+@extend %vacancy-content;
+}
+}
+}
+}
+.vacancies-seventh-content {
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+    width: 250px;
+.vacancy-title {
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+    background: #252525;
+    color: #ffffff;
+}
+.vacancy-content {
+@extend %vacancy-content;
+}
+}
+}
+}
+.vacancies-eighth-content {
+.vacancy-block {
+@extend %vacancy-block;
+.vacancy-wrapper {
+@extend %vacancy-wrapper;
+.vacancy-title {
+@extend %vacancy-title;
+}
+.vacancy-salary {
+@extend %vacancy-salary;
+}
+.vacancy-content {
+@extend %vacancy-content;
+}
+}
+}
+}
+}
+<div class="vacancies scroll">
+<a id="vacancy"></a>
+                  <div class="bigger-ceneterer">
+<div class="title">
+<span>ВАКАНСИИ</span>
+                </div>
+                  <div class="text">
+<span>Выбирайте лучшее предложения для себя</span>
+                                             </div>
+                                               <div class="vacancies-blocks">
+<div class="vacancies-first-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/1.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Разнорабочие</a>
+                          </div>
+                            <div class="vacancy-salary">
+ЗП 450-750$
+</div>
+  <div class="vacancy-content">
+Наша компания работает с заводами SAMSUNG (производство холодильников ,стиральных машин),
+Electrolux (стиральные машинки), LG (телевизоры, холодильники), AUDI (производство запчастей
+                                                                      к легковым авто) BMW (автозапчасти) McDonald’ s (общественное питание) и другие
+                            </div>
+                                                                                                                                                                             </div>
+                                                                                                                                                                               </div>
+                                                                                                                                                                                 </div>
+                                                                                                                                                                                   <div class="vacancies-second-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/2.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Швеи</a>
+                  </div>
+                    <div class="vacancy-salary">
+ЗП 500-800$
+</div>
+  <div class="vacancy-content">
+Возможно с минимальным опытом работы , а также без опыта,но с желанием обучится швейному делу
+                            </div>
+                                                                                                                       </div>
+                                                                                                                         </div>
+                                                                                                                           </div>
+                                                                                                                             <div class="vacancies-third-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/3.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Сельхоз</a>
+                     </div>
+                       <div class="vacancy-salary">
+ЗП 450-7000$
+</div>
+  <div class="vacancy-content">
+Сбор урожая, трактористы. Выращивание грибов, овощей, цветов (теплицы), дойка коров,
+                                                                        уход за скотом, и т.д.
+</div>
+  </div>
+    </div>
+      </div>
+        <div class="vacancies-fourth-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/4.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Общепит</a>
+                     </div>
+                       <div class="vacancy-salary">
+ЗП 450-700$
+</div>
+  <div class="vacancy-content">
+Общественное питание и отели (официанты, повара, кондитеры, пекари, горничные)
+</div>
+  </div>
+    </div>
+      </div>
+        <div class="vacancies-fifth-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/5.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Водители</a>
+                      </div>
+                        <div class="vacancy-salary">
+ЗП 600-1000$
+</div>
+  <div class="vacancy-content">
+Водители на автокар, а также водители категории С, возможно без опыта
+                            </div>
+                                                                                              </div>
+                                                                                                </div>
+                                                                                                  </div>
+                                                                                                    <div class="vacancies-sixth-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/6.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Сиделки</a>
+                     </div>
+                       <div class="vacancy-salary">
+ЗП 500-800$
+</div>
+  <div class="vacancy-content">
+Девушки и женщины. Желательно с опытом работы и медицинским образованием
+                            </div>
+                                                                                          </div>
+                                                                                            </div>
+                                                                                              </div>
+                                                                                                <div class="vacancies-seventh-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/7.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Мастера</a>
+                     </div>
+                       <div class="vacancy-salary">
+ЗП 600-1500$
+</div>
+  <div class="vacancy-content">
+Квалифицированные специалисты на производство (токари, сварщики, мебельщики, столяры,
+                                               слесари, электрики, инженеры)
+</div>
+  </div>
+    </div>
+      </div>
+        <div class="vacancies-eighth-content vacancy-ib">
+<div class="vacancy-block">
+<img src="img/vacancies/8.png" alt="vacancy image">
+<div class="vacancy-wrapper">
+<div class="vacancy-title">
+<a href="#">Строители</a>
+                       </div>
+                         <div class="vacancy-salary">
+ЗП 500-1000$
+</div>
+  <div class="vacancy-content">
+Плотники-опалубщики, арматурщики, бетонщики, каменщики, плиточники,
+гипсокартонщики, электромонтажники, жестянщики, сантехники, столяры
+                            </div>
+                                                                                          </div>
+                                                                                            </div>
+                                                                                              </div>
+                                                                                                </div>
+                                                                                                  </div>
+                                                                                                    </div>

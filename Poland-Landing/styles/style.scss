@@ -20,12 +20,12 @@ $black-border:1px solid black;
   color: #fc3e3f;
   text-align: center;
   font-weight: bold;
-  margin: 70px 30px 10px 30px;
+  padding: 50px 30px 10px 30px;
 }
 %text{
   font-size: 20px;
   text-align: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 20px 0;
 }
 /*______________________________________________________________*/
 @font-face {
@@ -41,6 +41,7 @@ body{
   margin:0;
   padding: 0;
   font-family: MyriadPro;
+  box-sizing: border-box;
 }
 a{
   text-decoration: none;
@@ -50,7 +51,7 @@ a{
   margin: 0 auto;
   height: inherit;
   position: relative;
-  border: $black-border;
+  /*border: $black-border;*/
   &::after{
     content: '';
     display: block;
@@ -62,7 +63,7 @@ a{
   margin: 0 auto;
   height: inherit;
   position: relative;
-  border: $black-border;
+  /*border: $black-border;*/
   &::after{
     content: '';
     display: block;
@@ -75,17 +76,19 @@ img{
   display: block;
 }
 /*_________________________________Top block______________________________*/
-$phone-margin-right:100px;
+$phone-margin-right:50px;
 $phone-span-font-size:28px;
 .first-block{
   background: url("../img/first-block/bg-image.png");
+  background-size: cover;
+/*  height: 768px;*/
 }
 .top-section{
   .banner{
     margin-top: 30px;
     float: left;
   }
-  .vk-logo, .phone{
+  .vk-logo, .phone, .phone-list{
     display: inline-block;
     letter-spacing: normal;
   }
@@ -108,22 +111,38 @@ $phone-span-font-size:28px;
     float: right;
     margin-top: 40px;
     letter-spacing: -4px;
-    .phone{
-      margin-right: $phone-margin-right;
-      position: relative;
-    }
-    .phone::after{
-      content: '';
-      display: block;
-      position: absolute;
+    .phone-list{
       border: 8px solid transparent;
       border-top: 10px solid #ffffff;
-      right: -($phone-margin-right/2);
-      top: ($phone-span-font-size/2);
+      margin-left: 50px;
+      vertical-align: bottom;
+      position: relative;
+      &:hover{
+        cursor: pointer;
+      }
+      ul{
+        $ul-width:250px;
+        position: absolute;
+        list-style: none;
+        text-align: center;
+        width: $ul-width;
+        left: -($ul-width/2);
+        top:10px;
+        li{
+          margin-top: 20px;
+          a{
+            font-size: 20px;
+            &:hover{
+              color: #959595;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
-    .phone:hover::after{
-      cursor: pointer;
-    }
+    .phone{
+      margin-right: $phone-margin-right;
+      }
     span{
       font-size: $phone-span-font-size;
       color: #ffffff;
@@ -156,10 +175,15 @@ $phone-span-font-size:28px;
   .more-btn{
     @extend %btn;
     font-weight: bold;
+    &:hover{
+      background: #ff353b;
+      color: #ffffff;
+    }
   }
 }
 .circles{
   margin-top: 430px;
+  /*position: absolute;*/
  a{
    display: block;
    width:10px;
@@ -167,6 +191,9 @@ $phone-span-font-size:28px;
    background: #ffffff;
    margin-bottom: 10px;
    @include border-radius(50%);
+   &:last-child{
+     margin-bottom: 0;
+   }
  }
   a:hover{
     background: #00528f;
@@ -212,6 +239,8 @@ $phone-span-font-size:28px;
 #nav-menu.default{
   width: 100%;
   transition: all 1s;
+ /* position: fixed;*/
+  bottom: 0;
 }
 #nav-menu.fixed{
   top:0;
@@ -228,7 +257,16 @@ $phone-span-font-size:28px;
   @extend  %text
   }
   .service-blocks {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    .more-btn{
+      @extend %btn;
+      padding: 15px 80px;
+      font-weight: bold;
+      &:hover{
+        background: #ff353b;
+        color: #ffffff;
+      }
+    }
     .first-sblock, .second-block, .third-block {
       display: inline-block;
       position: relative;
@@ -249,225 +287,193 @@ $phone-span-font-size:28px;
       li {
         margin-left: 18px;
       }
-      .more-btn{
-        @extend %btn;
-        padding: 15px 80px;
-        font-weight: bold;
-      }
     }
-    .second-block, .third-block{
-     div{
-       position: absolute;
-       top: 0;
-     }
+    .sb-content, .tb-content{
+      position: absolute;
+      top: 35%;
+      text-align: center;
       .block-title{
-        font-size: 40px;
+        font-size: 35px;
         color: #ffffff;
+        opacity:0.8;
+      }
+      .div-button{
+        margin-top: 115px;
       }
     }
   }
 }
 /*___________________________________Vacancies_________________________________*/
-%vacancy-block{
-  position: relative;
+%vac-title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
 }
-%vacancy-wrapper{
-  position: absolute;
-  top: 0;
-  width: 450px;
-  margin: 20px 20px;
-}
-%vacancy-title{
-  display: inline-block;
-  font-weight: bold;
-  font-size: 25px;
-  color: #ffffff;
-}
-%vacancy-salary{
-  display: inline-block;
+%vac-salary{
   background: #eff3f6;
   padding: 10px;
-  float: right;
+  font-size: 15px;
   font-weight: bold;
+  color: #000000;
+  float: right;
 }
-%vacancy-content{
+%vac-content{
   color: #ffffff;
   margin-top: 30px;
+  font-size: 16px;
 }
-.vacancies{
+.vacancies {
+  padding-bottom: 20px;
   .title {
     @extend %title
   }
   .text {
-    @extend  %text
+    @extend %text
   }
-  .vacancy-block{
-    margin-left: -4px;
-    margin-top:-4px;
+  .vac-ib{
+    float: left;
+    padding: 30px;
+    height: 13rem;
   }
-  .vacancies-blocks{
-    letter-spacing: -4px;
+  .vac-title:hover{
+    background: #0079d4;
+    padding: 5px;
+    opacity: 0.8;
   }
-  .vacancy-ib{
-    display: inline-block;
-    letter-spacing: normal;
-  }
-  .vacancies-first-content {
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        .vacancy-title {
-          @extend %vacancy-title;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-        }
+  .vac-1{
+    background: url("../img/vacancies/1.png") no-repeat;
+    width: 40%;
+    background-size: cover;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+      }
+      .vac-salary{
+        @extend %vac-salary
       }
     }
-  }
-  .vacancies-second-content {
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        width: 250px !important;
-        .vacancy-title {
-          @extend %vacancy-title;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-          background: #252525;
-          color: #ffffff;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-        }
-      }
+    .vac-content{
+      @extend %vac-content
     }
   }
-  .vacancies-third-content{
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        width: 250px !important;
-        .vacancy-title {
-          @extend %vacancy-title;
-          color: #000000;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-          background: #f93a26;
-          color: #ffffff;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-          color: #000000;
-        }
+  .vac-2{
+    background: url("../img/vacancies/2.png") no-repeat;
+    width: 20%;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+      }
+      .vac-salary{
+        color: #ffffff;
+        background: #222222;
+      @extend %vac-salary;
       }
     }
-  }
-  .vacancies-fourth-content{
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        width: 250px !important;
-        .vacancy-title {
-          @extend %vacancy-title;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-          background: #252525;
-          color: #ffffff;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-        }
-      }
+    .vac-content{
+      @extend %vac-content
     }
   }
-  .vacancies-fifth-content{
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        width: 250px !important;
-        .vacancy-title {
-          @extend %vacancy-title;
-          color: #000000;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-          background: #f93a26;
-          color: #ffffff;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-          color: #000000;
-        }
+  .vac-3{
+    background: url("../img/vacancies/3.png") no-repeat;
+    width: 20%;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+        color: #000000;
+      }
+      .vac-salary{
+        color: #ffffff;
+        background: #ff0000;
+        @extend %vac-salary
       }
     }
-  }
-  .vacancies-sixth-content {
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        width: 250px !important;
-        .vacancy-title {
-          @extend %vacancy-title;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-          background: #252525;
-          color: #ffffff;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-        }
-      }
+    .vac-content{
+      color: #000000;
+      @extend %vac-content
     }
   }
-  .vacancies-seventh-content {
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        width: 250px !important;
-        .vacancy-title {
-          @extend %vacancy-title;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-          background: #252525;
-          color: #ffffff;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-        }
+  .vac-4{
+    background: url("../img/vacancies/4.png") no-repeat;
+    width: 20%;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+      }
+      .vac-salary{
+      @extend %vac-salary
       }
     }
+    .vac-content{
+      @extend %vac-content
+    }
   }
-  .vacancies-eighth-content {
-    .vacancy-block {
-      @extend %vacancy-block;
-      .vacancy-wrapper {
-        @extend %vacancy-wrapper;
-        .vacancy-title {
-          @extend %vacancy-title;
-        }
-        .vacancy-salary {
-          @extend %vacancy-salary;
-        }
-        .vacancy-content {
-          @extend %vacancy-content;
-        }
+  .vac-5{
+    background: url("../img/vacancies/5.png") no-repeat;
+    width: 20%;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+        color: #000000;
       }
+      .vac-salary{
+        color: #ffffff;
+        background: #ff0000;
+        @extend %vac-salary
+      }
+    }
+    .vac-content{
+      color: #000000;
+      @extend %vac-content
+    }
+  }
+  .vac-6{
+    background: url("../img/vacancies/6.png") no-repeat;
+    width: 20%;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+      }
+      .vac-salary{
+        color: #ffffff;
+        background: #222222;
+        @extend %vac-salary;
+      }
+    }
+    .vac-content{
+      @extend %vac-content
+    }
+  }
+  .vac-7{
+    background: url("../img/vacancies/7.png") no-repeat;
+    width: 20%;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+      }
+      .vac-salary{
+        color: #ffffff;
+        background: #222222;
+        @extend %vac-salary;
+      }
+    }
+    .vac-content{
+      @extend %vac-content
+    }
+  }
+  .vac-8{
+    background: url("../img/vacancies/8.png") no-repeat;
+    width: 40%;
+    background-size: cover;
+    .vac-info{
+      .vac-title {
+        @extend %vac-title;
+      }
+      .vac-salary{
+        @extend %vac-salary
+      }
+    }
+    .vac-content{
+      @extend %vac-content
     }
   }
 }
@@ -517,7 +523,7 @@ $phone-span-font-size:28px;
   }
   .step-desc{
     margin-top: 50px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     color: #FFF;
     .step-title{
       font-weight: bold;
@@ -679,5 +685,25 @@ $phone-span-font-size:28px;
       background: #ff443a;
       color: #ffffff;
     }
+  }
+}
+footer{
+  .to-top{
+    background: #d0d0d0;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .all-rights{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 }

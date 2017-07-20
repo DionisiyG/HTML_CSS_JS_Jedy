@@ -1,10 +1,10 @@
 /*_____________________Variables/mixins general_____________________________*/
-.mid-section .more-btn, .services .service-blocks .fb-content .more-btn, .contacts .address .more-btn {
+.mid-section .more-btn, .services .service-blocks .more-btn, .contacts .address .more-btn {
   background: #eff3f6;
   padding: 15px 70px;
   color: #fc3e3f;
   font-size: 18px; }
-  .mid-section .more-btn span, .services .service-blocks .fb-content .more-btn span, .contacts .address .more-btn span {
+  .mid-section .more-btn span, .services .service-blocks .more-btn span, .contacts .address .more-btn span {
     margin-left: 30px; }
 
 .services .title, .vacancies .title, .execution .title, .feedbacks .title, .about-us .title, .contacts .title {
@@ -12,12 +12,12 @@
   color: #fc3e3f;
   text-align: center;
   font-weight: bold;
-  margin: 70px 30px 10px 30px; }
+  padding: 50px 30px 10px 30px; }
 
 .services .text, .vacancies .text, .execution .text, .feedbacks .text, .about-us .text, .contacts .text {
   font-size: 20px;
   text-align: center;
-  margin: 0 0 50px 0; }
+  margin: 0 0 20px 0; }
 
 /*______________________________________________________________*/
 @font-face {
@@ -31,7 +31,8 @@ body {
 * {
   margin: 0;
   padding: 0;
-  font-family: MyriadPro; }
+  font-family: MyriadPro;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none; }
@@ -41,7 +42,7 @@ a {
   margin: 0 auto;
   height: inherit;
   position: relative;
-  border: 1px solid black; }
+  /*border: $black-border;*/ }
   .centerer::after {
     content: '';
     display: block;
@@ -52,7 +53,7 @@ a {
   margin: 0 auto;
   height: inherit;
   position: relative;
-  border: 1px solid black; }
+  /*border: $black-border;*/ }
   .bigger-ceneterer::after {
     content: '';
     display: block;
@@ -65,12 +66,14 @@ img {
 
 /*_________________________________Top block______________________________*/
 .first-block {
-  background: url("../img/first-block/bg-image.png"); }
+  background: url("../img/first-block/bg-image.png");
+  background-size: cover;
+  /*  height: 768px;*/ }
 
 .top-section .banner {
   margin-top: 30px;
   float: left; }
-.top-section .vk-logo, .top-section .phone {
+.top-section .vk-logo, .top-section .phone, .top-section .phone-list {
   display: inline-block;
   letter-spacing: normal; }
 .top-section a {
@@ -92,19 +95,30 @@ img {
   float: right;
   margin-top: 40px;
   letter-spacing: -4px; }
-  .top-section .phone-vk .phone {
-    margin-right: 100px;
-    position: relative; }
-  .top-section .phone-vk .phone::after {
-    content: '';
-    display: block;
-    position: absolute;
+  .top-section .phone-vk .phone-list {
     border: 8px solid transparent;
     border-top: 10px solid #ffffff;
-    right: -50px;
-    top: 14px; }
-  .top-section .phone-vk .phone:hover::after {
-    cursor: pointer; }
+    margin-left: 50px;
+    vertical-align: bottom;
+    position: relative; }
+    .top-section .phone-vk .phone-list:hover {
+      cursor: pointer; }
+    .top-section .phone-vk .phone-list ul {
+      position: absolute;
+      list-style: none;
+      text-align: center;
+      width: 250px;
+      left: -125px;
+      top: 10px; }
+      .top-section .phone-vk .phone-list ul li {
+        margin-top: 20px; }
+        .top-section .phone-vk .phone-list ul li a {
+          font-size: 20px; }
+          .top-section .phone-vk .phone-list ul li a:hover {
+            color: #959595;
+            text-decoration: underline; }
+  .top-section .phone-vk .phone {
+    margin-right: 50px; }
   .top-section .phone-vk span {
     font-size: 28px;
     color: #ffffff; }
@@ -130,9 +144,13 @@ img {
     margin-bottom: 40px; }
   .mid-section .more-btn {
     font-weight: bold; }
+    .mid-section .more-btn:hover {
+      background: #ff353b;
+      color: #ffffff; }
 
 .circles {
-  margin-top: 430px; }
+  margin-top: 430px;
+  /*position: absolute;*/ }
   .circles a {
     display: block;
     width: 10px;
@@ -143,6 +161,8 @@ img {
     -o-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%; }
+    .circles a:last-child {
+      margin-bottom: 0; }
   .circles a:hover {
     background: #00528f; }
 
@@ -177,7 +197,9 @@ img {
 
 #nav-menu.default {
   width: 100%;
-  transition: all 1s; }
+  transition: all 1s;
+  /* position: fixed;*/
+  bottom: 0; }
 
 #nav-menu.fixed {
   top: 0;
@@ -187,7 +209,13 @@ img {
 
 /*___________________________________Services_________________________________*/
 .services .service-blocks {
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
+  .services .service-blocks .more-btn {
+    padding: 15px 80px;
+    font-weight: bold; }
+    .services .service-blocks .more-btn:hover {
+      background: #ff353b;
+      color: #ffffff; }
   .services .service-blocks .first-sblock, .services .service-blocks .second-block, .services .service-blocks .third-block {
     display: inline-block;
     position: relative; }
@@ -204,89 +232,95 @@ img {
       margin-bottom: 40px; }
     .services .service-blocks .fb-content li {
       margin-left: 18px; }
-    .services .service-blocks .fb-content .more-btn {
-      padding: 15px 80px;
-      font-weight: bold; }
-  .services .service-blocks .second-block div, .services .service-blocks .third-block div {
+  .services .service-blocks .sb-content, .services .service-blocks .tb-content {
     position: absolute;
-    top: 0; }
-  .services .service-blocks .second-block .block-title, .services .service-blocks .third-block .block-title {
-    font-size: 40px;
-    color: #ffffff; }
+    top: 35%;
+    text-align: center; }
+    .services .service-blocks .sb-content .block-title, .services .service-blocks .tb-content .block-title {
+      font-size: 35px;
+      color: #ffffff;
+      opacity: 0.8; }
+    .services .service-blocks .sb-content .div-button, .services .service-blocks .tb-content .div-button {
+      margin-top: 115px; }
 
 /*___________________________________Vacancies_________________________________*/
-.vacancies .vacancies-first-content .vacancy-block, .vacancies .vacancies-second-content .vacancy-block, .vacancies .vacancies-third-content .vacancy-block, .vacancies .vacancies-fourth-content .vacancy-block, .vacancies .vacancies-fifth-content .vacancy-block, .vacancies .vacancies-sixth-content .vacancy-block, .vacancies .vacancies-seventh-content .vacancy-block, .vacancies .vacancies-eighth-content .vacancy-block {
-  position: relative; }
-
-.vacancies .vacancies-first-content .vacancy-block .vacancy-wrapper, .vacancies .vacancies-second-content .vacancy-block .vacancy-wrapper, .vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper, .vacancies .vacancies-fourth-content .vacancy-block .vacancy-wrapper, .vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper, .vacancies .vacancies-sixth-content .vacancy-block .vacancy-wrapper, .vacancies .vacancies-seventh-content .vacancy-block .vacancy-wrapper, .vacancies .vacancies-eighth-content .vacancy-block .vacancy-wrapper {
-  position: absolute;
-  top: 0;
-  width: 450px;
-  margin: 20px 20px; }
-
-.vacancies .vacancies-first-content .vacancy-block .vacancy-wrapper .vacancy-title, .vacancies .vacancies-second-content .vacancy-block .vacancy-wrapper .vacancy-title, .vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper .vacancy-title, .vacancies .vacancies-fourth-content .vacancy-block .vacancy-wrapper .vacancy-title, .vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper .vacancy-title, .vacancies .vacancies-sixth-content .vacancy-block .vacancy-wrapper .vacancy-title, .vacancies .vacancies-seventh-content .vacancy-block .vacancy-wrapper .vacancy-title, .vacancies .vacancies-eighth-content .vacancy-block .vacancy-wrapper .vacancy-title {
-  display: inline-block;
+.vacancies .vac-1 .vac-info .vac-title, .vacancies .vac-2 .vac-info .vac-title, .vacancies .vac-3 .vac-info .vac-title, .vacancies .vac-4 .vac-info .vac-title, .vacancies .vac-5 .vac-info .vac-title, .vacancies .vac-6 .vac-info .vac-title, .vacancies .vac-7 .vac-info .vac-title, .vacancies .vac-8 .vac-info .vac-title {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff; }
 
-.vacancies .vacancies-first-content .vacancy-block .vacancy-wrapper .vacancy-salary, .vacancies .vacancies-second-content .vacancy-block .vacancy-wrapper .vacancy-salary, .vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper .vacancy-salary, .vacancies .vacancies-fourth-content .vacancy-block .vacancy-wrapper .vacancy-salary, .vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper .vacancy-salary, .vacancies .vacancies-sixth-content .vacancy-block .vacancy-wrapper .vacancy-salary, .vacancies .vacancies-seventh-content .vacancy-block .vacancy-wrapper .vacancy-salary, .vacancies .vacancies-eighth-content .vacancy-block .vacancy-wrapper .vacancy-salary {
-  display: inline-block;
+.vacancies .vac-1 .vac-info .vac-salary, .vacancies .vac-2 .vac-info .vac-salary, .vacancies .vac-3 .vac-info .vac-salary, .vacancies .vac-4 .vac-info .vac-salary, .vacancies .vac-5 .vac-info .vac-salary, .vacancies .vac-6 .vac-info .vac-salary, .vacancies .vac-7 .vac-info .vac-salary, .vacancies .vac-8 .vac-info .vac-salary {
   background: #eff3f6;
   padding: 10px;
-  float: right;
-  font-weight: bold; }
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  float: right; }
 
-.vacancies .vacancies-first-content .vacancy-block .vacancy-wrapper .vacancy-content, .vacancies .vacancies-second-content .vacancy-block .vacancy-wrapper .vacancy-content, .vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper .vacancy-content, .vacancies .vacancies-fourth-content .vacancy-block .vacancy-wrapper .vacancy-content, .vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper .vacancy-content, .vacancies .vacancies-sixth-content .vacancy-block .vacancy-wrapper .vacancy-content, .vacancies .vacancies-seventh-content .vacancy-block .vacancy-wrapper .vacancy-content, .vacancies .vacancies-eighth-content .vacancy-block .vacancy-wrapper .vacancy-content {
+.vacancies .vac-1 .vac-content, .vacancies .vac-2 .vac-content, .vacancies .vac-3 .vac-content, .vacancies .vac-4 .vac-content, .vacancies .vac-5 .vac-content, .vacancies .vac-6 .vac-content, .vacancies .vac-7 .vac-content, .vacancies .vac-8 .vac-content {
   color: #ffffff;
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-size: 16px; }
 
-.vacancies .vacancy-block {
-  margin-left: -4px;
-  margin-top: -4px; }
-.vacancies .vacancies-blocks {
-  letter-spacing: -4px; }
-.vacancies .vacancy-ib {
-  display: inline-block;
-  letter-spacing: normal; }
-.vacancies .vacancies-second-content .vacancy-block .vacancy-wrapper {
-  width: 250px !important; }
-  .vacancies .vacancies-second-content .vacancy-block .vacancy-wrapper .vacancy-salary {
-    background: #252525;
-    color: #ffffff; }
-.vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper {
-  width: 250px !important; }
-  .vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper .vacancy-title {
-    color: #000000; }
-  .vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper .vacancy-salary {
-    background: #f93a26;
-    color: #ffffff; }
-  .vacancies .vacancies-third-content .vacancy-block .vacancy-wrapper .vacancy-content {
-    color: #000000; }
-.vacancies .vacancies-fourth-content .vacancy-block .vacancy-wrapper {
-  width: 250px !important; }
-  .vacancies .vacancies-fourth-content .vacancy-block .vacancy-wrapper .vacancy-salary {
-    background: #252525;
-    color: #ffffff; }
-.vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper {
-  width: 250px !important; }
-  .vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper .vacancy-title {
-    color: #000000; }
-  .vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper .vacancy-salary {
-    background: #f93a26;
-    color: #ffffff; }
-  .vacancies .vacancies-fifth-content .vacancy-block .vacancy-wrapper .vacancy-content {
-    color: #000000; }
-.vacancies .vacancies-sixth-content .vacancy-block .vacancy-wrapper {
-  width: 250px !important; }
-  .vacancies .vacancies-sixth-content .vacancy-block .vacancy-wrapper .vacancy-salary {
-    background: #252525;
-    color: #ffffff; }
-.vacancies .vacancies-seventh-content .vacancy-block .vacancy-wrapper {
-  width: 250px !important; }
-  .vacancies .vacancies-seventh-content .vacancy-block .vacancy-wrapper .vacancy-salary {
-    background: #252525;
-    color: #ffffff; }
+.vacancies {
+  padding-bottom: 20px; }
+  .vacancies .vac-ib {
+    float: left;
+    padding: 30px;
+    height: 13rem; }
+  .vacancies .vac-title:hover {
+    background: #0079d4;
+    padding: 5px;
+    opacity: 0.8; }
+  .vacancies .vac-1 {
+    background: url("../img/vacancies/1.png") no-repeat;
+    width: 40%;
+    background-size: cover; }
+  .vacancies .vac-2 {
+    background: url("../img/vacancies/2.png") no-repeat;
+    width: 20%; }
+    .vacancies .vac-2 .vac-info .vac-salary {
+      color: #ffffff;
+      background: #222222; }
+  .vacancies .vac-3 {
+    background: url("../img/vacancies/3.png") no-repeat;
+    width: 20%; }
+    .vacancies .vac-3 .vac-info .vac-title {
+      color: #000000; }
+    .vacancies .vac-3 .vac-info .vac-salary {
+      color: #ffffff;
+      background: #ff0000; }
+    .vacancies .vac-3 .vac-content {
+      color: #000000; }
+  .vacancies .vac-4 {
+    background: url("../img/vacancies/4.png") no-repeat;
+    width: 20%; }
+  .vacancies .vac-5 {
+    background: url("../img/vacancies/5.png") no-repeat;
+    width: 20%; }
+    .vacancies .vac-5 .vac-info .vac-title {
+      color: #000000; }
+    .vacancies .vac-5 .vac-info .vac-salary {
+      color: #ffffff;
+      background: #ff0000; }
+    .vacancies .vac-5 .vac-content {
+      color: #000000; }
+  .vacancies .vac-6 {
+    background: url("../img/vacancies/6.png") no-repeat;
+    width: 20%; }
+    .vacancies .vac-6 .vac-info .vac-salary {
+      color: #ffffff;
+      background: #222222; }
+  .vacancies .vac-7 {
+    background: url("../img/vacancies/7.png") no-repeat;
+    width: 20%; }
+    .vacancies .vac-7 .vac-info .vac-salary {
+      color: #ffffff;
+      background: #222222; }
+  .vacancies .vac-8 {
+    background: url("../img/vacancies/8.png") no-repeat;
+    width: 40%;
+    background-size: cover; }
 
 /*___________________________________Execution terms_________________________________*/
 .execution {
@@ -309,7 +343,7 @@ img {
     bottom: -20px; }
   .execution .step-desc {
     margin-top: 50px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     color: #FFF; }
     .execution .step-desc .step-title {
       font-weight: bold;
@@ -420,5 +454,22 @@ img {
     text-decoration: none;
     background: #ff443a;
     color: #ffffff; }
+
+footer .to-top {
+  background: #d0d0d0;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left; }
+footer .all-rights {
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
