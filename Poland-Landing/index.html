@@ -10,13 +10,14 @@
     <!--<script src="scripts/scrolling.js"></script>-->
     <!--<script src="scripts/nav-menu-fixer.js"></script>-->
 
-    <!--<script src="scripts/libs/jquery.fullPage.min.js"></script>
+    <script src="scripts/libs/jquery.fullPage.min.js"></script>
     <link href="styles/jquery.fullPage.css" rel="stylesheet" type="text/css">
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage();
         });
-    </script>-->
+        anchors: ['top'];
+    </script>
 
     <script src="scripts/fancy-img.js"></script>
     <script src="scripts/dropdown-phones.js"></script>
@@ -27,7 +28,7 @@
 </head>
 <body>
 <div id="fullpage">
-    <section class="section"><div class="first-block scroll">
+    <section class="section" data-anchor="top"><div class="first-block scroll">
         <div class="centerer">
             <div class="top-section" id="top">
                 <div class="banner">
@@ -355,14 +356,14 @@
                 </div>
             </div>
     </div></section>
-    <footer>
+    <section class="section fp-auto-height"><footer>
         <a href="#top"><div class="to-top">
             &uarr;
         </div></a>
         <div class="all-rights">
             Все права защищены <span>&copy;</span> 2017
         </div>
-    </footer>
+    </footer></section>
 </div>
 
 </body>
