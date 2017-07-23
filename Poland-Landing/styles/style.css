@@ -19,7 +19,7 @@
   text-align: center;
   margin: 0 0 20px 0; }
 
-/*______________________________________________________________*/
+/*_________________________General____________________________*/
 @font-face {
   font-family: 'MyriadPro';
   src: url(../fonts/MyriadPro/MyriadPro-Regular.otf);
@@ -71,14 +71,17 @@ img {
   /*  height: 768px;*/ }
 
 .top-section .banner {
-  margin-top: 30px;
+  margin-top: 65px;
   float: left; }
 .top-section .vk-logo, .top-section .phone, .top-section .phone-list {
   display: inline-block;
   letter-spacing: normal; }
 .top-section a {
   color: #ffffff;
-  font-size: 28px; }
+  font-size: 28px;
+  /*.vk-logo:hover{
+    background: #0079d2;
+  }*/ }
   .top-section a .vk-logo {
     width: 60px;
     height: 60px;
@@ -89,8 +92,6 @@ img {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #00528f; }
-  .top-section a .vk-logo:hover {
-    background: #0079d2; }
 .top-section .phone-vk {
   float: right;
   margin-top: 40px;
@@ -100,9 +101,10 @@ img {
     border-top: 10px solid #ffffff;
     margin-left: 50px;
     vertical-align: bottom;
-    position: relative; }
-    .top-section .phone-vk .phone-list:hover {
-      cursor: pointer; }
+    position: relative;
+    /* &:hover{
+       cursor: pointer;
+     }*/ }
     .top-section .phone-vk .phone-list ul {
       position: absolute;
       list-style: none;
@@ -113,10 +115,11 @@ img {
       .top-section .phone-vk .phone-list ul li {
         margin-top: 20px; }
         .top-section .phone-vk .phone-list ul li a {
-          font-size: 20px; }
-          .top-section .phone-vk .phone-list ul li a:hover {
+          font-size: 20px;
+          /*&:hover{
             color: #959595;
-            text-decoration: underline; }
+            text-decoration: underline;
+          }*/ }
   .top-section .phone-vk .phone {
     margin-right: 50px; }
   .top-section .phone-vk span {
@@ -131,7 +134,7 @@ img {
   float: right;
   width: 500px;
   margin-right: 100px;
-  margin-top: 180px; }
+  margin-top: 140px; }
   .mid-section .caps-and-bold {
     font-size: 35px;
     color: #ffffff;
@@ -143,14 +146,19 @@ img {
     color: #ffffff;
     margin-bottom: 40px; }
   .mid-section .more-btn {
-    font-weight: bold; }
-    .mid-section .more-btn:hover {
+    font-weight: bold;
+    /*&:hover{
       background: #ff353b;
-      color: #ffffff; }
+      color: #ffffff;
+    }*/ }
 
 .circles {
-  margin-top: 430px;
-  /*position: absolute;*/ }
+  margin-top: 350px;
+  padding-bottom: 90px;
+  /*position: absolute;*/
+  /* a:hover{
+     background: #00528f;
+   }*/ }
   .circles a {
     display: block;
     width: 10px;
@@ -163,8 +171,6 @@ img {
     border-radius: 50%; }
     .circles a:last-child {
       margin-bottom: 0; }
-  .circles a:hover {
-    background: #00528f; }
 
 /*________________________________Nav__________________________________________*/
 #nav-menu {
@@ -172,7 +178,15 @@ img {
   width: 100%; }
   #nav-menu ul {
     letter-spacing: -4px;
-    text-align: center; }
+    text-align: center;
+    /* a:hover{
+       color: #fc3e3f;
+       background: #e3e7e9;
+     }*/
+    /*.request-btn:hover{
+      background: #ff4a46;
+      color: #ffffff;
+    }*/ }
     #nav-menu ul li, #nav-menu ul a {
       display: inline-block;
       letter-spacing: normal; }
@@ -180,42 +194,42 @@ img {
       list-style: none; }
     #nav-menu ul a {
       color: #000000;
-      padding: 40px 25px;
+      padding: 30px 25px;
       font-size: 20px; }
-    #nav-menu ul a:hover {
-      color: #fc3e3f;
-      background: #e3e7e9; }
     #nav-menu ul .request-btn {
       color: #ffffff;
       background: #f90c17;
-      padding: 20px 35px 20px 35px;
+      padding: 0 35px;
+      line-height: 50px;
       float: right;
       margin-top: 20px; }
-    #nav-menu ul .request-btn:hover {
-      background: #ff4a46;
-      color: #ffffff; }
 
-#nav-menu.default {
+#nav-menu.go-bot {
   width: 100%;
-  transition: all 1s;
-  /* position: fixed;*/
-  bottom: 0; }
+  transition: top 1s;
+  position: fixed;
+  z-index: 3;
+  top: calc(100% - 84px); }
 
-#nav-menu.fixed {
+#nav-menu.go-top {
   top: 0;
   width: 100%;
   position: fixed;
-  z-index: 3; }
+  z-index: 3;
+  transition: top 1s; }
 
 /*___________________________________Services_________________________________*/
+.services .title {
+  margin-top: 60px; }
 .services .service-blocks {
   margin-bottom: 20px; }
   .services .service-blocks .more-btn {
     padding: 15px 80px;
-    font-weight: bold; }
-    .services .service-blocks .more-btn:hover {
+    font-weight: bold;
+    /*&:hover{
       background: #ff353b;
-      color: #ffffff; }
+      color: #ffffff;
+    }*/ }
   .services .service-blocks .first-sblock, .services .service-blocks .second-block, .services .service-blocks .third-block {
     display: inline-block;
     position: relative; }
@@ -263,15 +277,18 @@ img {
   font-size: 16px; }
 
 .vacancies {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  /*.vac-title:hover{
+    background: #0079d4;
+    padding: 5px;
+    opacity: 0.8;
+  }*/ }
+  .vacancies .title {
+    margin-top: 60px; }
   .vacancies .vac-ib {
     float: left;
     padding: 30px;
     height: 13rem; }
-  .vacancies .vac-title:hover {
-    background: #0079d4;
-    padding: 5px;
-    opacity: 0.8; }
   .vacancies .vac-1 {
     background: url("../img/vacancies/1.png") no-repeat;
     width: 40%;
@@ -325,6 +342,8 @@ img {
 /*___________________________________Execution terms_________________________________*/
 .execution {
   background: url("../img/execution/bg.png"); }
+  .execution .title {
+    padding-top: 140px; }
   .execution .text {
     color: #9a9a9a; }
   .execution .step {
@@ -351,6 +370,8 @@ img {
       height: 80px; }
 
 /*___________________________________Feedbacks_________________________________*/
+.feedbacks .title {
+  margin-top: 60px; }
 .feedbacks .counter {
   font-size: 40px;
   text-align: center;
@@ -365,7 +386,8 @@ img {
     display: table-cell;
     vertical-align: middle; }
   .feedbacks .feedback-wrapper .arrow-left, .feedbacks .feedback-wrapper .arrow-right {
-    /*padding: 10% 0;*/ }
+    /*padding: 10% 0;*/
+    cursor: pointer; }
     .feedbacks .feedback-wrapper .arrow-left span, .feedbacks .feedback-wrapper .arrow-right span {
       color: #ff0000;
       font-size: 60px;
@@ -387,10 +409,14 @@ img {
       font-size: 18px; }
     .feedbacks .feedback-wrapper .person .profile {
       font-size: 18px;
-      margin-top: 20px; }
+      margin-top: 20px;
+      width: 300px; }
       .feedbacks .feedback-wrapper .person .profile a {
         color: #ffffff;
-        font-size: 28px; }
+        font-size: 28px;
+        /*.vk-logo:hover {
+          background: #0079d2;
+        }*/ }
         .feedbacks .feedback-wrapper .person .profile a .vk-logo {
           float: right;
           width: 60px;
@@ -403,12 +429,35 @@ img {
           border-radius: 50%;
           background: #00528f;
           margin-right: 150px; }
-        .feedbacks .feedback-wrapper .person .profile a .vk-logo:hover {
-          background: #0079d2; }
+  .feedbacks .feedback-wrapper img {
+    width: 200px; }
+.feedbacks .write-us {
+  text-align: center; }
+  .feedbacks .write-us .text {
+    width: 700px;
+    margin: 0 auto 150px auto; }
+  .feedbacks .write-us .name-input input, .feedbacks .write-us .phone-input input {
+    width: 500px;
+    padding: 10px 50px;
+    color: #c2c2c2;
+    border: 1px solid #c2c2c2; }
+  .feedbacks .write-us .phone-input {
+    margin-top: 30px; }
+  .feedbacks .write-us .btn-send {
+    color: #e6e6e6;
+    font-size: 16px;
+    padding: 0 50px;
+    line-height: 50px;
+    background: #ff0000;
+    border: none;
+    margin-top: 50px;
+    cursor: pointer; }
 
 /*___________________________________About us_________________________________*/
 .about-us {
   background: url("../img/about-us/canyon-bg.png"); }
+  .about-us .title {
+    padding-top: 120px; }
   .about-us .text {
     color: #ffffff; }
   .about-us .license1, .about-us .license2 {
@@ -425,6 +474,8 @@ img {
       margin-bottom: 30px; }
 
 /*___________________________________Contacts_________________________________*/
+.contacts .title {
+  padding-top: 105px; }
 .contacts .map {
   position: relative; }
 .contacts .address {
@@ -437,12 +488,18 @@ img {
   color: #ffffff;
   text-align: center;
   font-size: 25px;
-  top: 0; }
+  top: 0;
+  /* a:hover{
+     color: #000e5e;
+     text-decoration: underline;
+   }*/
+  /* .more-btn:hover{
+     text-decoration: none;
+     background: #ff443a;
+     color: #ffffff;
+   }*/ }
   .contacts .address a {
     color: #ffffff; }
-  .contacts .address a:hover {
-    color: #000e5e;
-    text-decoration: underline; }
   .contacts .address .email {
     line-height: 60px; }
   .contacts .address .btn-address {
@@ -450,10 +507,6 @@ img {
   .contacts .address .firm-name {
     margin-bottom: 20px;
     margin-top: 70px; }
-  .contacts .address .more-btn:hover {
-    text-decoration: none;
-    background: #ff443a;
-    color: #ffffff; }
 
 footer .to-top {
   background: #d0d0d0;
@@ -471,5 +524,415 @@ footer .all-rights {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 18px; }
+
+/*_________________________________________Media_____________________________________________*/
+@media screen and (max-width: 1280px) {
+  .fp-tableCell {
+    vertical-align: top;
+    height: 100% !important; }
+
+  .first-block .circles {
+    margin-top: 420px; }
+
+  .services .title {
+    margin-top: 0; }
+
+  .vacancies .title {
+    margin-top: -150px; }
+
+  .execution {
+    margin-top: -340px; }
+
+  .feedbacks {
+    margin-top: -340px; }
+    .feedbacks .title {
+      margin-top: 0px;
+      padding-top: 0; }
+
+  .about-us {
+    margin-top: -500px; }
+
+  .contacts {
+    margin-top: -500px; }
+    .contacts .title {
+      padding: 0;
+      margin: 0; }
+
+  footer {
+    margin-top: 0px; } }
+@media screen and (min-width: 1024px) {
+  /*hovers*/
+  .top-section a .vk-logo:hover {
+    background: #0079d2; }
+
+  .phone-vk .phone-list:hover {
+    cursor: pointer; }
+
+  ul li a:hover {
+    color: #959595;
+    text-decoration: underline; }
+
+  .mid-section .more-btn:hover {
+    background: #ff353b;
+    color: #ffffff; }
+
+  .circles a:hover {
+    background: #00528f; }
+
+  #nav-menu ul a:hover {
+    color: #fc3e3f;
+    background: #e3e7e9; }
+  #nav-menu ul .request-btn:hover {
+    background: #ff4a46;
+    color: #ffffff; }
+
+  .services .service-blocks .more-btn:hover {
+    background: #ff353b;
+    color: #ffffff; }
+
+  .vacancies .vac-title:hover {
+    background: #0079d4;
+    padding: 5px;
+    opacity: 0.8; }
+
+  .feedbacks .profile a .vk-logo:hover {
+    background: #0079d2; }
+
+  .contacts .address a:hover {
+    color: #000e5e;
+    text-decoration: underline; }
+  .contacts .address .more-btn:hover {
+    text-decoration: none;
+    background: #ff443a;
+    color: #ffffff; } }
+@media screen and (max-width: 1024px) {
+  .centerer {
+    padding: 0 15px; }
+
+  #nav-menu ul a {
+    padding: 30px 20px;
+    font-size: 18px; }
+  #nav-menu ul .request-btn {
+    line-height: 40px;
+    margin: 20px 0; }
+
+  .services .service-blocks .first-sblock, .services .service-blocks .second-block, .services .service-blocks .third-block {
+    display: block;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    margin-top: 30px; }
+
+  .vacancies .title {
+    margin-top: -10px; }
+  .vacancies .vac-ib {
+    padding: 10px; }
+  .vacancies .vac-1 .vac-info .vac-title, .vacancies .vac-2 .vac-info .vac-title, .vacancies .vac-3 .vac-info .vac-title, .vacancies .vac-4 .vac-info .vac-title, .vacancies .vac-5 .vac-info .vac-title, .vacancies .vac-6 .vac-info .vac-title, .vacancies .vac-7 .vac-info .vac-title, .vacancies .vac-8 .vac-info .vac-title {
+    font-size: 18px; }
+  .vacancies .vac-1 .vac-info .vac-salary, .vacancies .vac-2 .vac-info .vac-salary, .vacancies .vac-3 .vac-info .vac-salary, .vacancies .vac-4 .vac-info .vac-salary, .vacancies .vac-5 .vac-info .vac-salary, .vacancies .vac-6 .vac-info .vac-salary, .vacancies .vac-7 .vac-info .vac-salary, .vacancies .vac-8 .vac-info .vac-salary {
+    font-size: 14px;
+    padding: 4px; }
+
+  .execution {
+    margin-top: -100px; }
+    .execution .title {
+      padding-top: 50px; }
+
+  .feedbacks {
+    margin-top: -200px; }
+    .feedbacks .feedback-wrapper .arrow-left span, .feedbacks .feedback-wrapper .arrow-right span {
+      font-size: 20px; }
+
+  .about-us {
+    margin-top: -400px; }
+    .about-us .title {
+      padding-top: 50px; }
+
+  .contacts {
+    margin-top: -450px; } }
+@media screen and (max-width: 768px) {
+  .top-section .banner {
+    width: 35%;
+    margin-top: 35px; }
+  .top-section .phone-vk span {
+    font-size: 18px; }
+
+  .mid-section {
+    width: 400px;
+    margin-right: 0; }
+    .mid-section .caps-and-bold {
+      font-size: 25px; }
+    .mid-section .guarantee-docs {
+      font-size: 18px; }
+
+  .first-block .circles {
+    margin-top: 290px;
+    padding-bottom: 40px; }
+
+  #nav-menu ul a {
+    padding: 20px 10px;
+    font-size: 16px; }
+  #nav-menu ul .request-btn {
+    line-height: 40px;
+    margin: 10px 0; }
+
+  .services .title {
+    padding: 0; }
+  .services .service-blocks .fb-content {
+    margin: 10px;
+    font-size: 14px; }
+    .services .service-blocks .fb-content ul {
+      margin-bottom: 20px; }
+  .services .service-blocks .sb-content .block-title, .services .service-blocks .tb-content .block-title {
+    font-size: 22px; }
+  .services .service-blocks .more-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 0 60px; }
+
+  .vacancies .vac-ib {
+    height: 12rem; }
+  .vacancies .vac-1 .vac-info .vac-title, .vacancies .vac-2 .vac-info .vac-title, .vacancies .vac-3 .vac-info .vac-title, .vacancies .vac-4 .vac-info .vac-title, .vacancies .vac-5 .vac-info .vac-title, .vacancies .vac-6 .vac-info .vac-title, .vacancies .vac-7 .vac-info .vac-title, .vacancies .vac-8 .vac-info .vac-title {
+    font-size: 14px; }
+  .vacancies .vac-1 .vac-info .vac-salary, .vacancies .vac-2 .vac-info .vac-salary, .vacancies .vac-3 .vac-info .vac-salary, .vacancies .vac-4 .vac-info .vac-salary, .vacancies .vac-5 .vac-info .vac-salary, .vacancies .vac-6 .vac-info .vac-salary, .vacancies .vac-7 .vac-info .vac-salary, .vacancies .vac-8 .vac-info .vac-salary {
+    font-size: 11px;
+    padding: 4px; }
+  .vacancies .vac-1 .vac-content, .vacancies .vac-2 .vac-content, .vacancies .vac-3 .vac-content, .vacancies .vac-4 .vac-content, .vacancies .vac-5 .vac-content, .vacancies .vac-6 .vac-content, .vacancies .vac-7 .vac-content, .vacancies .vac-8 .vac-content {
+    font-size: 13px !important; }
+
+  .execution {
+    margin-top: 0; }
+    .execution .step-number {
+      font-size: 80px; }
+    .execution .step-ico {
+      width: 40%;
+      left: 35px;
+      bottom: 0; }
+    .execution .step-desc .step-title {
+      font-size: 16px;
+      height: 60px; }
+
+  .feedbacks {
+    margin-top: 0; }
+    .feedbacks iframe {
+      width: 350px;
+      height: 215px; }
+    .feedbacks .feedback-wrapper img {
+      margin-top: 40px; }
+    .feedbacks .feedback-wrapper .person {
+      padding-left: 10px; }
+      .feedbacks .feedback-wrapper .person .position {
+        font-size: 15px; }
+    .feedbacks .write-us .text {
+      margin: 0 auto 100px auto; }
+
+  .about-us {
+    margin-top: 0; }
+    .about-us .license1, .about-us .license2 {
+      margin: 0 0 20px 80px; }
+      .about-us .license1 img, .about-us .license2 img {
+        width: 80%; }
+    .about-us .about-us-text {
+      font-size: 15px;
+      float: left;
+      margin-left: 180px; }
+      .about-us .about-us-text > div {
+        margin-bottom: 10px; }
+
+  .contacts {
+    margin-top: 20px; }
+    .contacts .address {
+      font-size: 15px; } }
+@media screen and (max-width: 480px) {
+  .top-section a .vk-logo {
+    width: 40px;
+    height: 40px;
+    line-height: 40px; }
+  .top-section .banner {
+    width: 35%;
+    margin-top: 35px; }
+  .top-section .phone-vk {
+    margin-top: 35px; }
+    .top-section .phone-vk .phone {
+      margin-right: 20px; }
+    .top-section .phone-vk .phone-list {
+      margin-left: 20px; }
+    .top-section .phone-vk span {
+      font-size: 18px; }
+
+  .mid-section {
+    width: 100%;
+    margin-right: 0;
+    text-align: center; }
+    .mid-section .caps-and-bold {
+      font-size: 20px; }
+    .mid-section .guarantee-docs {
+      font-size: 16px; }
+    .mid-section .more-btn {
+      padding: 10px 15px;
+      font-size: 15px; }
+
+  .first-block .circles {
+    padding-bottom: 65px; }
+
+  #nav-menu ul a {
+    padding: 10px 5px;
+    font-size: 12px; }
+  #nav-menu ul .request-btn {
+    line-height: 20px;
+    margin: 5px 130px; }
+
+  #nav-menu.go-bot {
+    top: calc(100% - 64px); }
+
+  .services .title {
+    padding: 0;
+    font-size: 25px; }
+  .services .text {
+    font-size: 16px; }
+  .services .service-blocks .fb-content {
+    margin: 10px;
+    font-size: 14px; }
+    .services .service-blocks .fb-content ul {
+      margin-bottom: 20px; }
+  .services .service-blocks .sb-content .block-title, .services .service-blocks .tb-content .block-title {
+    font-size: 20px; }
+  .services .service-blocks .more-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0 60px; }
+  .services .service-blocks .first-sblock, .services .service-blocks .second-block, .services .service-blocks .third-block {
+    display: block;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    margin-top: 30px; }
+  .services .service-blocks .sb-content, .services .service-blocks .tb-content {
+    left: 5%; }
+
+  .vacancies .title {
+    font-size: 25px; }
+  .vacancies .text {
+    font-size: 16px; }
+  .vacancies .vac-ib {
+    height: 100%;
+    float: none; }
+  .vacancies .vac-1, .vacancies .vac-2, .vacancies .vac-3, .vacancies .vac-4, .vacancies .vac-5, .vacancies .vac-6, .vacancies .vac-7, .vacancies .vac-8 {
+    width: 100%;
+    margin-top: 10px;
+    background-size: cover; }
+    .vacancies .vac-1 .vac-info .vac-title, .vacancies .vac-2 .vac-info .vac-title, .vacancies .vac-3 .vac-info .vac-title, .vacancies .vac-4 .vac-info .vac-title, .vacancies .vac-5 .vac-info .vac-title, .vacancies .vac-6 .vac-info .vac-title, .vacancies .vac-7 .vac-info .vac-title, .vacancies .vac-8 .vac-info .vac-title {
+      font-size: 14px; }
+    .vacancies .vac-1 .vac-info .vac-salary, .vacancies .vac-2 .vac-info .vac-salary, .vacancies .vac-3 .vac-info .vac-salary, .vacancies .vac-4 .vac-info .vac-salary, .vacancies .vac-5 .vac-info .vac-salary, .vacancies .vac-6 .vac-info .vac-salary, .vacancies .vac-7 .vac-info .vac-salary, .vacancies .vac-8 .vac-info .vac-salary {
+      font-size: 11px;
+      padding: 4px; }
+    .vacancies .vac-1 .vac-content, .vacancies .vac-2 .vac-content, .vacancies .vac-3 .vac-content, .vacancies .vac-4 .vac-content, .vacancies .vac-5 .vac-content, .vacancies .vac-6 .vac-content, .vacancies .vac-7 .vac-content, .vacancies .vac-8 .vac-content {
+      font-size: 13px; }
+
+  .execution {
+    margin-top: 0; }
+    .execution .title {
+      font-size: 25px; }
+    .execution .text {
+      font-size: 16px; }
+    .execution .step-number {
+      font-size: 80px; }
+    .execution .step-ico {
+      width: 40%;
+      left: 35px;
+      bottom: 0; }
+    .execution .step-desc {
+      font-size: 12px; }
+      .execution .step-desc .step-title {
+        font-size: 14px;
+        height: 60px; }
+
+  .feedbacks {
+    margin-top: -50px; }
+    .feedbacks .title {
+      font-size: 25px; }
+    .feedbacks .text {
+      font-size: 16px; }
+    .feedbacks iframe {
+      width: 250px;
+      height: 115px; }
+    .feedbacks .feedback-wrapper {
+      display: block;
+      text-align: -webkit-center; }
+      .feedbacks .feedback-wrapper img {
+        width: 150px; }
+      .feedbacks .feedback-wrapper .person {
+        padding-left: 10px; }
+        .feedbacks .feedback-wrapper .person .name {
+          font-size: 18px;
+          margin-top: 50px; }
+        .feedbacks .feedback-wrapper .person .position {
+          font-size: 13px;
+          width: 250px;
+          text-align: justify; }
+        .feedbacks .feedback-wrapper .person .profile {
+          font-size: 16px;
+          width: 200px; }
+          .feedbacks .feedback-wrapper .person .profile a .vk-logo {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 5px; }
+      .feedbacks .feedback-wrapper .arrow-left {
+        display: none !important; }
+      .feedbacks .feedback-wrapper .arrow-right {
+        float: right;
+        margin-top: -150px; }
+    .feedbacks .write-us {
+      text-align: center; }
+      .feedbacks .write-us .text {
+        width: 300px;
+        margin: 0 auto 15px auto; }
+      .feedbacks .write-us .name-input input, .feedbacks .write-us .phone-input input {
+        width: 200px; }
+      .feedbacks .write-us .phone-input {
+        margin-top: 15px; }
+      .feedbacks .write-us .btn-send {
+        font-size: 14px;
+        padding: 0 20px;
+        line-height: 30px; }
+
+  .about-us {
+    padding-top: 30px; }
+    .about-us .title {
+      padding: 0;
+      font-size: 25px; }
+    .about-us .text {
+      font-size: 16px; }
+    .about-us .license1, .about-us .license2 {
+      display: table-cell;
+      text-align: -webkit-center;
+      float: none; }
+      .about-us .license1 img, .about-us .license2 img {
+        width: 80%; }
+    .about-us .about-us-text {
+      font-size: 13px;
+      /*  float: left;*/
+      margin-left: 20px;
+      margin-top: 10px; }
+      .about-us .about-us-text > div {
+        margin-bottom: 10px; }
+
+  .contacts {
+    margin-top: 20px; }
+    .contacts .title {
+      padding: 0;
+      font-size: 25px; }
+    .contacts .text {
+      font-size: 16px; }
+    .contacts .address {
+      font-size: 15px; }
+      .contacts .address .more-btn {
+        padding: 5px 20px;
+        font-size: 16px; }
+
+  footer .all-rights {
+    margin: 0;
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */

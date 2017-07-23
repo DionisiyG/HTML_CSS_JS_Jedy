@@ -2,369 +2,426 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <script src="scripts/libs/jquery-3.2.1.min.js"></script>
-    <script src="scripts/libs/jquery.scrollify.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="scripts/libs/jquery.fancybox.min.js"></script>
-    <!--<script src="scripts/scrolling.js"></script>-->
-    <!--<script src="scripts/nav-menu-fixer.js"></script>-->
-
-    <script src="scripts/libs/jquery.fullPage.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/jquery.fullPage.css" rel="stylesheet" type="text/css">
-    <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage();
-        });
-        anchors: ['top'];
-    </script>
-
-    <script src="scripts/fancy-img.js"></script>
-    <script src="scripts/dropdown-phones.js"></script>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/slick.css" rel="stylesheet" type="text/css">
+    <link href="styles/slick-theme.css" rel="stylesheet" type="text/css">
     <title>Poland Landing</title>
-
 </head>
 <body>
-<div id="fullpage">
-    <section class="section" data-anchor="top"><div class="first-block scroll">
-        <div class="centerer">
-            <div class="top-section" id="top">
-                <div class="banner">
-                    <a href="#"><img src="img/first-block/wrld-emig-banner.png" alt="banner"></a>
-                </div>
-                <div class="phone-vk">
-                    <div class="phone">
-                        <span>+38 (050) 266 26 56</span>
-                            <div class="phone-list">
-                                <ul>
-                                    <li><a href="#">+38 (050) 266 26 56</a></li>
-                                    <li><a href="#">+38 (050) 266 26 57</a></li>
-                                    <li><a href="#">+38 (050) 266 26 58</a></li>
-                                </ul>
+<nav id="nav-menu" class="go-bot">
+    <div class="centerer">
+        <ul>
+            <li data-menuanchor="services"><a href="#services">Услуги</a></li>
+            <li data-menuanchor="vacancy"><a href="#vacancy">Вакансии</a></li>
+            <li data-menuanchor="execution"><a href="#execution">Этапы оформления</a></li>
+            <li data-menuanchor="feedback"><a href="#feedback">Отзывы</a></li>
+            <li data-menuanchor="about-us"><a href="#about-us">О нас</a></li>
+            <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+            <a href="#" class="request-btn">Оставить заявку</a>
+        </ul>
+    </div>
+</nav>
+    <div id="fullpage">
+        <section class="section" data-anchor="top">
+            <div class="first-block scroll">
+                <div class="centerer">
+                    <div class="top-section" id="">
+                        <div class="banner">
+                            <a href="#"><img src="img/first-block/wrld-emig-banner.png" alt="banner"></a>
+                        </div>
+                        <div class="phone-vk">
+                            <div class="phone">
+                                <span>+38 (050) 266 26 56</span>
+                                    <div class="phone-list">
+                                        <ul>
+                                            <li><a href="#">+38 (050) 266 26 56</a></li>
+                                            <li><a href="#">+38 (050) 266 26 57</a></li>
+                                            <li><a href="#">+38 (050) 266 26 58</a></li>
+                                        </ul>
+                                    </div>
                             </div>
+                            <a href="#">
+                                <div class="vk-logo">В</div>
+                            </a>
+                        </div>
                     </div>
-                    <a href="#">
-                        <div class="vk-logo">В</div>
+                    <div class="mid-section">
+                        <div class="caps-and-bold">годовое приглашение на работу в польше</div>
+                        <div class="guarantee-docs">Гарантия опертивного оформления документов</div>
+                        <a href="#" class="more-btn">Подробнее <span>&#8594;</span></a>
+                    </div>
+                    <div class="circles">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" data-anchor="services">
+            <div class="services scroll">
+                <div class="centerer">
+                    <div class="title">
+                        <span>НАШИ УСЛУГИ</span>
+                    </div>
+                    <div class="text">
+                        <span>Гарантировано качество, скорость и 100% результата</span>
+                    </div>
+                    <div class="service-blocks">
+                        <div class="first-sblock">
+                            <img src="img/services/Rectangle%2051.png" alt="first">
+                                <div class="fb-content">
+                                    Оказываем профессиональную помощь в оформлении визы<br>
+                                    <span class="bold">Срок оформления:</span> от 1 месяца<br>
+                                    <span class="bold">В услугу входит:</span><br>
+                                    <ul>
+                                        <li>консультация по условиям работы;</li>
+                                        <li>запись на подачу документов в визовый центр;</li>
+                                        <li>рекомендации по оформлению документов для консульства</li>
+                                        <li>заполнение анкеты, медстраховка и другие документы</li>
+                                    </ul>
+                                    <a href="#" class="more-btn">Подробнее<span>&#8594;</span></a>
+                                </div>
+                        </div>
+                        <div class="second-block">
+                            <img src="img/services/2nd-img.png" alt="second">
+                            <div class="sb-content">
+                                <span class="block-title">Годовое разрешение на работу</span>
+                                <div class="div-button"> <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a></div>
+                            </div>
+                        </div>
+                        <div class="third-block">
+                            <img src="img/services/3nd-img.png" alt="third">
+                            <div class="tb-content">
+                                <span class="block-title">Трудоустройство в Польшу</span>
+                                <div class="div-button"> <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <section class="section" data-anchor="vacancy">
+            <div class="vacancies scroll">
+                <div class="bigger-ceneterer">
+                <div class="title">
+                        <span>ВАКАНСИИ</span>
+                    </div>
+                <div class="text">
+                        <span>Выбирайте лучшее предложения для себя</span>
+                    </div>
+                <div class="vacancy-block-wrapper">
+                    <div class="vac-1 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Разнорабочие</a>
+                                <span class="vac-salary">ЗП 450-750$</span>
+                            </div>
+                            <div class="vac-content">
+                                Наша компания работает с заводами SAMSUNG (производство холодильников ,стиральных машин),
+                                Electrolux (стиральные машинки), LG (телевизоры, холодильники), AUDI (производство запчастей
+                                к легковым авто) BMW (автозапчасти) McDonald’ s (общественное питание) и другие
+                            </div>
+                        </div>
+                    <div class="vac-2 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Швеи</a>
+                                <span class="vac-salary">ЗП 500-800$</span>
+                            </div>
+                            <div class="vac-content">
+                                Возможно с минимальным опытом работы , а также без опыта,но с желанием обучится швейному делу
+                            </div>
+                        </div>
+                    <div class="vac-3 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Сельхоз</a>
+                                <span class="vac-salary">ЗП  450-700$</span>
+                            </div>
+                            <div class="vac-content">
+                                Сбор урожая, трактористы. Выращивание грибов, овощей, цветов (теплицы), дойка коров, уход за скотом, и т.д.
+                            </div>
+                        </div>
+                    <div class="vac-4 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Общепит</a>
+                                <span class="vac-salary">ЗП 450-700$</span>
+                            </div>
+                            <div class="vac-content">
+                                Общественное питание и отели (официанты, повара, кондитеры, пекари, горничные)
+                            </div>
+                        </div>
+                    <div class="vac-5 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Водители</a>
+                                <span class="vac-salary">ЗП 600-1000$</span>
+                            </div>
+                            <div class="vac-content">
+                                Водители на автокар, а также водители категории С, возможно без опыта
+                            </div>
+                        </div>
+                    <div class="vac-6 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Сиделки</a>
+                                <span class="vac-salary">ЗП 500-800$</span>
+                            </div>
+                            <div class="vac-content">
+                                Девушки и женщины. Желательно с опытом работы и медицинским образованием
+                            </div>
+                        </div>
+                    <div class="vac-7 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Мастера</a>
+                                <span class="vac-salary">ЗП 600-1500$</span>
+                            </div>
+                            <div class="vac-content">
+                                Квалифицированные специалисты на производство (токари, сварщики, мебельщики, столяры,
+                                слесари, электрики, инженеры)
+                            </div>
+                        </div>
+                    <div class="vac-8 vac-ib">
+                            <div class="vac-info">
+                                <a href="#" class="vac-title">Строители</a>
+                                <span class="vac-salary">ЗП 500-1000$</span>
+                            </div>
+                            <div class="vac-content">
+                                Плотники-опалубщики, арматурщики, бетонщики, каменщики, плиточники,
+                                гипсокартонщики, электромонтажники, жестянщики, сантехники, столяры
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section" data-anchor="execution"><div class="execution scroll">
+            <div class="centerer">
+                <div class="title">
+                    <span>ЭТАПЫ ОФОРМЛЕНИЯ</span>
+                </div>
+                <div class="text">
+                    <span>Простота и прозрачность на первом месте</span>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">
+                            1
+                            <div class="step-ico">
+                                <img src="img/execution/003-clipboard.png">
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <div class="step-title">Подписание договора</div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">
+                            2
+                            <div class="step-ico">
+                                <img src="img/execution/004-visa.png">
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <div class="step-title">Получение приглашения на работу</div>
+                            и подготовка необходимых документов для оформления визы
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">
+                            3
+                            <div class="step-ico">
+                                <img src="img/execution/002-reception.png">
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <div class="step-title">Получение визы</div>
+                            и переговоры с работодателем (жилье, время прибытия и тд.)
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">
+                            4
+                            <div class="step-ico">
+                                <img src="img/execution/001-aeroplane-top-view.png">
+                            </div>
+                        </div>
+                        <div class="step-desc">
+                            <div class="step-title">Выезд клиента на работу в Польшу</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></section>
+        <section class="section" data-anchor="feedback">
+                <div class="feedbacks">
+                    <div class="slicker centerer">
+                        <div class="div-to-slide">
+                            <div class="title">
+                                <span>ОТЗЫВЫ КЛИЕНТОВ</span>
+                            </div>
+                            <div class="text">
+                                <span>Вся правда о нас с первых уст. Честность наше все</span>
+                            </div>
+                            <div class="counter">
+                                <span class="current">1</span>/<span class="max">5</span>
+                            </div>
+                            <div class="feedback-wrapper">
+                                <div class="arrow-left"><span>&#8592;</span></div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YmKJXME5_2c" frameborder="0" allowfullscreen></iframe>
+                                <div class="person">
+                                    <div class="name">Ольга Чепиль</div>
+                                    <div class="position">Работница завода оконной гранитуры</div>
+                                    <div class="profile">Профиль:
+                                        <a href="#">
+                                            <div class="vk-logo">В</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="arrow-right"><span>&#8594;</span></div>
+                            </div>
+                        </div>
+                        <div class="div-to-slide">
+                            <div class="title">
+                                <span>ОТЗЫВЫ КЛИЕНТОВ</span>
+                            </div>
+                            <div class="text">
+                                <span>Вся правда о нас с первых уст. Честность наше все</span>
+                            </div>
+                            <div class="counter">
+                                <span class="current">2</span>/<span class="max">5</span>
+                            </div>
+                            <div class="feedback-wrapper">
+                                <div class="arrow-left"><span>&#8592;</span></div>
+                                <img src="img/feedback/girl-895456_640.png" alt="some-girl">
+                                <div class="person">
+                                    <div class="name">Яна Пивовар</div>
+                                    <div class="position">Хочу поделится опытом от сотрудничества с агентством "Ворлд-Эмигрейшн".
+                                        Мой муж обратился за помощью в оформлении пакета документов для получения рабочей визы
+                                        и дальнейшего трудоустройства в Польше. Учитывая ситуацию
+                                        с записями на подачу по Харьковскому региону, документы сделаны быстро, визу
+                                        получил поехал на заранее оговоренную работу. Работа на современной мебельной фабрике,
+                                        жилье обеспечивает работодатель все необходимое для жизни есть. Сейчас в Польше делает
+                                        вид на жительство. Мы с дочерью так же в ближайшее время собираемся поехать в Польшу
+                                        к нашему папе и мужу. Оформление уже наших документов доверим также "Ворлд-Эмигрейшн". Рекомендую.  </div>
+                                    <div class="profile">Профиль:
+                                        <a href="#">
+                                            <div class="vk-logo">В</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="arrow-right"><span>&#8594;</span></div>
+                            </div>
+                        </div>
+                        <div class="div-to-slide write-us">
+                            <div class="title">
+                                <span>НАПИШИТЕ НАМ</span>
+                            </div>
+                            <div class="text">
+                                <span>Если у вас есть вопросы, оставьте ваш номер телефона и мы перезвоним в ближайшее время</span>
+                            </div>
+                            <div class="feedback-wrapper">
+                                <div class="arrow-left"><span>&#8592;</span></div>
+                                <form action="">
+                                    <div class="name-input">
+                                        <input type="text" value="Ваше имя">
+                                    </div>
+                                    <div class="phone-input">
+                                        <input type="tel" value="Телефон">
+                                    </div>
+                                    <input type="button" class="btn-send" value="Отправить">
+                                </form>
+                                <div class="arrow-right"><span>&#8594;</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section" data-anchor="about-us"><div class="about-us scroll">
+            <div class="centerer">
+                <div class="title">
+                    <span>О НАС</span>
+                </div>
+                <div class="text">
+                    <span>Несколько слов о нашей компании</span>
+                </div>
+                <div class="license1">
+                    <a href="img/about-us/license1-big.png"class="docs">
+                        <img src="img/about-us/license1.png" alt="licence1">
                     </a>
                 </div>
-            </div>
-            <div class="mid-section">
-                <div class="caps-and-bold">годовое приглашение на работу в польше</div>
-                <div class="guarantee-docs">Гарантия опертивного оформления документов</div>
-                <a href="#" class="more-btn">Подробнее <span>&#8594;</span></a>
-            </div>
-            <div class="circles">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
-        </div>
-    </div></section>
-    <!--<nav id="nav-menu" class="default">
-        <div class="centerer">
-            <ul>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#vacancy">Вакансии</a></li>
-                <li><a href="#execution">Этапы оформления</a></li>
-                <li><a href="#feedback">Отзывы</a></li>
-                <li><a href="#about-us">О нас</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-                <a href="#" class="request-btn">Оставить заявку</a>
-            </ul>
-        </div>
-    </nav>-->
-    <section class="section"><div class="services scroll">
-        <a href="" id="services"></a>
-        <div class="centerer">
-            <div class="title">
-                <span>НАШИ УСЛУГИ</span>
-            </div>
-            <div class="text">
-                <span>Гарантировано качество, скорость и 100% результата</span>
-            </div>
-            <div class="service-blocks">
-                <div class="first-sblock">
-                    <img src="img/services/Rectangle%2051.png" alt="first">
-                        <div class="fb-content">
-                            Оказываем профессиональную помощь в оформлении визы<br>
-                            <span class="bold">Срок оформления:</span> от 1 месяца<br>
-                            <span class="bold">В услугу входит:</span><br>
-                            <ul>
-                                <li>консультация по условиям работы;</li>
-                                <li>запись на подачу документов в визовый центр;</li>
-                                <li>рекомендации по оформлению документов для консульства</li>
-                                <li>заполнение анкеты, медстраховка и другие документы</li>
-                            </ul>
-                            <a href="#" class="more-btn">Подробнее<span>&#8594;</span></a>
-                        </div>
+                <div class="license2">
+                    <a href="img/about-us/license2-big.png" class="docs">
+                        <img src="img/about-us/license2.png" alt="licence2">
+                    </a>
                 </div>
-                <div class="second-block">
-                    <img src="img/services/2nd-img.png" alt="second">
-                    <div class="sb-content">
-                        <span class="block-title">Годовое разрешение на работу</span>
-                        <div class="div-button"> <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a></div>
+                <div class="about-us-text">
+                    <div class="found">
+                        World Emigration - молодая компания, основана в 2016 году.
                     </div>
-                </div>
-                <div class="third-block">
-                    <img src="img/services/3nd-img.png" alt="third">
-                    <div class="tb-content">
-                        <span class="block-title">Трудоустройство в Польшу</span>
-                        <div class="div-button"> <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a></div>
+                    <div class="sphere">
+                        <span class="bold">Главная сфера деятельности</span> - трудоустройство в Польше.
+                    </div>
+                    <div class="principles">
+                        <span class="bold">Принцип работы: </span><br>
+                        Сопровождение и помощь на всех этапах обеспечения работой: от получения приглашения работодателя, до поселения в Польше.
+                    </div>
+                    <div class="why-we">
+                        <span class="bold">Почему World Emigration?</span>
+                        <ul>
+                            <li>самые низкие цены на рынке;</li>
+                            <li>полное сопровождение;</li>
+                            <li>индивидуальный подход при подборе вакансий</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </div></section>
-    <section class="section"><div class="vacancies scroll">
-        <a id="vacancy"></a>
-        <div class="bigger-ceneterer">
-            <div class="title">
-                    <span>ВАКАНСИИ</span>
+        </div></section>
+        <section class="section fp-auto-height" data-anchor="contacts"><div class="contacts scroll">
+                <div class="title">
+                    <span>КОНТАКТЫ</span>
                 </div>
-            <div class="text">
-                    <span>Выбирайте лучшее предложения для себя</span>
+                <div class="text">
+                    <span>Уже сейчас вы можете изменить свою жизнь - пишите нам</span>
                 </div>
-            <div class="vacancy-block-wrapper">
-                <div class="vac-1 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Разнорабочие</a>
-                            <span class="vac-salary">ЗП 450-750$</span>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10260.040015940536!2d36.23886148083912!3d49.9924218984825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f216e73e37%3A0xcb16d0432a6b205c!2z0LLRg9C70LjRhtGPINCa0L7RgNC-0LvQtdC90LrQsCwgMjUsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2s!4v1500469766802" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="address">
+                        <div class="firm-name">ООО "World Emigration"</div>
+                        <div class="firm-address">г. Харьков, ул. Короленка 25. Офис №4<br>
+                        (ст. м. Майдан Конституции, бывшая Советская)</div>
+                        <a href="#" class="email">world2016_emig@ukr.net</a><br>
+                        <a href="#">+38 (066) 789 90 90</a><br>
+                        <a href="#">+38 (073) 789 90 90</a><br>
+                        <a href="#">+38 (096) 789 90 90</a><br>
+                        <div class="btn-address">
+                            <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a>
                         </div>
-                        <div class="vac-content">
-                            Наша компания работает с заводами SAMSUNG (производство холодильников ,стиральных машин),
-                            Electrolux (стиральные машинки), LG (телевизоры, холодильники), AUDI (производство запчастей
-                            к легковым авто) BMW (автозапчасти) McDonald’ s (общественное питание) и другие
-                        </div>
-                    </div>
-                <div class="vac-2 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Швеи</a>
-                            <span class="vac-salary">ЗП 500-800$</span>
-                        </div>
-                        <div class="vac-content">
-                            Возможно с минимальным опытом работы , а также без опыта,но с желанием обучится швейному делу
-                        </div>
-                    </div>
-                <div class="vac-3 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Сельхоз</a>
-                            <span class="vac-salary">ЗП  450-700$</span>
-                        </div>
-                        <div class="vac-content">
-                            Сбор урожая, трактористы. Выращивание грибов, овощей, цветов (теплицы), дойка коров, уход за скотом, и т.д.
-                        </div>
-                    </div>
-                <div class="vac-4 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Общепит</a>
-                            <span class="vac-salary">ЗП 450-700$</span>
-                        </div>
-                        <div class="vac-content">
-                            Общественное питание и отели (официанты, повара, кондитеры, пекари, горничные)
-                        </div>
-                    </div>
-                <div class="vac-5 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Водители</a>
-                            <span class="vac-salary">ЗП 600-1000$</span>
-                        </div>
-                        <div class="vac-content">
-                            Водители на автокар, а также водители категории С, возможно без опыта
-                        </div>
-                    </div>
-                <div class="vac-6 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Сиделки</a>
-                            <span class="vac-salary">ЗП 500-800$</span>
-                        </div>
-                        <div class="vac-content">
-                            Девушки и женщины. Желательно с опытом работы и медицинским образованием
-                        </div>
-                    </div>
-                <div class="vac-7 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Мастера</a>
-                            <span class="vac-salary">ЗП 600-1500$</span>
-                        </div>
-                        <div class="vac-content">
-                            Квалифицированные специалисты на производство (токари, сварщики, мебельщики, столяры,
-                            слесари, электрики, инженеры)
-                        </div>
-                    </div>
-                <div class="vac-8 vac-ib">
-                        <div class="vac-info">
-                            <a href="#" class="vac-title">Строители</a>
-                            <span class="vac-salary">ЗП 500-1000$</span>
-                        </div>
-                        <div class="vac-content">
-                            Плотники-опалубщики, арматурщики, бетонщики, каменщики, плиточники,
-                            гипсокартонщики, электромонтажники, жестянщики, сантехники, столяры
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div></section>
-    <section class="section"><div class="execution scroll">
-        <a id="execution"></a>
-        <div class="centerer">
-            <div class="title">
-                <span>ЭТАПЫ ОФОРМЛЕНИЯ</span>
-            </div>
-            <div class="text">
-                <span>Простота и прозрачность на первом месте</span>
-            </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">
-                        1
-                        <div class="step-ico">
-                            <img src="img/execution/003-clipboard.png">
-                        </div>
-                    </div>
-                    <div class="step-desc">
-                        <div class="step-title">Подписание договора</div>
                     </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">
-                        2
-                        <div class="step-ico">
-                            <img src="img/execution/004-visa.png">
-                        </div>
-                    </div>
-                    <div class="step-desc">
-                        <div class="step-title">Получение приглашения на работу</div>
-                        и подготовка необходимых документов для оформления визы
-                    </div>
+        </div></section>
+        <section class="section fp-auto-height">
+            <footer>
+            <!--<a href="#">
+                <div class="to-top">
+                &uarr;
                 </div>
-                <div class="step">
-                    <div class="step-number">
-                        3
-                        <div class="step-ico">
-                            <img src="img/execution/002-reception.png">
-                        </div>
-                    </div>
-                    <div class="step-desc">
-                        <div class="step-title">Получение визы</div>
-                        и переговоры с работодателем (жилье, время прибытия и тд.)
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">
-                        4
-                        <div class="step-ico">
-                            <img src="img/execution/001-aeroplane-top-view.png">
-                        </div>
-                    </div>
-                    <div class="step-desc">
-                        <div class="step-title">Выезд клиента на работу в Польшу</div>
-                    </div>
-                </div>
+            </a>-->
+                <a href="#" class="scrollToTop">Push me</a>
+            <div class="all-rights">
+                Все права защищены <span>&copy;</span> 2017
             </div>
-        </div>
-    </div></section>
-    <section class="section"><div class="feedbacks scroll">
-        <a id="feedback"></a>
-        <div class="centerer">
-            <div class="title">
-                <span>ОТЗЫВЫ КЛИЕНТОВ</span>
-            </div>
-            <div class="text">
-                <span>Вся правда о нас с первых уст. Честность наше все</span>
-            </div>
-            <div class="counter"><span class="current">1</span>/<span class="max">5</span></div>
-            <div class="feedback-wrapper">
-                <div class="arrow-left"><a href="#"><span>&#8592;</span></a></div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YmKJXME5_2c" frameborder="0" allowfullscreen></iframe>
-                <div class="person">
-                    <div class="name">Ольга Чепиль</div>
-                    <div class="position">Работница завода оконной гранитуры</div>
-                    <div class="profile">Профиль:
-                        <a href="#">
-                            <div class="vk-logo">В</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="arrow-right"><a href="#"><span>&#8594;</span></a></div>
-            </div>
-        </div>
-    </div></section>
-    <section class="section"><div class="about-us scroll">
-        <a id="about-us"></a>
-        <div class="centerer">
-            <div class="title">
-                <span>О НАС</span>
-            </div>
-            <div class="text">
-                <span>Несколько слов о нашей компании</span>
-            </div>
-            <div class="license1">
-                <a href="img/about-us/license1-big.png"class="docs">
-                    <img src="img/about-us/license1.png" alt="licence1">
-                </a>
-            </div>
-            <div class="license2">
-                <a href="img/about-us/license2-big.png" class="docs">
-                    <img src="img/about-us/license2.png" alt="licence2">
-                </a>
-            </div>
-            <div class="about-us-text">
-                <div class="found">
-                    World Emigration - молодая компания, основана в 2016 году.
-                </div>
-                <div class="sphere">
-                    <span class="bold">Главная сфера деятельности</span> - трудоустройство в Польше.
-                </div>
-                <div class="principles">
-                    <span class="bold">Принцип работы: </span><br>
-                    Сопровождение и помощь на всех этапах обеспечения работой: от получения приглашения работодателя, до поселения в Польше.
-                </div>
-                <div class="why-we">
-                    <span class="bold">Почему World Emigration?</span>
-                    <ul>
-                        <li>самые низкие цены на рынке;</li>
-                        <li>полное сопровождение;</li>
-                        <li>индивидуальный подход при подборе вакансий</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div></section>
-    <section class="section"><div class="contacts scroll">
-        <a id="contacts"></a>
-            <div class="title">
-                <span>КОНТАКТЫ</span>
-            </div>
-            <div class="text">
-                <span>Уже сейчас вы можете изменить свою жизнь - пишите нам</span>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10260.040015940536!2d36.23886148083912!3d49.9924218984825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f216e73e37%3A0xcb16d0432a6b205c!2z0LLRg9C70LjRhtGPINCa0L7RgNC-0LvQtdC90LrQsCwgMjUsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2s!4v1500469766802" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <div class="address">
-                    <div class="firm-name">ООО "World Emigration"</div>
-                    <div class="firm-address">г. Харьков, ул. Короленка 25. Офис №4<br>
-                    (ст. м. Майдан Конституции, бывшая Советская)</div>
-                    <a href="#" class="email">world2016_emig@ukr.net</a><br>
-                    <a href="#">+38 (066) 789 90 90</a><br>
-                    <a href="#">+38 (073) 789 90 90</a><br>
-                    <a href="#">+38 (096) 789 90 90</a><br>
-                    <div class="btn-address">
-                        <a href="#" class="more-btn">Подробнее  <span>&#8594;</span></a>
-                    </div>
-                </div>
-            </div>
-    </div></section>
-    <section class="section fp-auto-height"><footer>
-        <a href="#top"><div class="to-top">
-            &uarr;
-        </div></a>
-        <div class="all-rights">
-            Все права защищены <span>&copy;</span> 2017
-        </div>
-    </footer></section>
-</div>
+            </footer>
+        </section>
+    </div>
+<script src="scripts/libs/jquery-3.2.1.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="scripts/libs/jquery.fancybox.min.js"></script>
+<script src="scripts/libs/jquery.fullPage.min.js"></script>
+<script src="scripts/libs/slick.min.js"></script>
+<script src="scripts/dropdown-phones.js"></script>
+<script src="scripts/fancy-img.js"></script>
 
+<script src="scripts/fuck.js"></script>
+<script src="scripts/slick-slider.js"></script>
 </body>
 </html>

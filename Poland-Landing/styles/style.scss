@@ -27,7 +27,7 @@ $black-border:1px solid black;
   text-align: center;
   margin: 0 0 20px 0;
 }
-/*______________________________________________________________*/
+/*_________________________General____________________________*/
 @font-face {
   font-family: 'MyriadPro';
   src: url(../fonts/MyriadPro/MyriadPro-Regular.otf);
@@ -85,7 +85,7 @@ $phone-span-font-size:28px;
 }
 .top-section{
   .banner{
-    margin-top: 30px;
+    margin-top: 65px;
     float: left;
   }
   .vk-logo, .phone, .phone-list{
@@ -103,9 +103,9 @@ $phone-span-font-size:28px;
       @include border-radius(50%);
       background: #00528f;
     }
-    .vk-logo:hover{
+    /*.vk-logo:hover{
       background: #0079d2;
-    }
+    }*/
   }
   .phone-vk{
     float: right;
@@ -117,9 +117,9 @@ $phone-span-font-size:28px;
       margin-left: 50px;
       vertical-align: bottom;
       position: relative;
-      &:hover{
+     /* &:hover{
         cursor: pointer;
-      }
+      }*/
       ul{
         $ul-width:250px;
         position: absolute;
@@ -132,10 +132,10 @@ $phone-span-font-size:28px;
           margin-top: 20px;
           a{
             font-size: 20px;
-            &:hover{
+            /*&:hover{
               color: #959595;
               text-decoration: underline;
-            }
+            }*/
           }
         }
       }
@@ -154,12 +154,11 @@ $phone-span-font-size:28px;
     clear: both;
   }
 }
-
 .mid-section{
   float: right;
   width: 500px;
   margin-right: 100px;
-  margin-top: 180px;
+  margin-top: 140px;
   .caps-and-bold{
     font-size: 35px;
     color: #ffffff;
@@ -175,14 +174,15 @@ $phone-span-font-size:28px;
   .more-btn{
     @extend %btn;
     font-weight: bold;
-    &:hover{
+    /*&:hover{
       background: #ff353b;
       color: #ffffff;
-    }
+    }*/
   }
 }
 .circles{
-  margin-top: 430px;
+  margin-top: 350px;
+  padding-bottom: 90px;
   /*position: absolute;*/
  a{
    display: block;
@@ -195,9 +195,9 @@ $phone-span-font-size:28px;
      margin-bottom: 0;
    }
  }
-  a:hover{
+ /* a:hover{
     background: #00528f;
-  }
+  }*/
 }
 /*________________________________Nav__________________________________________*/
 #nav-menu{
@@ -215,42 +215,45 @@ $phone-span-font-size:28px;
     }
     a{
       color: #000000;
-      padding: 40px 25px;
+      padding: 30px 25px;
       font-size: 20px;
     }
-    a:hover{
+   /* a:hover{
       color: #fc3e3f;
       background: #e3e7e9;
-    }
+    }*/
     .request-btn{
       color: #ffffff;
       background: #f90c17;
-      padding: 20px 35px 20px 35px;
+      padding: 0 35px;
+      line-height: 50px;
       float: right;
       margin-top: 20px;
     }
-    .request-btn:hover{
+    /*.request-btn:hover{
       background: #ff4a46;
       color: #ffffff;
-    }
+    }*/
   }
-
 }
-#nav-menu.default{
+#nav-menu.go-bot{
   width: 100%;
-  transition: all 1s;
- /* position: fixed;*/
-  bottom: 0;
+  transition: top 1s;
+  position: fixed;
+  z-index: 3;
+  top: calc(100% - 84px);
 }
-#nav-menu.fixed{
+#nav-menu.go-top{
   top:0;
   width: 100%;
   position: fixed;
   z-index: 3;
+  transition: top 1s;
 }
 /*___________________________________Services_________________________________*/
 .services {
   .title {
+    margin-top: 60px;
   @extend %title
   }
   .text {
@@ -262,10 +265,10 @@ $phone-span-font-size:28px;
       @extend %btn;
       padding: 15px 80px;
       font-weight: bold;
-      &:hover{
+      /*&:hover{
         background: #ff353b;
         color: #ffffff;
-      }
+      }*/
     }
     .first-sblock, .second-block, .third-block {
       display: inline-block;
@@ -325,7 +328,8 @@ $phone-span-font-size:28px;
 .vacancies {
   padding-bottom: 20px;
   .title {
-    @extend %title
+    margin-top: 60px;
+    @extend %title;
   }
   .text {
     @extend %text
@@ -335,11 +339,11 @@ $phone-span-font-size:28px;
     padding: 30px;
     height: 13rem;
   }
-  .vac-title:hover{
+  /*.vac-title:hover{
     background: #0079d4;
     padding: 5px;
     opacity: 0.8;
-  }
+  }*/
   .vac-1{
     background: url("../img/vacancies/1.png") no-repeat;
     width: 40%;
@@ -498,6 +502,7 @@ $phone-span-font-size:28px;
 .execution{
   background: url("../img/execution/bg.png");
   .title {
+    padding-top: 140px;
     @extend %title;
   }
   .text {
@@ -533,41 +538,43 @@ $phone-span-font-size:28px;
   }
 }
 /*___________________________________Feedbacks_________________________________*/
-.feedbacks{
-  .title{
+.feedbacks {
+  .title {
+    margin-top: 60px;
     @extend %title;
   }
-  .text{
+  .text {
     @extend %text;
   }
-  .counter{
+  .counter {
     font-size: 40px;
     text-align: center;
     margin-bottom: 40px;
   }
-  .feedback-wrapper{
+  .feedback-wrapper {
     width: 100%;
     height: 100%;
     display: table;
     margin-bottom: 40px;
-      .arrow-left, iframe, .person, .arrow-right{
-       /*display: inline-block;*/
-        display: table-cell;
-        vertical-align: middle;
-      }
+    .arrow-left, iframe, .person, .arrow-right {
+      /*display: inline-block;*/
+      display: table-cell;
+      vertical-align: middle;
+    }
     .arrow-left, .arrow-right {
       /*padding: 10% 0;*/
+      cursor: pointer;
       span {
         color: #ff0000;
         font-size: 60px;
         font-weight: bold;
       }
     }
-    .arrow-left{
+    .arrow-left {
       /*float: left;*/
       padding-right: 20px;
     }
-    .arrow-right{
+    .arrow-right {
       /*float: right;*/
       padding-left: 20px;
 
@@ -586,7 +593,8 @@ $phone-span-font-size:28px;
       .profile {
         font-size: 18px;
         margin-top: 20px;
-        a{
+        width: 300px;
+        a {
           color: #ffffff;
           font-size: 28px;
           .vk-logo {
@@ -600,19 +608,51 @@ $phone-span-font-size:28px;
             margin-right: 150px;
 
           }
-          .vk-logo:hover {
+          /*.vk-logo:hover {
             background: #0079d2;
-          }
+          }*/
         }
       }
     }
+    img{
+      width: 200px;
+    }
+  }
+  .write-us{
+    text-align: center;
+    .text{
+      width: 700px;
+      margin: 0 auto 150px auto;
+    }
+    .name-input, .phone-input{
+      input{
+        width: 500px;
+        padding: 10px 50px;
+        color: #c2c2c2;
+        border:1px solid #c2c2c2;
+
+      }
+    }
+    .phone-input{
+      margin-top: 30px;
+    }
+    .btn-send{
+      color: rgb(230, 230, 230);
+      font-size: 16px;
+      padding: 0 50px;
+      line-height: 50px;
+      background: #ff0000;
+      border: none;
+      margin-top: 50px;
+      cursor: pointer;
+    }
   }
 }
-
 /*___________________________________About us_________________________________*/
 .about-us{
   background: url("../img/about-us/canyon-bg.png");
   .title{
+    padding-top: 120px;
     @extend %title;
   }
   .text{
@@ -640,6 +680,7 @@ $phone-span-font-size:28px;
 /*___________________________________Contacts_________________________________*/
 .contacts{
   .title{
+    padding-top: 105px;
     @extend %title;
   }
   .text{
@@ -659,14 +700,13 @@ $phone-span-font-size:28px;
     text-align: center;
     font-size: 25px;
     top: 0;
-
     a{
       color: #ffffff;
     }
-    a:hover{
+   /* a:hover{
       color: #000e5e;
       text-decoration: underline;
-    }
+    }*/
     .email{
       line-height: 60px;
     }
@@ -680,11 +720,11 @@ $phone-span-font-size:28px;
     .more-btn{
       @extend %btn;
     }
-    .more-btn:hover{
+   /* .more-btn:hover{
       text-decoration: none;
       background: #ff443a;
       color: #ffffff;
-    }
+    }*/
   }
 }
 footer{
@@ -705,5 +745,635 @@ footer{
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 18px;
+  }
+}
+/*_________________________________________Media_____________________________________________*/
+@media screen and (max-width: 1280px){
+  .fp-tableCell{
+    vertical-align: top;
+    height: 100% !important;
+  }
+  .first-block{
+    .circles{
+      margin-top: 420px;
+    }
+  }
+  .services{
+    .title{
+      margin-top: 0;
+    }
+  }
+  .vacancies{
+    .title{
+      margin-top: -150px;
+    }
+  }
+  .execution{
+    margin-top: -340px;
+  }
+  .feedbacks{
+    margin-top: -340px;
+    .title{
+      margin-top: 0px;
+      padding-top: 0;
+    }
+  }
+  .about-us{
+    margin-top: -500px;
+  }
+  .contacts{
+    margin-top: -500px;
+    .title{
+      padding: 0;
+      margin: 0;
+    }
+  }
+  footer{
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1024px){
+ /*hovers*/
+  .top-section{
+    a{
+      .vk-logo:hover{
+        background: #0079d2;
+      }
+    }
+  }
+  .phone-vk{
+    .phone-list{
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  ul {
+    li {
+      a {
+        &:hover {
+          color: #959595;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .mid-section{
+      .more-btn{
+        &:hover{
+          background: #ff353b;
+          color: #ffffff;
+        }
+      }
+  }
+  .circles{
+    a:hover{
+      background: #00528f;
+    }
+  }
+  #nav-menu{
+    ul{
+      a:hover{
+        color: #fc3e3f;
+        background: #e3e7e9;
+      }
+      .request-btn:hover{
+        background: #ff4a46;
+        color: #ffffff;
+      }
+    }
+  }
+  .services {
+    .service-blocks {
+      .more-btn{
+        &:hover{
+          background: #ff353b;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .vacancies {
+    .vac-title:hover{
+      background: #0079d4;
+      padding: 5px;
+      opacity: 0.8;
+    }
+  }
+  .feedbacks {
+    .profile {
+      a{
+        .vk-logo:hover {
+          background: #0079d2;
+        }
+      }
+    }
+  }
+  .contacts{
+    .address{
+      a:hover{
+        color: #000e5e;
+        text-decoration: underline;
+      }
+      .more-btn:hover{
+        text-decoration: none;
+        background: #ff443a;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  .centerer{
+    padding: 0 15px;
+  }
+  #nav-menu{
+    ul{
+      a{
+        padding: 30px 20px;
+        font-size: 18px;
+      }
+      .request-btn{
+        line-height: 40px;
+        margin: 20px 0;
+      }
+    }
+  }
+  .services{
+    .service-blocks{
+      .first-sblock, .second-block, .third-block {
+        display: block;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        margin-top: 30px;
+      }
+    }
+  }
+  .vacancies{
+    .title{
+      margin-top: -10px;
+    }
+    .vac-ib{
+      padding: 10px;
+    }
+   .vac-1, .vac-2, .vac-3, .vac-4,.vac-5,.vac-6,.vac-7, .vac-8{
+     .vac-info{
+       .vac-title{
+         font-size: 18px;
+       }
+       .vac-salary{
+         font-size: 14px;
+         padding: 4px;
+       }
+     }
+   }
+  }
+  .execution{
+    margin-top: -100px;
+    .title{
+      padding-top: 50px;
+    }
+  }
+  .feedbacks{
+    margin-top: -200px;
+    .feedback-wrapper{
+      .arrow-left, .arrow-right {
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .about-us{
+    margin-top: -400px;
+    .title{
+      padding-top: 50px;
+    }
+  }
+  .contacts{
+    margin-top: -450px ;
+  }
+}
+@media screen and (max-width: 768px){
+  .top-section{
+    .banner{
+      width: 35%;
+      margin-top: 35px;
+    }
+    .phone-vk{
+      span{
+        font-size: 18px;
+      }
+    }
+  }
+  .mid-section{
+    width: 400px;
+    margin-right: 0;
+    .caps-and-bold{
+      font-size: 25px;
+    }
+    .guarantee-docs{
+      font-size: 18px;
+    }
+  }
+  .first-block{
+    .circles{
+      margin-top: 290px;
+      padding-bottom: 40px;
+    }
+  }
+  #nav-menu{
+    ul{
+      a{
+        padding: 20px 10px;
+        font-size: 16px;
+      }
+      .request-btn{
+        line-height: 40px;
+        margin: 10px 0;
+      }
+    }
+  }
+  .services{
+    .title{
+      padding: 0;
+    }
+    .service-blocks{
+      .fb-content{
+        margin: 10px;
+        font-size: 14px;
+        ul{
+          margin-bottom: 20px;
+        }
+      }
+      .sb-content, .tb-content{
+        .block-title{
+          font-size: 22px;
+        }
+      }
+      .more-btn{
+        padding: 5px 10px;
+        font-size: 16px;
+        margin: 0 60px;
+      }
+    }
+  }
+  .vacancies{
+    .vac-ib{
+      height: 12rem;
+    }
+    .vac-1, .vac-2, .vac-3, .vac-4,.vac-5,.vac-6,.vac-7, .vac-8{
+      .vac-info{
+        .vac-title{
+          font-size: 14px;
+        }
+        .vac-salary{
+          font-size: 11px;
+          padding: 4px;
+        }
+      }
+      .vac-content{
+        font-size: 13px !important;
+      }
+    }
+  }
+  .execution{
+    margin-top: 0;
+    .step-number{
+      font-size: 80px;
+    }
+    .step-ico{
+      width: 40%;
+      left: 35px;
+      bottom: 0;
+    }
+    .step-desc{
+      .step-title{
+        font-size: 16px;
+        height: 60px;
+      }
+    }
+  }
+  .feedbacks{
+    margin-top: 0;
+    iframe{
+      width:350px;
+      height: 215px;
+    }
+    .feedback-wrapper{
+      img{
+        margin-top: 40px;
+      }
+      .person{
+        padding-left: 10px;
+        .position{
+          font-size: 15px;
+        }
+      }
+    }
+    .write-us{
+      .text{
+        margin: 0 auto 100px auto;
+      }
+    }
+  }
+  .about-us {
+    margin-top: 0;
+    .license1, .license2 {
+      margin: 0 0 20px 80px;
+      img {
+        width: 80%;
+      }
+    }
+    .about-us-text{
+      font-size: 15px;
+      float: left;
+      margin-left: 180px;
+      >div{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .contacts{
+    margin-top: 20px;
+    .address{
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 480px){
+  .top-section{
+    a{
+      .vk-logo{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    .banner{
+      width: 35%;
+      margin-top: 35px;
+    }
+    .phone-vk{
+      margin-top: 35px;
+      .phone{
+        margin-right: 20px;
+      }
+      .phone-list{
+        margin-left: 20px;
+      }
+      span{
+        font-size: 18px;
+      }
+    }
+
+  }
+  .mid-section{
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    .caps-and-bold{
+      font-size: 20px;
+    }
+    .guarantee-docs{
+      font-size: 16px;
+    }
+    .more-btn{
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+  }
+  .first-block{
+    .circles{
+      padding-bottom: 65px;
+    }
+  }
+  #nav-menu{
+    ul{
+      a{
+        padding: 10px 5px;
+        font-size: 12px;
+      }
+      .request-btn{
+        line-height: 20px;
+        margin: 5px 130px;
+      }
+    }
+  }
+  #nav-menu.go-bot{
+    top: calc(100% - 64px);
+  }
+  .services{
+    .title{
+      padding: 0;
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    .service-blocks{
+      .fb-content{
+        margin: 10px;
+        font-size: 14px;
+        ul{
+          margin-bottom: 20px;
+        }
+      }
+      .sb-content, .tb-content{
+        .block-title{
+          font-size: 20px;
+        }
+      }
+      .more-btn{
+        padding: 5px 10px;
+        font-size: 14px;
+        margin: 0 60px;
+      }
+    }
+    .service-blocks{
+      .first-sblock, .second-block, .third-block {
+        display: block;
+        width: 70%;
+        left: 15%;
+        right: 15%;
+        margin-top: 30px;
+      }
+      .sb-content, .tb-content {
+        left: 5%;
+      }
+    }
+  }
+  .vacancies{
+    .title{
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    .vac-ib{
+      height: 100%;
+      float: none;
+    }
+    .vac-1, .vac-2, .vac-3, .vac-4,.vac-5,.vac-6,.vac-7, .vac-8{
+      width: 100%;
+      margin-top: 10px;
+      background-size: cover;
+      .vac-info{
+        .vac-title{
+          font-size: 14px;
+        }
+        .vac-salary{
+          font-size: 11px;
+          padding: 4px;
+        }
+      }
+      .vac-content{
+        font-size: 13px;
+      }
+    }
+  }
+  .execution{
+    .title{
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    margin-top: 0;
+    .step-number{
+      font-size: 80px;
+    }
+    .step-ico{
+      width: 40%;
+      left: 35px;
+      bottom: 0;
+    }
+    .step-desc{
+      font-size: 12px;
+      .step-title{
+        font-size: 14px;
+        height: 60px;
+      }
+    }
+  }
+  .feedbacks{
+    .title{
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    margin-top: -50px;
+    iframe{
+      width:250px;
+      height: 115px;
+    }
+    .feedback-wrapper{
+      display: block;
+      text-align: -webkit-center;
+      img{
+        width: 150px;
+      }
+      .person{
+        padding-left: 10px;
+        .name{
+          font-size: 18px;
+          margin-top: 50px;
+        }
+        .position{
+          font-size: 13px;
+          width: 250px;
+          text-align: justify;
+        }
+        .profile{
+          font-size: 16px;
+          width: 200px;
+          a{
+            .vk-logo{
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      .arrow-left{
+        display: none !important;
+      }
+      .arrow-right{
+        float: right;
+        margin-top: -150px;
+      }
+    }
+      .write-us{
+        text-align: center;
+        .text{
+          width: 300px;
+          margin: 0 auto 15px auto;
+        }
+        .name-input, .phone-input{
+          input{
+            width: 200px;
+          }
+        }
+        .phone-input{
+          margin-top: 15px;
+        }
+        .btn-send{
+          font-size: 14px;
+          padding: 0 20px;
+          line-height: 30px;
+        }
+      }
+  }
+  .about-us {
+    .title{
+      padding: 0;
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    padding-top: 30px;
+    .license1, .license2 {
+      display: table-cell;
+      text-align: -webkit-center;
+      float: none;
+      img {
+        width: 80%;
+      }
+    }
+    .about-us-text{
+      font-size: 13px;
+    /*  float: left;*/
+      margin-left: 20px;
+      margin-top: 10px;
+      >div{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .contacts{
+    .title{
+      padding: 0;
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    margin-top: 20px;
+    .address{
+      font-size: 15px;
+      .more-btn{
+        padding: 5px 20px;
+        font-size: 16px;
+      }
+    }
+  }
+  footer .all-rights{
+    margin: 0;
+    font-size: 14px;
   }
 }
