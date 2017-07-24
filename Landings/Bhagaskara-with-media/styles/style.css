@@ -92,7 +92,10 @@ header, nav, .main-section, .about-us, .section-hat-on-bg, .team-section, .secti
     width: 120px;
     height: 20px;
 }
-.btn-send-email{
+/*.btn-send-email{
+    margin-left: 40px;
+}*/
+.btn-send-mail{
     margin-left: 40px;
 }
 .portfolio-btn{
@@ -106,12 +109,7 @@ header, nav, .main-section, .about-us, .section-hat-on-bg, .team-section, .secti
     white-space: nowrap;
 }
 /*___________________________________Social icons___________________________________________*/
-.fb:hover,.google:hover, .twitter:hover{
-    background: #9f449b;
-}
-.fb:hover span,.google:hover span, .twitter:hover span{
-    color: #ffffff;
-}
+
 .fb, .google, .twitter{
     height: 50px;
     width: 50px;
@@ -144,9 +142,7 @@ header .header-title + p{
 header .header-title + p + p{
     font-size: 30px;
 }
-header .arrow1:hover{
-    background: url("../img/header/arrow1-hover.png") no-repeat;
-}
+
 .header-title{
     font: 90px Arial, sans-serif;
     margin-bottom: 105px;
@@ -183,11 +179,7 @@ header .service, .portfolio, .about, .team, .blog, .contact{
     display: block;
     clear: both;
 }
-.hover:hover{
-    background: url("../img/header/hover-shape.png") no-repeat;
-    height: 181px;
-    width: 167px;
-}
+
 .first-line-icons-wrapper{
     text-align: center;
     margin-top: 170px;
@@ -207,9 +199,7 @@ nav a{
     margin: 65px 15px 35px 2px;
 
 }
-nav a:hover{
-    color: #9f449b;
-}
+
 .nav-items{
     float: right;
 }
@@ -258,9 +248,7 @@ nav a:hover{
     top:2px;
     display: none;
 }
-.gray:hover .blue{
-    display: block;
-}
+
 /*________________________________Main section_About us____________________________________*/
  .about-us{
     background: #ffffff;
@@ -411,9 +399,6 @@ nav a:hover{
     border: 2px solid #684d65;
     margin-right: 8px;
 }
-.statistics a:hover{
-    background: #684d65;
-}
 .circles-nav{
     margin-left: auto;
     margin-right: auto;
@@ -461,9 +446,6 @@ nav a:hover{
     margin-left: 20px;
     position: relative;
 }
-.portfolio-img:hover{
-    opacity: 0.8;
-}
 .plus{
     display: none;
     position: absolute;
@@ -472,9 +454,6 @@ nav a:hover{
     color: #e0e0e0;
     opacity: 0.8;
     left: 25%;
-}
-.portfolio-img:hover .plus{
-    display:block;
 }
 figcaption{
     text-align: center;
@@ -486,10 +465,6 @@ figcaption{
 .tag{
     color: #888888;
     font-size: 25px;
-}
-.portfolio-btn:hover{
-    background: #9f449b;
-    color: #ffffff;
 }
 /*____________________________Contacts_________________________________________________________*/
 .contacts .title-with-corners{
@@ -560,6 +535,42 @@ footer .footer-title{
     margin-bottom: 80px;
 }
 /*____________________________________Media________________________________*/
+@media screen and (min-width: 1023px){
+    .fb:hover,.google:hover, .twitter:hover{
+        background: #9f449b;
+    }
+    .fb:hover span,.google:hover span, .twitter:hover span{
+        color: #ffffff;
+    }
+    header .arrow1:hover{
+        background: url("../img/header/arrow1-hover.png") no-repeat;
+    }
+    .hover:hover{
+        background: url("../img/header/hover-shape.png") no-repeat;
+        height: 181px;
+        width: 167px;
+    }
+    nav a:hover{
+        color: #9f449b;
+    }
+    .gray:hover .blue{
+        display: block;
+    }
+    .statistics a:hover{
+        background: #684d65;
+    }
+    .portfolio-img:hover{
+        opacity: 0.8;
+        cursor:pointer;
+    }
+    .portfolio-img:hover .plus{
+        display:block;
+    }
+    .portfolio-btn:hover{
+        background: #9f449b;
+        color: #ffffff;
+    }
+}
 @media screen  and (max-width:768px){
     .wrapper {
         max-width: 768px;
@@ -869,7 +880,9 @@ footer .footer-title{
         margin-top: 30px;
         margin-right: 70px;
     }
-
+    .btn-send-mail{
+        margin-left:20px;
+    }
     textarea, .input-name, .input-email{
         padding: 5px 0 10px 12px;
         width: 430px;
@@ -1186,7 +1199,9 @@ footer .footer-title{
         margin-top: 30px;
         margin-right: 70px;
     }
-
+    .btn-send-mail{
+        margin-left:20px;
+    }
     textarea, .input-name, .input-email{
         padding: 5px 0 10px 12px;
         width: 230px;
@@ -1499,7 +1514,9 @@ footer .footer-title{
             margin-top: 30px;
             margin-right: 70px;
         }
-
+    .btn-send-mail{
+        margin-left:20px;
+    }
         textarea, .input-name, .input-email{
             padding: 5px 0 10px 12px;
             width: 230px;
@@ -1806,6 +1823,9 @@ footer .footer-title{
     }
     .input-part{
         margin-left: 50px;
+    }
+    .btn-send-mail{
+        margin-left: 20px;
     }
     textarea, .input-name, .input-email{
         padding: 5px 0 10px 12px;
