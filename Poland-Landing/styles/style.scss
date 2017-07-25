@@ -1324,3 +1324,111 @@ footer{
     font-size: 14px;
   }
 }
+@media screen and (max-width: 320px){
+  .centerer{
+    padding: 0 5px;
+  }
+  #nav-menu{
+    ul{
+      a{
+        padding: 5px 15px;
+        font-size: 12px;
+      }
+      .request-btn{
+        line-height: 20px;
+        margin: 5px 97px;
+      }
+    }
+  }
+  .services{
+    .title{
+      padding: 0;
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    .service-blocks{
+      .fb-content{
+        margin: 40px 8px 8px 8px;
+        font-size: 12px;
+        width:100%;
+        ul{
+          margin-bottom: 20px;
+        }
+        .bold{
+          line-height: 8px;
+        }
+      }
+      .sb-content, .tb-content{
+        .block-title{
+          font-size: 20px;
+        }
+      }
+      .more-btn{
+        padding: 5px 10px;
+        font-size: 14px;
+        margin: 0 60px;
+      }
+    }
+    .service-blocks{
+      .first-sblock, .second-block, .third-block {
+        display: block;
+        width: 70%;
+        left: 30px;
+        right: 30px;
+        margin-top: 30px;
+        img{
+          width:115%;
+        }
+      }
+      .sb-content, .tb-content {
+        left: 5%;
+        .div-button{
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+  .execution{
+    /*.title{
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    margin-top: 0;*/
+    .step-number{
+      font-size: 80px;
+    }
+    .step-ico{
+      width: 40%;
+      left: 35px;
+      bottom: 0;
+    }
+    .step-desc{
+      font-size: 12px;
+      .step-title{
+        font-size: 12px;
+        height: 60px;
+      }
+    }
+  }
+  .contacts{
+    .title{
+      padding: 0;
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    margin-top: 20px;
+    .address{
+      font-size: 15px;
+      .more-btn{
+        padding: 5px 20px;
+        font-size: 10px;
+      }
+    }
+  }
+}

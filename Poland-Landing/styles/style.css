@@ -881,5 +881,80 @@ footer .all-rights {
   footer .all-rights {
     margin: 0;
     font-size: 14px; } }
+@media screen and (max-width: 320px) {
+  .centerer {
+    padding: 0 5px; }
+
+  #nav-menu ul a {
+    padding: 5px 15px;
+    font-size: 12px; }
+  #nav-menu ul .request-btn {
+    line-height: 20px;
+    margin: 5px 97px; }
+
+  .services .title {
+    padding: 0;
+    font-size: 25px; }
+  .services .text {
+    font-size: 16px; }
+  .services .service-blocks .fb-content {
+    margin: 40px 8px 8px 8px;
+    font-size: 12px;
+    width: 100%; }
+    .services .service-blocks .fb-content ul {
+      margin-bottom: 20px; }
+    .services .service-blocks .fb-content .bold {
+      line-height: 8px; }
+  .services .service-blocks .sb-content .block-title, .services .service-blocks .tb-content .block-title {
+    font-size: 20px; }
+  .services .service-blocks .more-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0 60px; }
+  .services .service-blocks .first-sblock, .services .service-blocks .second-block, .services .service-blocks .third-block {
+    display: block;
+    width: 70%;
+    left: 30px;
+    right: 30px;
+    margin-top: 30px; }
+    .services .service-blocks .first-sblock img, .services .service-blocks .second-block img, .services .service-blocks .third-block img {
+      width: 115%; }
+  .services .service-blocks .sb-content, .services .service-blocks .tb-content {
+    left: 5%; }
+    .services .service-blocks .sb-content .div-button, .services .service-blocks .tb-content .div-button {
+      margin-top: 80px; }
+
+  .execution {
+    /*.title{
+      font-size: 25px;
+    }
+    .text{
+      font-size: 16px;
+    }
+    margin-top: 0;*/ }
+    .execution .step-number {
+      font-size: 80px; }
+    .execution .step-ico {
+      width: 40%;
+      left: 35px;
+      bottom: 0; }
+    .execution .step-desc {
+      font-size: 12px; }
+      .execution .step-desc .step-title {
+        font-size: 12px;
+        height: 60px; }
+
+  .contacts {
+    margin-top: 20px; }
+    .contacts .title {
+      padding: 0;
+      font-size: 25px; }
+    .contacts .text {
+      font-size: 16px; }
+    .contacts .address {
+      font-size: 15px; }
+      .contacts .address .more-btn {
+        padding: 5px 20px;
+        font-size: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
