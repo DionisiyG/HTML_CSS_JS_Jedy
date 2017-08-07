@@ -26,7 +26,9 @@ window.Todo = {
         spanTaskName.appendChild(document.createTextNode(text));
 
         var test = document.querySelector(".task");
+
         test.appendChild(label);
+
         label.appendChild(inputCheck);
         label.appendChild(spanCustom);
         label.appendChild(spanTaskName);
