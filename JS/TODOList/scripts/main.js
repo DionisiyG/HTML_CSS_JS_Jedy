@@ -10,12 +10,34 @@ window.Todo = {
         Todo.container.addEventListener('click', Todo.onTodolistClicked);
         Todo.renderTasks();
     },
+    addNewTaskRow: function (text) {
+        var inputCheck = document.createElement('input');
+        inputCheck.setAttribute('type', 'checkbox');
+        inputCheck.className = "checkbox";
+
+        var label = document.createElement('label');//label
+        /*label.appendChild(document.createTextNode('text for label'));*/
+
+        var spanCustom = document.createElement('span');
+        spanCustom.className = "checkbox-custom";
+
+        var spanTaskName = document.createElement("task-name");
+        spanTaskName.className = "task-name label";
+        spanTaskName.appendChild(document.createTextNode(text));
+
+        var test = document.querySelector(".task");
+        test.appendChild(label);
+        label.appendChild(inputCheck);
+        label.appendChild(spanCustom);
+        label.appendChild(spanTaskName);
+    },
 
     onAddTaskClicked: function() {
         var taskName = Todo.newTaskInput.value;
         Todo.newTaskInput.value = "";
-        var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);
-        Todo.container.insertAdjacentHTML('afterbegin', taskHTML);
+      /*  var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);*/
+        var taskHTML = Todo.addNewTaskRow(taskName);
+        /*Todo.container.insertAdjacentHTML('afterbegin', taskHTML);*/
         Todo.saveTask(taskName, false);
     },
 
@@ -81,19 +103,20 @@ function wantDelete() {
     window.location.reload(true);
 }
 
-function testNewElem() {
+function testNewElem(text) {
     var inputCheck = document.createElement('input');
     inputCheck.setAttribute('type', 'checkbox');
     inputCheck.className = "checkbox";
 
     var label = document.createElement('label');//label
-    label.appendChild(document.createTextNode('text for label'));
+    /*label.appendChild(document.createTextNode('text for label'));*/
 
     var spanCustom = document.createElement('span');
     spanCustom.className = "checkbox-custom";
 
     var spanTaskName = document.createElement("task-name");
     spanTaskName.className = "task-name label";
+    spanTaskName.appendChild(document.createTextNode(text));
 
     var test = document.querySelector(".task");
     test.appendChild(label);
