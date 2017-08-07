@@ -18,6 +18,11 @@ window.Todo = {
             inputCheck.setAttribute('type', 'checkbox');
             inputCheck.className = "checkbox";
 
+            var deleteBtn = document.createElement('input');
+            deleteBtn.setAttribute('type', 'button');
+            deleteBtn.className = "delete-btn";
+            deleteBtn.setAttribute('value', 'x');
+
             var label = document.createElement('label');//label
             /*label.appendChild(document.createTextNode('text for label'));*/
 
@@ -36,6 +41,7 @@ window.Todo = {
             label.appendChild(inputCheck);
             label.appendChild(spanCustom);
             label.appendChild(spanTaskName);
+            label.appendChild(deleteBtn);
 
             return liTask.outerHTML;
     },
@@ -47,6 +53,7 @@ window.Todo = {
         Todo.container.insertAdjacentHTML('afterbegin', taskHTML);*/
 
         var taskProp = Todo.addNewTaskRow(taskName);
+        window.location.reload(true);
         Todo.saveTask(taskName, taskProp);
     },
 
@@ -90,6 +97,13 @@ window.Todo = {
     renderTasks: function() {
         for (var i = 0; i < window.localStorage.length; i++) {
             var taskName = window.localStorage.key(i);
+            var taskProp = JSON.parse(window.localStorage.getItem(taskName));
+            Todo.container.insertAdjacentHTML('afterbegin', taskProp);
+
+        }
+
+        /*for (var i = 0; i < window.localStorage.length; i++) {
+            var taskName = window.localStorage.key(i);
             var isCompleted = JSON.parse(window.localStorage.getItem(taskName));
             var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);
 
@@ -101,7 +115,7 @@ window.Todo = {
                 var taskHTML1 = Todo.templateCompleted.replace("<!-- TODO -->", taskName1);
                 Todo.container.insertAdjacentHTML('afterbegin', taskHTML1);
             }
-        }
+        }*/
     }
 }
 
