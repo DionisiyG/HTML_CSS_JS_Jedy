@@ -11,36 +11,43 @@ window.Todo = {
         Todo.renderTasks();
     },
     addNewTaskRow: function (text) {
-        var inputCheck = document.createElement('input');
-        inputCheck.setAttribute('type', 'checkbox');
-        inputCheck.className = "checkbox";
 
-        var label = document.createElement('label');//label
-        /*label.appendChild(document.createTextNode('text for label'));*/
+            var liTask = document.createElement("li");
+            liTask.className = "task";
+            var inputCheck = document.createElement('input');
+            inputCheck.setAttribute('type', 'checkbox');
+            inputCheck.className = "checkbox";
 
-        var spanCustom = document.createElement('span');
-        spanCustom.className = "checkbox-custom";
+            var label = document.createElement('label');//label
+            /*label.appendChild(document.createTextNode('text for label'));*/
 
-        var spanTaskName = document.createElement("task-name");
-        spanTaskName.className = "task-name label";
-        spanTaskName.appendChild(document.createTextNode(text));
+            var spanCustom = document.createElement('span');
+            spanCustom.className = "checkbox-custom";
 
-        var test = document.querySelector(".task");
+            var spanTaskName = document.createElement("task-name");
+            spanTaskName.className = "task-name label";
+            spanTaskName.appendChild(document.createTextNode(text));
 
-        test.appendChild(label);
+            var test = document.querySelector(".task");
 
-        label.appendChild(inputCheck);
-        label.appendChild(spanCustom);
-        label.appendChild(spanTaskName);
+            /*liTask.appendChild(test);*/
+            liTask.appendChild(label);
+
+            label.appendChild(inputCheck);
+            label.appendChild(spanCustom);
+            label.appendChild(spanTaskName);
+
+            return liTask.outerHTML;
     },
 
     onAddTaskClicked: function() {
         var taskName = Todo.newTaskInput.value;
         Todo.newTaskInput.value = "";
-      /*  var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);*/
-        var taskHTML = Todo.addNewTaskRow(taskName);
-        /*Todo.container.insertAdjacentHTML('afterbegin', taskHTML);*/
-        Todo.saveTask(taskName, false);
+        /*var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);
+        Todo.container.insertAdjacentHTML('afterbegin', taskHTML);*/
+
+        var taskProp = Todo.addNewTaskRow(taskName);
+        Todo.saveTask(taskName, taskProp);
     },
 
     onTodolistClicked: function(event) {
@@ -76,14 +83,14 @@ window.Todo = {
         }
     },
 
-    saveTask: function(name, isCompleted) {
-        window.localStorage.setItem(name, JSON.stringify(isCompleted));
+    saveTask: function(name, taskProp) {
+        window.localStorage.setItem(name, JSON.stringify(taskProp));
     },
 
     renderTasks: function() {
         for (var i = 0; i < window.localStorage.length; i++) {
             var taskName = window.localStorage.key(i);
-            var isCompleted = JSON.parse(window.localStorage.getItem(taskName)) === "true";
+            var isCompleted = JSON.parse(window.localStorage.getItem(taskName));
             var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);
 
             if (!isCompleted) {
