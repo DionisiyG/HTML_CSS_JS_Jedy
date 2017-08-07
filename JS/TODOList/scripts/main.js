@@ -89,19 +89,15 @@ function testNewElem() {
     var label = document.createElement('label');//label
     label.appendChild(document.createTextNode('text for label'));
 
-    var test = document.querySelector(".task");
-
     var spanCustom = document.createElement('span');
     spanCustom.className = "checkbox-custom";
 
     var spanTaskName = document.createElement("task-name");
-    spanTaskName.className = "task-name";
+    spanTaskName.className = "task-name label";
 
-
+    var test = document.querySelector(".task");
     test.appendChild(label);
     label.appendChild(inputCheck);
     label.appendChild(spanCustom);
     label.appendChild(spanTaskName);
-
-
 }
