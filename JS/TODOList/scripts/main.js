@@ -80,3 +80,28 @@ function wantDelete() {
     localStorage.clear();
     window.location.reload(true);
 }
+
+function testNewElem() {
+    var inputCheck = document.createElement('input');
+    inputCheck.setAttribute('type', 'checkbox');
+    inputCheck.className = "checkbox";
+
+    var label = document.createElement('label');//label
+    label.appendChild(document.createTextNode('text for label'));
+
+    var test = document.querySelector(".task");
+
+    var spanCustom = document.createElement('span');
+    spanCustom.className = "checkbox-custom";
+
+    var spanTaskName = document.createElement("task-name");
+    spanTaskName.className = "task-name";
+
+
+    test.appendChild(label);
+    label.appendChild(inputCheck);
+    label.appendChild(spanCustom);
+    label.appendChild(spanTaskName);
+
+
+}
