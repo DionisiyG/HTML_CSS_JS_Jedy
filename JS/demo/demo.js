@@ -22,17 +22,27 @@ class Wolf extends Animal{
     run(){
         console.log(`${this.name}! I can run! from-Wolf`);
     }
-    overrideRun(){
+    superRun(){
         super.run();
     }
-
+}
+class Rabbit extends Animal{
+    constructor(name, type, numberOfLegs, sound)  {
+        super(name, type, numberOfLegs);
+        this.sound = sound;
+    }
+    jump(){
+        console.log(`${this.name} jump-jump`);
+    }
 }
 
 let wolf = new Wolf("Wolffy", "Meat eater", "4");
+let rabbit = new Rabbit("Rabby", "Afraider", "4", "fr-fr-fr");
 wolf.animalInfo;
 /*wolf.changeName = "bad wolf";
 wolf.animalInfo;*/
 wolf.run();
-wolf.overrideRun();
+wolf.superRun();
+rabbit.jump();
 
 
