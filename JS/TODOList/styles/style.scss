@@ -62,6 +62,9 @@
     }
   }
 }*/
+#delete-all, #add-task-button, .delete-btn{
+  cursor: pointer;
+}
 form{
   margin: 30px 0;
   textarea{
