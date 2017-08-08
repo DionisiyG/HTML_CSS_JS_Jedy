@@ -1,4 +1,4 @@
-window.Todo = {
+Todo = {
     addTaskButton: document.getElementById("add-task-button"),
     newTaskInput: document.getElementById("new-task-input"),
     deleteAllBtn: document.getElementById("delete-all"),
@@ -9,13 +9,12 @@ window.Todo = {
     setup: function () {
         Todo.addTaskButton.addEventListener('click', Todo.onAddTaskClicked);
         Todo.container.addEventListener('click', Todo.onTodolistClicked);
-         Todo.deleteAllBtn.addEventListener('click', Todo.onWantDeleteClicked);
+            Todo.deleteAllBtn.addEventListener('click', Todo.onWantDeleteClicked);
         Todo.renderTasks();
     },
 
-    onWantDeleteClicked: function () {
-        localStorage.clear();
-        Todo.rerenderPage();
+    saveTask: function (name, taskProp) {
+        localStorage.setItem(name, JSON.stringify(taskProp));
     },
 
     addNewTaskRow: function (text) {
@@ -53,6 +52,53 @@ window.Todo = {
         return liTask.outerHTML;
     },
 
+    renderTasks: function () {
+        for (var i = 0; i < window.localStorage.length; i++) {
+            var taskName = window.localStorage.key(i);
+            var taskProp = JSON.parse(window.localStorage.getItem(taskName));
+            if (taskProp.indexOf('completed') + 1) {
+                taskProp = taskProp.replace(`<input type="checkbox" class="checkbox">`, '<input type="checkbox" class="checkbox" checked>');
+            }
+            Todo.container.insertAdjacentHTML('afterbegin', taskProp);
+
+        }
+        /*for (var i = 0; i < window.localStorage.length; i++) {
+         var taskName = window.localStorage.key(i);
+         var isCompleted = JSON.parse(window.localStorage.getItem(taskName));
+         var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);
+
+         if (!isCompleted) {
+         Todo.container.insertAdjacentHTML('afterbegin', taskHTML);
+         }
+         else {
+         var taskName1 = window.localStorage.key(i);
+         var taskHTML1 = Todo.templateCompleted.replace("<!-- TODO -->", taskName1);
+         Todo.container.insertAdjacentHTML('afterbegin', taskHTML1);
+         }
+         }*/
+    },
+
+    rerenderPage: function () {
+        Todo.container.remove();
+        for (var i = 0; i < window.localStorage.length; i++) {
+            var taskName = window.localStorage.key(i);
+            var taskProp = JSON.parse(window.localStorage.getItem(taskName));
+            Todo.container.insertAdjacentHTML('afterbegin', taskProp);
+        }
+        /* for (var i =  window.localStorage.length; ;){
+         var taskName = window.localStorage.key(i-1);
+         var taskProp = JSON.parse(window.localStorage.getItem(taskName));
+         Todo.container.insertAdjacentHTML('afterbegin', taskProp);
+         break;
+         }*/
+
+    }
+
+    onWantDeleteClicked: function () {
+        localStorage.clear();
+        Todo.rerenderPage();
+    },
+
     onAddTaskClicked: function () {
         var taskName = Todo.newTaskInput.value;
         Todo.newTaskInput.value = "";
@@ -60,8 +106,13 @@ window.Todo = {
          Todo.container.insertAdjacentHTML('afterbegin', taskHTML);*/
 
         var taskProp = Todo.addNewTaskRow(taskName);
+        if(taskName == ""){
+            alert("add some TODO");
+        }
+        else{
+            Todo.saveTask(taskName, taskProp);
+        }
 
-        Todo.saveTask(taskName, taskProp);
     },
 
     onTodolistClicked: function (event) {
@@ -96,54 +147,9 @@ window.Todo = {
             targetElement.remove();
         }
     },
-
-    saveTask: function (name, taskProp) {
-        window.localStorage.setItem(name, JSON.stringify(taskProp));
-    },
-
-    renderTasks: function () {
-        for (var i = 0; i < window.localStorage.length; i++) {
-            var taskName = window.localStorage.key(i);
-            var taskProp = JSON.parse(window.localStorage.getItem(taskName));
-            if (taskProp.indexOf('completed') + 1) {
-                taskProp = taskProp.replace(`<input type="checkbox" class="checkbox">`, '<input type="checkbox" class="checkbox" checked>');
-            }
-            Todo.container.insertAdjacentHTML('afterbegin', taskProp);
-
-        }
-        /*for (var i = 0; i < window.localStorage.length; i++) {
-         var taskName = window.localStorage.key(i);
-         var isCompleted = JSON.parse(window.localStorage.getItem(taskName));
-         var taskHTML = Todo.template.replace("<!-- TODO -->", taskName);
-
-         if (!isCompleted) {
-         Todo.container.insertAdjacentHTML('afterbegin', taskHTML);
-         }
-         else {
-         var taskName1 = window.localStorage.key(i);
-         var taskHTML1 = Todo.templateCompleted.replace("<!-- TODO -->", taskName1);
-         Todo.container.insertAdjacentHTML('afterbegin', taskHTML1);
-         }
-         }*/
-    },
-
-    rerenderPage: function () {
-        Todo.container.remove();
-        for (var i = 0; i < window.localStorage.length; i++) {
-            var taskName = window.localStorage.key(i);
-            var taskProp = JSON.parse(window.localStorage.getItem(taskName));
-            Todo.container.insertAdjacentHTML('afterbegin', taskProp);
-        }
-       /* for (var i =  window.localStorage.length; ;){
-            var taskName = window.localStorage.key(i-1);
-            var taskProp = JSON.parse(window.localStorage.getItem(taskName));
-            Todo.container.insertAdjacentHTML('afterbegin', taskProp);
-            break;
-        }*/
-
-    }
 };
 
-Todo.setup();
+
+document.addEventListener("DOMContentLoaded", Todo.setup());
 
 
