@@ -530,6 +530,37 @@ footer {
 .timer-separator {
   padding: 10px !important; }
 
+/*___________________MOB MENU_____________________*/
+#mob-wrapper {
+  /* display: none;*/ }
+  #mob-wrapper .mob-menu {
+    position: fixed;
+    top: 110px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    background: url(../images/mob-menu-ico.png) no-repeat;
+    cursor: pointer;
+    z-index: 100001; }
+  #mob-wrapper .mob-nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+    margin-top: 9px;
+    background: url("../images/menu-bg.png") repeat; }
+    #mob-wrapper .mob-nav ul {
+      padding: 15px 0 15px 0;
+      margin: auto;
+      display: block; }
+      #mob-wrapper .mob-nav ul li {
+        text-align: center;
+        display: block; }
+        #mob-wrapper .mob-nav ul li a {
+          font-size: 10px; }
+
 /*______________MEDIA_______________________*/
 @media (max-width: 1280px) {
   header .top-part {

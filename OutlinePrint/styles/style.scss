@@ -638,6 +638,42 @@ footer{
 #timer-text-eba8b465b67fc1fe4127bfd98fc02f4d-secundes
 {font-size: 16px !important;}
 .timer-separator{padding: 10px !important;}
+/*___________________MOB MENU_____________________*/
+#mob-wrapper{
+ /* display: none;*/
+  .mob-menu{
+    position: fixed;
+    top: 110px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    background: url(../images/mob-menu-ico.png) no-repeat;
+    cursor: pointer;
+    z-index: 100001;
+  }
+  .mob-nav{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+    margin-top: 9px;
+    background: $bg-menu;
+    ul{
+      padding: 15px 0 15px 0;
+      margin: auto;
+      display: block;
+      li{
+        text-align: center;
+        display: block;
+        a{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
 
 /*______________MEDIA_______________________*/
 
