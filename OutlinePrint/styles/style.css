@@ -594,7 +594,7 @@ footer {
   .work-scheme a:hover {
     text-decoration: underline; } }
 @media (max-width: 1024px) {
-  .nav-fixed a {
+  .nav-fixed nav ul li a {
     font-size: 13px; }
 
   .container {
