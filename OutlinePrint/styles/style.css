@@ -275,10 +275,10 @@ header {
       .production .product-slider .slick-prev::before, .production .product-slider .slick-next::before {
         content: ''; }
     .production .product-slider .slick-prev {
-      left: 400px;
+      left: 30%;
       background-position: 0 0; }
     .production .product-slider .slick-next {
-      right: 400px;
+      right: 30%;
       background-position: -66px 0; }
     .production .product-slider img {
       width: 316px;
