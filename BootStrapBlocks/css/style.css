@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  border: 1px solid black; }
+
+.block-in-div {
+  border: 1px solid black;
+  background: none;
+  /*height: 50px;*/ }
+
+.row {
+  margin-top: 15px; }
+
+.r1 .block-in-div {
+  height: 60px; }
+
+.r2 .col-lg-12 .block-in-div {
+  height: 40px; }
+.r2 .col-lg-8 .block-in-div {
+  height: 205px; }
+.r2 .col-lg-4 {
+  padding-right: 0; }
+  .r2 .col-lg-4 .row .col-lg-12 .block-in-div {
+    height: 40px; }
+  .r2 .col-lg-4 .row .col-lg-8 .block-in-div {
+    margin-top: 15px;
+    height: 150px; }
+
+.r3 .col-lg-6 .block-in-div {
+  height: 220px; }
+
+.r4 .block-in-div {
+  height: 60px; }
+
+.r5 > .col-lg-4 .block-in-div {
+  margin-bottom: 15px; }
+.r5 .col-lg-4 .col-lg-12 {
+  margin-top: -15px; }
+  .r5 .col-lg-4 .col-lg-12 .block-in-div {
+    height: 80px; }
+.r5 .col-lg-8 .block-in-div {
+  height: 175px; }
+
+.r6 .block-in-div {
+  height: 60px;
+  margin-bottom: 15px; }
+
+.active {
+  transition: width 12s, height 5s;
+  height: 100vh !important;
+  width: 84vw !important;
+  position: relative;
+  z-index: 555555; }
+
+/*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@ Todo = {
     setup: function () {
         Todo.addTaskButton.addEventListener('click', Todo.onAddTaskClicked);
         Todo.container.addEventListener('click', Todo.onTodolistClicked);
-            Todo.deleteAllBtn.addEventListener('click', Todo.onWantDeleteClicked);
+        Todo.deleteAllBtn.addEventListener('click', Todo.onWantDeleteClicked);
         Todo.renderTasks();
     },
 
@@ -92,7 +92,7 @@ Todo = {
          break;
          }*/
 
-    }
+    },
 
     onWantDeleteClicked: function () {
         localStorage.clear();
@@ -110,6 +110,7 @@ Todo = {
             alert("add some TODO");
         }
         else{
+            taskName = Math.random().toString(36).substr(2, 9);
             Todo.saveTask(taskName, taskProp);
         }
 
@@ -130,21 +131,32 @@ Todo = {
                 toLineThrough.classList.remove("completed");
             }
 
-            var taskNameElement = targetElement.querySelector(".task-name");
+           /* var taskNameElement = targetElement.querySelector(".task-name");
             var taskName = taskNameElement.innerText;
             var targetHTML = targetElement.outerHTML;
-
-            Todo.saveTask(taskName, targetHTML);
+            Todo.saveTask(taskName, targetHTML);*/
+            var taskName = "";
+            var targetHTML = "";
+            for ( var i = 0, len = localStorage.length; i < len; i++ ) {
+                if (/*targetElement.innerHTML.indexOf('completed'+ 1)*/ toLineThrough.classList.contains("completed"))  {
+                    localStorage.getItem(localStorage.key(i));
+                     taskName = localStorage.key(i);
+                     targetHTML = targetElement.outerHTML;
+                    Todo.saveTask(taskName, targetHTML);
+                }
+            }
         }
         else {
             while (!targetElement.classList.contains("task")) {
                 targetElement = targetElement.parentElement;
             }
-
-            var taskNameElement = targetElement.querySelector(".task-name");
+         /*   var taskNameElement = targetElement.querySelector(".task-name");
             var taskName = taskNameElement.innerText;
             localStorage.removeItem(taskName);
-            targetElement.remove();
+            targetElement.remove();*/
+            for ( var i = 0, len = localStorage.length; i < len; i++ ){
+                
+            }
         }
     },
 };
