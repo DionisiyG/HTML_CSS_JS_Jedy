@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto';
+  color: #2b2b2b; }
+
+img {
+  /*width: 100%;*/
+  height: auto;
+  width: auto\9;
+  /* ie8 */ }
+
+a {
+  text-decoration: none;
+  color: #2b2b2b; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+  .container::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 67px; }
+
+.btn {
+  margin-top: 40px; }
+  .btn a {
+    font-size: 18px;
+    color: #2b2b2b;
+    font-weight: bold;
+    padding: 15px 40px;
+    background: #ffc600; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto.ttf); }
+/*_____________HEADER_________________*/
+header {
+  height: 116px;
+  padding-top: 10px; }
+  header .logo {
+    display: inline-block;
+    float: left; }
+    header .logo span {
+      padding-left: 10px;
+      font-weight: bold;
+      float: right;
+      margin-top: 45px; }
+  header nav {
+    display: inline-block;
+    margin-top: 45px;
+    /* margin-top: 4%;*/
+    vertical-align: top;
+    float: left; }
+    header nav ul {
+      margin-left: 220px; }
+      header nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 40px; }
+
+/*_____________BANNER_________________*/
+.banner {
+  background: url("../img/header/car-banner.png") no-repeat center/cover;
+  height: 530px;
+  position: relative; }
+  .banner .text-block {
+    width: 390px;
+    height: 530px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 36px;
+    position: relative; }
+    .banner .text-block:before {
+      content: '';
+      display: block;
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      position: absolute;
+      width: 500px;
+      left: -500px; }
+    .banner .text-block .text-block-content {
+      height: 300px;
+      position: absolute;
+      top: 25%; }
+      .banner .text-block .text-block-content span {
+        font-weight: bold; }
+  .banner .more-block {
+    display: none;
+    background: #ffffff;
+    color: #000;
+    height: 290px;
+    width: 479px;
+    position: absolute;
+    left: -23%;
+    top: 25%; }
+    .banner .more-block .contacts-content {
+      margin-top: 5%;
+      font-size: 18px;
+      border: 2px solid #ffc600;
+      padding: 35px;
+      margin-left: 39px; }
+      .banner .more-block .contacts-content .ks {
+        margin-right: 18px; }
+
+/*_____________ABOUT US_________________*/
+.about-us {
+  height: 470px; }
+  .about-us .left {
+    float: left;
+    width: 30%; }
+  .about-us .right {
+    float: right;
+    width: 60%; }
+  .about-us .about-title {
+    background: url("../img/about-us/bg-swuare.png") repeat center;
+    width: 390px;
+    height: 470px;
+    position: relative;
+    float: left; }
+    .about-us .about-title:before {
+      content: '';
+      display: block;
+      background: url("../img/about-us/bg-swuare.png") repeat center;
+      height: 470px;
+      position: absolute;
+      width: 500px;
+      left: -500px; }
+    .about-us .about-title .title {
+      font-size: 36px;
+      font-weight: bold;
+      position: absolute;
+      top: 30%;
+      line-height: 48px; }
+  .about-us .about-content {
+    float: left;
+    width: 610px;
+    margin-top: 18%; }
+
+/*_____________WHY WE_________________*/
+.why-we {
+  background: url("../img/why-we/why-bg.png") no-repeat center/cover;
+  color: #ffffff; }
+  .why-we .cntblock {
+    display: inline-block;
+    width: 255px;
+    text-align: center;
+    padding-top: 70px; }
+  .why-we .why-content {
+    text-align: center; }
+    .why-we .why-content .comfort, .why-we .why-content .discount {
+      margin: 0 160px; }
+    .why-we .why-content .why-name {
+      padding: 25px 0 20px 0; }
+    .why-we .why-content .text {
+      line-height: 24px;
+      padding-bottom: 30px; }
+
+/*_____________FEEDBACK_________________*/
+.feedbacks {
+  position: relative; }
+  .feedbacks .title-more {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px 0 35px 0; }
+  .feedbacks .social {
+    text-align: center; }
+    .feedbacks .social .soc-ico {
+      width: 40px;
+      height: 40px;
+      font-weight: bold;
+      display: inline-block;
+      color: #ffffff;
+      text-align: center;
+      font-size: 30px;
+      line-height: 43px; }
+    .feedbacks .social .facebook {
+      background: #4065b4;
+      margin-right: 30px; }
+    .feedbacks .social .vk {
+      background: #4e759d; }
+  .feedbacks .btn {
+    text-align: center;
+    padding-bottom: 95px;
+    padding-top: 65px; }
+  .feedbacks .feedback-slick-slider {
+    width: 750px;
+    left: 17%; }
+  .feedbacks .arrows .prev, .feedbacks .arrows .next {
+    top: 195px;
+    width: 36px;
+    height: 60px;
+    z-index: 1;
+    cursor: pointer; }
+  .feedbacks .arrows .prev {
+    background: url("../img/feedback/left.png") no-repeat;
+    position: absolute;
+    left: 10%;
+    top: 50%; }
+  .feedbacks .arrows .next {
+    background: url("../img/feedback/right.png") no-repeat;
+    position: absolute;
+    right: 12%;
+    top: 50%; }
+  .feedbacks .feedback-slide {
+    width: 750px;
+    height: 430px;
+    background: #efefef;
+    margin: 35px auto 0 auto; }
+    .feedbacks .feedback-slide:after {
+      content: '';
+      display: block;
+      clear: both; }
+    .feedbacks .feedback-slide .left-side, .feedbacks .feedback-slide .right-side {
+      padding: 65px; }
+    .feedbacks .feedback-slide .left-side {
+      float: left;
+      width: 405px; }
+      .feedbacks .feedback-slide .left-side .feedback-text {
+        padding-top: 15px;
+        line-height: 24px; }
+    .feedbacks .feedback-slide .right-side {
+      float: right; }
+
+/*_____________CARS_________________*/
+.our-cars {
+  background: url("../img/about-us/bg-swuare.png") repeat;
+  position: relative; }
+  .our-cars:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .our-cars .bg-cars {
+    position: absolute;
+    background: url("../img/our-cars/car-bgon.png") repeat;
+    height: 463px;
+    z-index: 5555;
+    width: 679px; }
+  .our-cars .cars {
+    width: 55%;
+    font-size: 0;
+    float: left; }
+    .our-cars .cars .car {
+      display: inline-block; }
+      .our-cars .cars .car img {
+        width: 339px; }
+  .our-cars .cars-text {
+    /*float: right;*/
+    width: 260px;
+    position: absolute;
+    top: 25%;
+    left: 70%; }
+    .our-cars .cars-text span {
+      font-size: 30px; }
+    .our-cars .cars-text ul {
+      padding-top: 30px;
+      /*padding-left: 20px;*/ }
+      .our-cars .cars-text ul li {
+        list-style: none;
+        line-height: 25px; }
+        .our-cars .cars-text ul li:before {
+          content: '';
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          -moz-border-radius: 50%;
+          -o-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+          background: #ffc600;
+          margin-right: 15px; }
+
+/*_____________CONTACTS_________________*/
+.contacts-content {
+  margin-left: 5%;
+  margin-top: 8%;
+  float: left; }
+  .contacts-content .contacts-title {
+    font-size: 30px;
+    padding-bottom: 15px; }
+  .contacts-content .graph {
+    line-height: 30px; }
+  .contacts-content .phones {
+    padding-top: 15px; }
+    .contacts-content .phones span {
+      color: #ffc600;
+      padding-right: 15px;
+      line-height: 24px; }
+    .contacts-content .phones .ks {
+      margin-right: 16px; }
+
+.contacts {
+  height: 400px; }
+  .contacts .map {
+    float: right; }
+    .contacts .map iframe {
+      width: 670px;
+      height: 400px;
+      border: none; }
+
+/*_____________FOOTER_________________*/
+footer {
+  background: url("../img/footer/foot.png") repeat;
+  height: 100px; }
+
+/*_____________POP UP_________________*/
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+.pop-up {
+  display: none;
+  position: absolute;
+  top: 13%;
+  left: 17%;
+  z-index: 999;
+  width: 750px;
+  height: 620px;
+  background: #efefef; }
+  .pop-up .title {
+    font-size: 24px;
+    padding-top: 30px;
+    position: relative; }
+    .pop-up .title .close {
+      display: block;
+      position: absolute;
+      color: black;
+      font-size: 30px;
+      top: 40%;
+      left: 94%;
+      cursor: pointer; }
+  .pop-up input[type="text"] {
+    height: 45px;
+    width: 450px;
+    padding-left: 20px; }
+  .pop-up textarea {
+    width: 555px;
+    height: 210px;
+    padding-left: 20px;
+    padding-top: 15px;
+    text-align: left;
+    resize: none;
+    margin-top: 15px;
+    font-family: Roboto; }
+  .pop-up .button {
+    margin: 0 auto;
+    width: 200px; }
+  .pop-up button {
+    font-size: 24px;
+    padding: 15px 25px 15px 25px;
+    background: #ffc600; }
+  .pop-up label {
+    display: block;
+    padding: 25px 97px 20px 95px; }
+  .pop-up .first {
+    margin-right: 65px; }
+  .pop-up .second {
+    margin-right: 18px; }
+
+.approved {
+  display: none;
+  width: 320px;
+  margin: 30% auto; }
+  .approved img {
+    margin-left: 40%; }
+  .approved .thanks {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 30px 0 15px 0; }
+  .approved .sent {
+    font-size: 14px;
+    margin: 0 auto;
+    width: 250px; }
+
+/*_____________MEDIA_________________*/
+@media (max-width: 1280px) {
+  header nav {
+    float: right;
+    /* margin-top: -47px;*/
+    /* margin-top:-4%;*/
+    font-size: 14px; }
+    header nav ul {
+      margin: 0; }
+      header nav ul li {
+        padding-right: 19px; }
+  header .logo {
+    float: left; }
+
+  .banner .text-block .text-block-content {
+    padding-left: 15px; }
+  .banner .more-block {
+    width: 390px;
+    left: 0; }
+    .banner .more-block .contacts-content {
+      font-size: 15px;
+      padding: 28px;
+      margin-left: 20px; }
+
+  .about-us .about-title .title {
+    left: 20%; }
+  .about-us .about-content {
+    width: 450px;
+    float: right; }
+
+  .why-we .cntblock {
+    width: 270px; }
+  .why-we .why-content .comfort, .why-we .why-content .discount {
+    margin: 0; }
+  .why-we .why-content .price {
+    margin-top: 10px; }
+
+  .feedbacks .feedback-slide .right-side {
+    float: none; }
+    .feedbacks .feedback-slide .right-side .date {
+      width: 30px; }
+  .feedbacks .feedback-slick-slider {
+    width: 600px;
+    left: 23%; }
+
+  .our-cars .cars-text {
+    left: 65%; }
+  .our-cars .bg-cars {
+    width: 600px;
+    height: 410px; }
+  .our-cars .cars {
+    width: 70%; }
+    .our-cars .cars .car img {
+      width: 300px; }
+
+  .pop-up {
+    width: 550px;
+    left: 25%; }
+    .pop-up textarea {
+      width: 400px;
+      height: 180px; }
+    .pop-up input[type="text"] {
+      width: 400px; }
+    .pop-up .button {
+      width: 160px; }
+
+  .contacts .map {
+    margin-top: 0; }
+    .contacts .map iframe {
+      width: 575px; } }
+@media (min-width: 1024px) {
+  /*hovers*/
+  header nav a:hover {
+    color: #fcda62; }
+
+  .btn a:hover {
+    background: #fcda62; }
+
+  .feedbacks .arrows .prev:hover {
+    background: url("../img/feedback/left-hover.png") no-repeat; }
+  .feedbacks .arrows .next:hover {
+    background: url("../img/feedback/right-hover.png") no-repeat; } }
+@media (max-width: 1024px) {
+  .our-cars .cars-text {
+    left: 65%; }
+  .our-cars .bg-cars {
+    width: 500px;
+    height: 340px; }
+  .our-cars .cars {
+    width: 70%; }
+    .our-cars .cars .car img {
+      width: 250px; }
+
+  .about-us .about-content {
+    width: 405px;
+    padding: 10px; }
+
+  .feedbacks .arrows .prev {
+    left: 16%; }
+  .feedbacks .feedback-slick-slider {
+    width: 400px;
+    left: 28%; }
+
+  .pop-up {
+    left: 25%; }
+
+  .contacts .map {
+    margin: 0; }
+    .contacts .map iframe {
+      width: 425px; } }
+@media (max-width: 800px) {
+  .about-us .about-content {
+    width: 390px;
+    padding: 10px;
+    float: right; }
+
+  .feedbacks .feedback-slick-slider {
+    width: 400px;
+    left: 28%; }
+
+  .pop-up {
+    left: 16%; }
+
+  .our-cars .bg-cars {
+    width: 400px;
+    height: 270px; }
+  .our-cars .cars .car img {
+    width: 200px; }
+
+  .contacts-content {
+    width: 352px;
+    font-size: 13px; }
+
+  .contacts .map {
+    /* margin-top: -263px;*/ }
+    .contacts .map iframe {
+      width: 400px; } }
+@media (max-width: 320px) {
+  .btn {
+    margin-left: 50px; }
+
+  header nav ul {
+    margin-left: 10px;
+    margin-top: -47px;
+    display: table-caption; }
+
+  .banner .more-block {
+    width: 320px;
+    height: 330px; }
+    .banner .more-block .contacts-content {
+      width: 280px; }
+  .banner .text-block {
+    width: 320px; }
+
+  .about-us .about-content {
+    width: 320px;
+    margin-top: 140px; }
+  .about-us .about-title {
+    width: 320px;
+    height: 140px;
+    float: none; }
+    .about-us .about-title .title {
+      top: -25%; }
+
+  .why-we .cntblock {
+    padding-top: 30px; }
+
+  .feedbacks .feedback-slide {
+    width: 320px; }
+    .feedbacks .feedback-slide .left-side {
+      width: 200px; }
+      .feedbacks .feedback-slide .left-side .feedback-text {
+        padding-bottom: 50px; }
+    .feedbacks .feedback-slide .right-side {
+      width: 200px; }
+    .feedbacks .feedback-slide .left-side, .feedbacks .feedback-slide .right-side {
+      padding: 100px 0 0 40px; }
+  .feedbacks .feedback-slick-slider {
+    width: 250px;
+    left: 10%; }
+  .feedbacks .arrows .prev, .feedbacks .arrows .next {
+    top: 65%; }
+  .feedbacks .arrows .prev {
+    left: 11%; }
+  .feedbacks .btn {
+    margin-left: 0; }
+
+  .our-cars .bg-cars {
+    width: 320px;
+    height: 870px; }
+  .our-cars .cars .car img {
+    width: 320px; }
+  .our-cars .cars-text {
+    position: static; }
+    .our-cars .cars-text span {
+      padding-left: 15px; }
+    .our-cars .cars-text ul {
+      padding-left: 15px; }
+
+  .contacts-content {
+    width: 320px;
+    padding-left: 15px;
+    margin: 0; }
+    .contacts-content .graph {
+      font-size: 12px; }
+
+  .contacts .map {
+    margin: 0; }
+    .contacts .map iframe {
+      width: 320px; }
+
+  .pop-up {
+    width: 250px; }
+    .pop-up textarea {
+      width: 180px; }
+    .pop-up input[type="text"] {
+      width: 180px; }
+    .pop-up button {
+      font-size: 14px;
+      padding: 3px 25px 5px 25px;
+      width: 119px; }
+    .pop-up .button {
+      width: 119px; }
+    .pop-up label {
+      padding: 25px 60px 20px 40px; }
+    .pop-up .title {
+      font-size: 18px; }
+      .pop-up .title .close {
+        left: 90%; }
+
+  .approved .thanks {
+    font-size: 17px;
+    margin: 30px 0 15px 20px; }
+  .approved .sent {
+    width: 308px; }
+  .approved img {
+    margin-left: 30%; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@ function coordsPat(coors) {
     console.log(result);
 };
 function emailPat(email) {
-    let reg = /(\w+@[a-zA-Z]+\.\w{2,4})/;
+    let reg = /(\w+)@([a-zA-Z]+\.\w{2,4})/;
     let result = reg.test(email);
     console.log(result);
 }
