@@ -1,16 +1,31 @@
-/*
-textarea{
-  height:300px;
-  padding:0;
-  margin:0;
-  width:100px;
-}
-.generate{
-   width:308px;
-  text-align:center;
-}
-.result{
-   background:rgba(155,0,155,0.5);
-}*/
+body {
+  background: #969696; }
+
+#textbox {
+  margin-bottom: 10px; }
+
+.result {
+  padding-left: 15px;
+  margin-top: 3px; }
+  .result div {
+    float: left; }
+
+.copy-btn {
+  margin-left: 15px; }
+
+.disable-box {
+  margin-bottom: 15px; }
+
+.buffer {
+  position: fixed;
+  display: none;
+  border: 1px solid #000000;
+  padding: 15px;
+  left: 40%; }
+
+.copied {
+  position: fixed;
+  left: 31%;
+  /*display: none;*/ }
 
 /*# sourceMappingURL=style.css.map */

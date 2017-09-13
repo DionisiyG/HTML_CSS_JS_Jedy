@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>code generator</title>
+	<link href="css.css" rel="stylesheet">
+	<script src="node_modules/clipboard/dist/clipboard.min.js"></script>
+</head>
+<body>
+	<div id="txtField">Click generate for code</div>
+	<input type="text" id="length" placeholder="Length of the code">
+	<button class="btn" data-clipboard-target="#txtField" onclick="generateEN();">Generate EN</button>
+	<button class="btn" data-clipboard-target="#txtField" onclick="generateRU();">Generate RU</button>
+	<input type="text" id="codeIndex" placeholder="?index">
+
+	<div id="txtField2">Enter codes below to sort</div>
+	<input type="text" id="codes" placeholder="Codes to sort">
+	<button class="btn" data-clipboard-target="#txtField2" onclick="sortCodes();">Sort</button>
+	<input type="checkbox" id='noSpace'> No spaces?
+
+
+	<div id="txtField3">Enter codes below to combine</div>
+	<input type="text" id="codesComb" placeholder="Codes to sort">
+	<input type="text" id="codesLength" placeholder="Quantity to comb?">
+	<button class="btn" id="showAllCombs" onclick="showAll()">Show All</button>
+	<button class="btn" data-clipboard-target="#txtField3" onclick="combineClick()">Combine</button>
+	<script src="js.js"></script>
+</body>
+</html>

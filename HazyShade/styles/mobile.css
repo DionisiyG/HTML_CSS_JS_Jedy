@@ -1,0 +1,263 @@
+@media (max-width: 1280px) {
+  .men-cloth .men-stuff .img {
+    width: 195px;
+    /*width:120%;*/ } }
+@media (max-width: 1024px) {
+  header .left-side {
+    width: 55%; }
+    header .left-side nav ul li:not(:last-child) {
+      padding-right: 20px; }
+
+  .men-cloth .men-stuff:not(:last-child) {
+    margin: 0; }
+  .men-cloth .men-stuff {
+    width: 25%; }
+
+  .shopping-table table .prod-img .img {
+    width: 80px;
+    height: 80px; }
+  .shopping-table .table-bottom .total {
+    margin-right: 15px; }
+
+  .order-sent {
+    margin-top: 190px; }
+
+  .thanks-word {
+    margin-bottom: 190px; } }
+@media (min-width: 1024px) {
+  /*hovers*/
+  header nav a:hover {
+    opacity: 0.5; }
+  header .loupe:hover {
+    background: #e5e5e5; }
+
+  .text-block .arrival-btn:hover {
+    background: #e5e5e5; }
+
+  /*.sign-up{
+    .email-form{
+      button:hover{
+        cursor: pointer;
+        background: #f68236;
+      }
+    }
+  }*/
+  button:hover {
+    cursor: pointer;
+    background: #f68236; }
+
+  footer .social .tw:hover, footer .social .fb:hover, footer .social .inst:hover {
+    background: #e5e5e5;
+    cursor: pointer; }
+  footer ul li a:hover {
+    opacity: 0.5; } }
+@media (max-width: 768px) {
+  header .left-side {
+    width: 100%; }
+    header .left-side .logo {
+      margin-right: 50px; }
+    header .left-side nav ul li:not(:last-child) {
+      padding-right: 70px;
+      padding-bottom: 30px; }
+  header .border {
+    padding-top: 50px; }
+
+  .gallery-products .row1 .desc, .gallery-products .row2 .desc {
+    font-size: 12px; }
+  .gallery-products .row1 .pr-name, .gallery-products .row2 .pr-name {
+    font-size: 18px; }
+  .gallery-products .row1 .item, .gallery-products .row2 .item {
+    height: 160px; }
+
+  footer .social .tw, footer .social .fb, footer .social .inst {
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
+
+  .men-cloth {
+    margin-bottom: 80px; }
+    .men-cloth .men-stuff .img {
+      width: 145px;
+      height: 200px; }
+    .men-cloth .men-stuff .stuff-name, .men-cloth .men-stuff .stuff-price {
+      text-align: left; }
+    .men-cloth .men-stuff .stuff-price {
+      text-align: center; }
+
+  .current-stuff .big-img {
+    height: 300px; }
+
+  .shopping-table table .prod-img {
+    width: 13%; }
+    .shopping-table table .prod-img .img {
+      width: 70px;
+      height: 70px; }
+  .shopping-table table .prod-color, .shopping-table table .prod-size, .shopping-table table .prod-qty {
+    width: 11%; }
+  .shopping-table table .prod-amount {
+    width: 14%; }
+  .shopping-table .table-bottom .total {
+    margin-right: 30px; }
+
+  .order-sent {
+    margin-top: 130px; }
+
+  .thanks-word {
+    margin-bottom: 130px; } }
+@media (max-width: 480px) {
+  header .container1 {
+    position: relative; }
+  header .left-side .logo {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px; }
+  header .left-side nav {
+    padding-top: 85px;
+    display: block; }
+    header .left-side nav ul li {
+      display: block;
+      text-align: center; }
+      header .left-side nav ul li:not(:last-child) {
+        padding-right: 0;
+        padding-bottom: 30px; }
+  header .right-side .basket {
+    position: absolute;
+    top: 20px;
+    right: -15px;
+    width: 95px;
+    display: block; }
+  header .right-side .loupe {
+    position: absolute;
+    right: -40px;
+    top: 80px; }
+  header .right-side .search-box {
+    width: 352px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    display: inline-block; }
+
+  .product-slider .arrows .prev, .product-slider .arrows .next {
+    display: none; }
+
+  .sign-up .email-form input {
+    width: 290px; }
+
+  .text-block {
+    padding-top: 60px; }
+    .text-block .new-arrivals {
+      padding-bottom: 0; }
+      .text-block .new-arrivals .arrival-btn {
+        display: none; }
+
+  .gallery-products {
+    padding-bottom: 80px;
+    /*.row1,.row2{
+      .item{
+        &:nth-child(even){
+          background: #303030;
+          text-align: center;
+        }
+      }
+    }*/ }
+    .gallery-products .row1 .item, .gallery-products .row2 .item {
+      float: none;
+      width: 100%; }
+    .gallery-products .row2 .item1 {
+      border-top: 1px solid #e5e5e5; }
+
+  footer .collection, footer .site, footer .shop {
+    display: none; }
+  footer .social {
+    width: 100%;
+    text-align: center; }
+    footer .social .title {
+      text-transform: uppercase;
+      font-size: 24px; }
+
+  .path {
+    text-align: center; }
+
+  .men-cloth .men-stuff {
+    width: 50%;
+    float: left; }
+    .men-cloth .men-stuff .img {
+      width: 175px;
+      height: 250px;
+      margin: 0 auto; }
+    .men-cloth .men-stuff .stuff-price, .men-cloth .men-stuff .stuff-name {
+      width: 148px;
+      margin: 0 auto; }
+    .men-cloth .men-stuff .stuff-name {
+      padding-top: 20px; }
+    .men-cloth .men-stuff .stuff-price {
+      padding-bottom: 20px; }
+
+  .current-stuff .stuff-desc {
+    width: 320px; }
+
+  .add-block button {
+    width: 100%;
+    font-size: 18px; }
+
+  .shopping-table table th {
+    display: none; }
+  .shopping-table table .prod-qty {
+    display: none; }
+  .shopping-table .final-order-block .buttons {
+    float: none;
+    position: relative;
+    height: 90px; }
+    .shopping-table .final-order-block .buttons a {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      font-size: 18px; }
+    .shopping-table .final-order-block .buttons button {
+      width: 100%;
+      margin-left: 0; }
+
+  .order-sent {
+    margin-top: 80px;
+    font-size: 49px; }
+
+  .thanks-word {
+    margin-bottom: 130px;
+    font-size: 20px;
+    margin-top: 15px; } }
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    padding: 15px; }
+
+  header .right-side .search-box {
+    width: 250px;
+    left: 6px; }
+
+  .text-block .hazy {
+    font-size: 47px; }
+  .text-block .italic {
+    font-size: 16px; }
+
+  .sign-up .title {
+    font-size: 24px; }
+  .sign-up .subtitle-italic {
+    font-size: 16px; }
+  .sign-up .email-form {
+    width: 190px; }
+
+  .men-cloth .men-stuff .img {
+    width: 130px;
+    height: 200px; }
+
+  .more a:after {
+    display: none; }
+
+  .current-stuff .stuff-desc {
+    width: 281px; }
+
+  .shopping-table .final-order-block .buttons a {
+    left: 25%; } }
+
+/*# sourceMappingURL=mobile.css.map */

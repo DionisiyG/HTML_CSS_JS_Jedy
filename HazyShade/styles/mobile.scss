@@ -1,0 +1,428 @@
+@media (max-width: 1280px){
+  .men-cloth{
+    .men-stuff{
+      .img{
+        width: 195px;
+        /*width:120%;*/
+      }
+    }
+  }
+}
+@media (max-width: 1024px){
+  header{
+    .left-side{
+      width: 55%;
+      nav{
+        ul{
+          li:not(:last-child){
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+  .men-cloth{
+    .men-stuff:not(:last-child){
+      margin: 0;
+    }
+    .men-stuff{
+      width: 25%;
+    }
+  }
+  .shopping-table{
+    table{
+      .prod-img{
+        .img{
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+    }
+    .table-bottom{
+      .total{
+        margin-right: 15px;
+      }
+    }
+  }
+  .order-sent{
+    margin-top: 190px;
+  }
+  .thanks-word{
+    margin-bottom: 190px;
+  }
+}
+@media (min-width: 1024px) {
+  /*hovers*/
+  header{
+    nav{
+      a:hover{
+        opacity: 0.5;
+      }
+    }
+    .loupe:hover{
+      background: #e5e5e5;
+    }
+  }
+  .text-block{
+    .arrival-btn:hover{
+      background: #e5e5e5;
+    }
+  }
+  /*.sign-up{
+    .email-form{
+      button:hover{
+        cursor: pointer;
+        background: #f68236;
+      }
+    }
+  }*/
+  button:hover{
+    cursor: pointer;
+    background: #f68236;
+  }
+  footer{
+    .social{
+      .tw:hover, .fb:hover, .inst:hover{
+        background: #e5e5e5;
+        cursor: pointer;
+      }
+    }
+    ul{
+      li{
+        a:hover{
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  header{
+    .left-side{
+      width: 100%;
+      .logo{
+        margin-right: 50px;
+      }
+      nav{
+        ul{
+          li:not(:last-child){
+            padding-right: 70px;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+    .border{
+      padding-top: 50px;
+    }
+  }
+  .gallery-products{
+    .row1, .row2{
+      .desc{
+        font-size: 12px;
+      }
+      .pr-name{
+        font-size: 18px;
+      }
+      .item{
+        height: 160px;
+      }
+    }
+  }
+  footer{
+    .social{
+      .tw,.fb, .inst{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+  .men-cloth{
+    margin-bottom: 80px;
+    .men-stuff{
+      .img{
+        width: 145px;
+        height: 200px;
+      }
+      .stuff-name, .stuff-price{
+        text-align: left;
+      }
+      .stuff-price{
+        text-align: center;
+      }
+    }
+  }
+  .current-stuff{
+    .big-img{
+      height: 300px;
+    }
+  }
+  .shopping-table{
+    table{
+      .prod-img{
+        width: 13%;
+        .img{
+          width: 70px;
+          height: 70px;
+        }
+      }
+      .prod-color, .prod-size, .prod-qty{
+        width: 11%;
+      }
+      .prod-amount{
+        width: 14%;
+      }
+    }
+    .table-bottom{
+      .total{
+        margin-right: 30px;
+      }
+    }
+  }
+  .order-sent{
+    margin-top: 130px;
+  }
+  .thanks-word{
+    margin-bottom: 130px;
+  }
+}
+@media (max-width: 480px){
+  header {
+    .container1{
+      position: relative;
+    }
+    .left-side {
+      .logo {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 30px;
+      }
+      nav {
+        padding-top: 85px;
+        display: block;
+        ul {
+          li {
+            display: block;
+            text-align: center;
+            &:not(:last-child) {
+              padding-right: 0;
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+    .right-side{
+      .basket{
+        position: absolute;
+        top: 20px;
+        right: -15px;
+        width: 95px;
+        display: block;
+      }
+      .loupe{
+        position: absolute;
+        right: -40px;
+        top: 80px;
+      }
+      .search-box{
+        width: 352px;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        display: inline-block;
+      }
+    }
+  }
+  .product-slider{
+    .arrows{
+      .prev, .next{
+        display: none;
+      }
+    }
+  }
+  .sign-up{
+    .email-form{
+      input{
+        width: 290px;
+      }
+    }
+  }
+  .text-block{
+    padding-top: 60px;
+    .new-arrivals{
+      padding-bottom: 0;
+      .arrival-btn{
+        display: none;
+      }
+    }
+  }
+  .gallery-products{
+    padding-bottom: 80px;
+    .row1,.row2{
+      .item{
+        float: none;
+        width: 100%;
+      }
+    }
+    .row2{
+      .item1{
+        border-top: 1px solid #e5e5e5;
+      }
+    }
+    /*.row1,.row2{
+      .item{
+        &:nth-child(even){
+          background: #303030;
+          text-align: center;
+        }
+      }
+    }*/
+  }
+  footer{
+    .collection,.site, .shop{
+      display: none;
+    }
+    .social{
+      .title{
+        text-transform: uppercase;
+        font-size: 24px;
+      }
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .path{
+    text-align: center;
+  }
+  .men-cloth{
+    .men-stuff{
+      width: 50%;
+      float: left;
+      .img{
+        width: 175px;
+        height: 250px;
+        margin: 0 auto;
+      }
+      .stuff-price, .stuff-name{
+        width: 148px;
+        margin: 0 auto;
+      }
+      .stuff-name{
+        padding-top: 20px;
+      }
+      .stuff-price{
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .current-stuff{
+    .stuff-desc{
+      width: 320px;
+    }
+  }
+  .add-block{
+    button{
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+  .shopping-table{
+    table{
+      th{
+        display: none;
+      }
+      .prod-qty{
+        display: none;
+      }
+    }
+    .final-order-block{
+      .buttons{
+        float: none;
+        position: relative;
+        height: 90px;
+        a{
+          position: absolute;
+          bottom: 0;
+          left: 30%;
+          font-size: 18px;
+        }
+        button{
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .order-sent{
+    margin-top: 80px;
+    font-size: 49px;
+  }
+  .thanks-word{
+    margin-bottom: 130px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 320px){
+  .container{
+    width: 100%;
+    padding: 15px;
+  }
+  header{
+    .right-side{
+      .search-box{
+        width: 250px;
+        left: 6px;
+      }
+    }
+  }
+  .text-block{
+    .hazy{
+      font-size: 47px;
+    }
+    .italic{
+      font-size: 16px;
+    }
+  }
+  .sign-up{
+    .title{
+      font-size: 24px;
+    }
+    .subtitle-italic{
+      font-size: 16px;
+    }
+    .email-form{
+      width: 190px;
+    }
+  }
+  .men-cloth{
+    .men-stuff{
+      .img{
+        width: 130px;
+        height: 200px;
+      }
+    }
+  }
+  .more{
+    a:after{display: none;}
+
+  }
+  .current-stuff{
+    .stuff-desc{
+      width: 281px;
+    }
+  }
+  .shopping-table{
+    .final-order-block{
+      .buttons{
+        a{
+          left: 25%;
+        }
+      }
+    }
+  }
+}

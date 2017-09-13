@@ -1,0 +1,76 @@
+/*___________________HEADER___________________*/
+header {
+  letter-spacing: -4px; }
+  header .container {
+    padding-top: 30px; }
+  header .left-side {
+    display: inline-block;
+    width: 60%;
+    letter-spacing: normal; }
+    header .left-side .logo {
+      width: 40px;
+      height: 40px;
+      color: #ffffff;
+      background: #303030;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 60px; }
+    header .left-side nav {
+      display: inline-block;
+      letter-spacing: normal; }
+      header .left-side nav ul li {
+        letter-spacing: normal;
+        display: inline-block; }
+        header .left-side nav ul li:not(:last-child) {
+          padding-right: 45px; }
+  header .right-side {
+    display: inline-block;
+    float: right;
+    letter-spacing: -4px; }
+    header .right-side .search-box {
+      height: 40px;
+      float: left;
+      padding-left: 20px;
+      display: none; }
+    header .right-side .search-box-show {
+      display: block; }
+    header .right-side .loupe {
+      letter-spacing: normal;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #c2c2c2;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 35px;
+      cursor: pointer; }
+    header .right-side .basket {
+      display: inline-block;
+      letter-spacing: normal; }
+  header .border {
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 30px; }
+
+/*________________________FOOTER_______________*/
+footer li {
+  list-style: none; }
+footer .site, footer .collection, footer .shop, footer .social {
+  float: left;
+  width: 25%;
+  line-height: 24px; }
+footer .title {
+  font-weight: bold;
+  padding-bottom: 15px;
+  color: #303030; }
+footer .social .tw, footer .social .fb, footer .social .inst {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #303030;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 25px; }
+
+/*# sourceMappingURL=header-footer.css.map */

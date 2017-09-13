@@ -1,0 +1,97 @@
+/*___________________HEADER___________________*/
+header{
+  letter-spacing: -4px;
+  .container{
+    padding-top: 30px;
+  }
+  .left-side{
+    display: inline-block;
+    width: 60%;
+    letter-spacing: normal;
+    .logo{
+      width: 40px;
+      height: 40px;
+      color: #ffffff;
+      background: #303030;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 60px;
+    }
+    nav{
+      display: inline-block;
+      letter-spacing: normal;
+      ul{
+        li{
+          letter-spacing: normal;
+          display: inline-block;
+
+          &:not(:last-child){
+            padding-right: 45px;
+          }
+        }
+      }
+    }
+  }
+  .right-side{
+    display: inline-block;
+    float: right;
+    letter-spacing: -4px;
+    .search-box{
+      height: 40px;
+      float: left;
+      padding-left: 20px;
+      display: none;
+    }
+    .search-box-show{
+      display: block;
+    }
+    .loupe{
+      letter-spacing: normal;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #c2c2c2;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 35px;
+      cursor: pointer;
+    }
+    .basket{
+      display: inline-block;
+      letter-spacing: normal;
+    }
+  }
+  .border{
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 30px;
+  }
+}
+/*________________________FOOTER_______________*/
+footer{
+  li{
+    list-style: none;
+  }
+  .site, .collection, .shop, .social{
+    float: left;
+    width: 25%;
+    line-height: 24px;
+  }
+  .title{
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #303030;
+  }
+  .social{
+    .tw, .fb, .inst{
+      width:40px;
+      height: 40px;
+      border: 1px solid #303030;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 25px;
+    }
+  }
+}

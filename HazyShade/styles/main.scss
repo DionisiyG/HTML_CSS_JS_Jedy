@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Lato", serif;
+  background: #c2c2c2;
+}
+img {
+ /* width: 100%;*/
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+.container {
+  width:93%;
+  margin: 0 auto;
+  padding:30px;
+  background: #ffffff;
+  &::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+button{
+  background: #e67429;
+  border: none;
+  color: #e5e5e5;
+}
+@mixin border-radius($radius){
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*___________________TEXT BLOCK___________________*/
+.text-block{
+  padding-top: 120px;
+  .hazy, .italic{
+    text-align: center;
+  }
+  .hazy{
+    text-transform: uppercase;
+    font-size: 69px;
+  }
+  .italic{
+    font-style: italic;
+    color: #a3a3a3;
+    font-size: 24px;
+  }
+  .new-arrivals{
+    padding-top: 55px;
+    padding-bottom: 100px;
+    text-align: center;
+    .arrival-btn{
+      border: 1px solid #a3a3a3;
+      width: 230px;
+      height: 58px;
+      background: none;
+      color:#303030;
+    }
+  }
+}
+/*_________________________GALLERY PRODUCTS_______________*/
+.gallery-products{
+  &::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  padding-bottom: 100px;
+  .row1, .row2{
+    .text{
+      @include vertical-align();
+    }
+    .pr-name{
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .desc{
+      font-style: italic;
+      font-size: 18px;
+    }
+    .item{
+      color: #e5e5e5;
+      float: left;
+      width: 25%;
+      height: 290px;
+      background: #e5e5e5;
+      /*&:nth-child(even){
+        background: #303030;
+        text-align: center;
+      }*/
+    }
+  }
+  .row1{
+    .item{
+      &:nth-child(even){
+        background: #303030;
+        text-align: center;
+      }
+    }
+  }
+  .row2{
+    .item{
+      &:nth-child(odd){
+        background: #303030;
+        text-align: center;
+      }
+     /* &:nth-child(even){
+        background: #e5e5e5;
+      }*/
+      &:last-child:after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}
+/*_________________________SIGN UP_______________*/
+.sign-up{
+  .title{
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .subtitle-italic{
+    font-style: italic;
+    text-align: center;
+    font-size: 24px;
+    color: #a3a3a3;
+    padding-top: 15px;
+  }
+  .email-form{
+    padding-top: 35px;
+    padding-bottom: 100px;
+    text-align: center;
+    input{
+      padding: 20px 10px;
+      width: 480px;
+      &[placeholder]{
+        font-size: 11px;
+        font-style: italic;
+      }
+    }
+    button{
+      width: 94px;
+      height: 56px;
+      margin-left: -4px;
+    }
+  }
+}
+/*________________________PRODUCT SLIDER_______________*/
+.product-slider{
+  position: relative;
+  padding-bottom: 50px;
+  .pr-slider{
+    background: #a3a3a3;
+    padding: 9px 0;
+    height: 118px;
+    .photo{
+      height: 100px;
+      width: 100px;
+      background: #000;
+      margin-right: 30px;
+    }
+  }
+  .arrows{
+    background: #c2c2c2;
+    .prev,.next{
+      width: 80px;
+      height: 128px;
+      cursor: pointer;
+    }
+    .prev{
+      background: url("../img/product-slider/slide-arw.png") no-repeat 0 0;
+      position: absolute;
+      top: -3%;
+    }
+    .next{
+      background: url("../img/product-slider/slide-arw.png") no-repeat -48px 0;
+      position: absolute;
+      right: 0;
+      top: -3%;
+    }
+  }
+}
+
+/*
+@media (min-width: 1024px) {
+  !*hovers*!
+  header{
+    nav{
+      a:hover{
+        opacity: 0.5;
+      }
+    }
+    .loupe:hover{
+      background: #e5e5e5;
+    }
+  }
+  .text-block{
+    .arrival-btn:hover{
+      background: #e5e5e5;
+    }
+  }
+  !*.sign-up{
+    .email-form{
+      button:hover{
+        cursor: pointer;
+        background: #f68236;
+      }
+    }
+  }*!
+  button:hover{
+    cursor: pointer;
+    background: #f68236;
+  }
+  footer{
+    .social{
+      .tw:hover, .fb:hover, .inst:hover{
+        background: #e5e5e5;
+        cursor: pointer;
+      }
+    }
+    ul{
+      li{
+        a:hover{
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}*/

@@ -1,0 +1,170 @@
+.border{
+  margin-bottom: 100px;
+}
+.shopping-table{
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+    th{
+      color: #e5e5e5;
+      font-size: 14px;
+      text-align: left;
+      padding: 15px 0;
+    }
+    td{
+      padding: 15px 0;
+    }
+    tr{
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .prod-img{
+      width: 10%;
+     .img{
+       display: inline-block;
+       width: 100px;
+       height: 100px;
+       border: 1px solid #a3a3a3;
+       background: #e5e5e5;
+     }
+    }
+    .prod-desc{
+      width: 40%;
+    }
+    .prod-color, .prod-size, .prod-qty{
+      width: 12.5%;
+    }
+    .prod-amount{
+      /*width: 100px;*/
+      width: 8%;
+    }
+    .ref{
+      font-style: italic;
+      color: #e5e5e5;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .prod-delete{
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .table-bottom{
+    width: 100%;
+    height: 50px;
+    background: #e5e5e5;
+    margin-bottom: 40px;
+    .total{
+      float: right;
+      font-weight: bold;
+      margin-right: 40px;
+      span{
+        color: #e67429;
+        margin-left: 30px;
+        font-weight: normal;
+        line-height: 50px;
+      }
+    }
+  }
+  .final-order-block{
+    width: 100%;
+    margin-bottom: 120px;
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .buttons{
+      float: right;
+      a{
+        text-decoration: underline;
+      }
+      button{
+        width: 190px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+/*__________QUANTITY BUTTONS___________*/
+.quantity {
+  position: relative;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+.quantity input {
+  width: 43px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: 'Lato';
+  font-size: 16px;
+}
+.quantity input:focus {
+  outline: 0;
+}
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  width: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+  line-height: 1.7;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: none;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+}
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+  border-bottom: none;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+}
+@media (max-width: 480px){
+ .more{
+    a:after{
+      display: none;
+    }
+ }
+}

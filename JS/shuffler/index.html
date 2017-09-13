@@ -7,9 +7,20 @@
 </head>
 <body>
 	<input type="text" id="textbox">
-	<input type="submit" value="shuffle" id="shuffler">
- 	<div id="result"></div>
+	<input type="submit" value="Combine" id="shuffler">
+	<div class="disable-box">
+		<label>
+			<input type="checkbox" id="disabler">
+			Disable Copy button
+		</label>
+	</div>
+	<div class="buffer">
+		<div class="copied">Copied to buffer</div>
+		<div class="bufferContent">
+	</div>
+	</div>
 	<script src="libs/jquery-3.2.1.min.js"></script>
+	<script src="libs/clipboard.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>

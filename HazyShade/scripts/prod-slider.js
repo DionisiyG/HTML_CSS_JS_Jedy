@@ -1,20 +1,22 @@
 $(document).ready(function(){
-    $('.feedback-slick-slider').slick({
+    $('.pr-slider').slick({
         dots: false,
         infinite: true,
         arrows: true,
-        speed: 300,
-
+        autoplay:true,
+        autoplaySpeed:1500,
+        speed: 600,
         nextArrow: $('.next'),
         prevArrow: $('.prev'),
         variableWidth: true,
-        slidesToShow: 1,
+        slidesToShow: 5,
+        slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 321,
+                breakpoint: 481,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
+                    arrows:false,
                     infinite: true,
                     dots: false
                 }

@@ -1,15 +1,31 @@
-/*
-textarea{
-  height:300px;
-  padding:0;
-  margin:0;
-  width:100px;
+body{
+  background: #969696;
 }
-.generate{
-   width:308px;
-  text-align:center;
+#textbox{
+  margin-bottom: 10px;
 }
 .result{
-   background:rgba(155,0,155,0.5);
-}*/
-
+  padding-left: 15px;
+  margin-top: 3px;
+  div{
+    float: left;
+  }
+}
+.copy-btn{
+  margin-left: 15px;
+}
+.disable-box{
+  margin-bottom: 15px;
+}
+.buffer{
+  position: fixed;
+  display: none;
+  border: 1px solid #000000;
+  padding: 15px;
+  left: 40%;
+}
+.copied{
+  position: fixed;
+  left: 31%;
+  /*display: none;*/
+}
