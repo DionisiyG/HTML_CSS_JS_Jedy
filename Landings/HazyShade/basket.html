@@ -7,8 +7,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href="styles/main.css" rel="stylesheet" type="text/css">
 	<link href="styles/header-footer.css" rel="stylesheet" type="text/css">
-	<link href="styles/slick/slick.css" rel="stylesheet" type="text/css">
-	<link href="styles/slick/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="styles/men-coat.css" rel="stylesheet" type="text/css">
+	<link href="styles/basket.css" rel="stylesheet" type="text/css">
 	<link href="styles/mobile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 	<header>
 		<div class="container1">
 			<div class="left-side">
-				<a href="./index.html">
+				<a href="index.html">
 					<div class="logo">
 						SH
 					</div>
@@ -24,7 +24,7 @@
 				<nav>
 					<ul>
 						<li><a href="">Woman</a></li>
-						<li><a href="./men.html">Men</a></li>
+						<li><a href="men.html">Men</a></li>
 						<li><a href="">Kids</a></li>
 						<li><a href="">Comming Soon</a></li>
 						<li><a href="">About</a></li>
@@ -33,9 +33,9 @@
 			</div>
 			<div class="right-side">
 				<input type="text" class="search-box" placeholder="Search...">
-					<div class="loupe">
-						<img src="img/header/loupe.png" alt="">
-					</div>
+				<div class="loupe">
+					<img src="img/header/loupe.png" alt="">
+				</div>
 				<a href="./basket.html">
 					<div class="basket">
 						<img src="img/header/basket.png" alt="">
@@ -47,90 +47,64 @@
 			</div>
 		</div>
 	</header>
-	<div class="text-block">
-		<div class="container1">
-			<div class="hazy">
-				Hazy Shade of spring
-			</div>
-			<div class="italic">
-				Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
-			</div>
-		</div>
-		<div class="new-arrivals">
-			<button class="arrival-btn">
-				CHECK NEW ARRIVALS
-			</button>
-		</div>
+	<div class="stuff-title">YOUR SHOPPING BAG</div>
+	<div class="more">
+		<a href="">Item reserved for limited time only</a>
 	</div>
-	<div class="gallery-products">
-		<div class="container1">
-			<div class="row1">
-				<div class="item item1"></div>
-				<div class="item item2">
-					<div class="text">
-						<div class="pr-name">ELEGANT SHOES</div>
-						<div class="desc">BRAIDED LEATHER</div>
+	<div class="shopping-table">
+		<table>
+			<tr>
+				<th>PRODUCT</th>
+				<th>DESCRIPTION</th>
+				<th>COLOR</th>
+				<th>SIZE</th>
+				<th>QTY</th>
+				<th>AMOUNT</th>
+			</tr>
+			<tr>
+				<td class="prod-img"><div class="img"></div></td>
+				<td class="prod-desc"><div class="name">FLORAL PRIMSOL</div><div class="ref">Ref.2514/302</div></td>
+				<td class="prod-color" data-label="Color: ">One Color</td>
+				<td class="prod-size" data-label="Size: ">39</td>
+				<td class="prod-qty">
+					<div class="quantity">
+						<input type="number" value="1" min="1" max="20" class="input-num">
 					</div>
-				</div>
-				<div class="item item3"></div>
-				<div class="item item4">
-					<div class="text">
-						<div class="pr-name">ELEGANT SHOES</div>
-						<div class="desc">BRAIDED LEATHER</div>
+				</td>
+				<td class="prod-amount">€<span class="amount">100.00</span> <span class="prod-delete" href="">X</span></td>
+			</tr>
+			<tr>
+				<td class="prod-img"><div class="img"></div></td>
+				<td class="prod-desc"><div class="name">COATED 5 POCKET TROUSERS</div><div class="ref">Ref. 8246/044</div></td>
+				<td class="prod-color">One Color</td>
+				<td class="prod-size">M</td>
+				<td class="prod-qty">
+					<div class="quantity">
+						<input type="number" value="1" min="1" max="20" class="input-num">
 					</div>
-				</div>
-			</div>
-			<div class="row2">
-				<div class="item item1">
-					<div class="text">
-						<div class="pr-name">ELEGANT SHOES</div>
-						<div class="desc">BRAIDED LEATHER</div>
+				</td>
+				<td class="prod-amount">€<span class="amount">200.00</span> <span class="prod-delete" href="">X</span></td>
+			</tr>
+			<tr>
+				<td class="prod-img"><div class="img"></div></td>
+				<td class="prod-desc"><div class="name">COVERSIZED STUDIO BLOUSE</div><div class="ref">Ref. 2401/657</div></td>
+				<td class="prod-color">Black</td>
+				<td class="prod-size">S</td>
+				<td class="prod-qty">
+					<div class="quantity">
+						<input type="number" value="1" min="1" max="20" class="input-num">
 					</div>
-				</div>
-				<div class="item item2"></div>
-				<div class="item item3">
-					<div class="text">
-						<div class="pr-name">ELEGANT SHOES</div>
-						<div class="desc">BRAIDED LEATHER</div>
-					</div>
-				</div>
-				<div class="item item4"></div>
-			</div>
+				</td>
+				<td class="prod-amount">€<span class="amount">300.00</span> <span class="prod-delete" href="">X</span></td>
+			</tr>
+		</table>
+		<div class="table-bottom">
+			<div class="total">Subtotal: €<span class="total-sum"></span></div>
 		</div>
-	</div>
-	<div class="sign-up">
-		<div class="container1">
-			<div class="title">
-				sign up to receive our updates
-			</div>
-			<div class="subtitle-italic">
-				Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
-			</div>
-			<div class="email-form">
-				<form>
-					<input placeholder="Your e-mail">
-					<button>add</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="product-slider">
-		<div class="container1">
-			<div class="pr-slider">
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-			</div>
-			<div class="arrows">
-				<div class="prev"></div>
-				<div class="next"></div>
+		<div class="final-order-block">
+			<div class="buttons">
+				<a href="index.html">Continue Shopping</a>
+				<button class="order-btn">ORDER NOW</button>
 			</div>
 		</div>
 	</div>
@@ -184,8 +158,8 @@
 	</footer>
 </div>
 <script src="scripts/libs/jquery-3.2.1.min.js"></script>
-<script src="scripts/libs/slick.min.js"></script>
-<script src="scripts/prod-slider.js"></script>
+<script src="scripts/order.js"></script>
+<script src="scripts/basket.js"></script>
 <script src="scripts/serch-box.js"></script>
 </body>
 </html>

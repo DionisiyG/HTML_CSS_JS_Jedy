@@ -1,6 +1,8 @@
 /*___________________HEADER___________________*/
 header {
   letter-spacing: -4px; }
+  header .container1 {
+    width: 100%; }
   header .container {
     padding-top: 30px; }
   header .left-side {
@@ -15,7 +17,7 @@ header {
       line-height: 40px;
       text-align: center;
       display: inline-block;
-      margin-right: 60px; }
+      margin-right: 15px; }
     header .left-side nav {
       display: inline-block;
       letter-spacing: normal; }
@@ -27,12 +29,18 @@ header {
   header .right-side {
     display: inline-block;
     float: right;
-    letter-spacing: -4px; }
+    letter-spacing: -4px;
+    /*width: 40%;*/ }
+    header .right-side .float-right {
+      float: right;
+      position: relative; }
     header .right-side .search-box {
       height: 40px;
       float: left;
       padding-left: 20px;
-      display: none; }
+      display: none;
+      position: absolute;
+      right: 100%; }
     header .right-side .search-box-show {
       display: block; }
     header .right-side .loupe {

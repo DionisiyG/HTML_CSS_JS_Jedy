@@ -7,7 +7,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href="styles/main.css" rel="stylesheet" type="text/css">
 	<link href="styles/header-footer.css" rel="stylesheet" type="text/css">
-	<link href="styles/thnks-for-order.css" rel="stylesheet" type="text/css">
+	<link href="styles/men-coat.css" rel="stylesheet" type="text/css">
+	<link href="styles/slick/slick.css" rel="stylesheet" type="text/css">
+	<link href="styles/slick/slick-theme.css" rel="stylesheet" type="text/css">
 	<link href="styles/mobile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -15,7 +17,7 @@
 		<header>
 			<div class="container1">
 				<div class="left-side">
-					<a href="./index.html">
+					<a href="index.html">
 						<div class="logo">
 							SH
 						</div>
@@ -23,7 +25,7 @@
 					<nav>
 						<ul>
 							<li><a href="">Woman</a></li>
-							<li><a href="./men.html">Men</a></li>
+							<li><a href="men.html">Men</a></li>
 							<li><a href="">Kids</a></li>
 							<li><a href="">Comming Soon</a></li>
 							<li><a href="">About</a></li>
@@ -35,7 +37,7 @@
 					<div class="loupe">
 						<img src="img/header/loupe.png" alt="">
 					</div>
-					<a href="./basket.html">
+					<a href="basket.html">
 						<div class="basket">
 							<img src="img/header/basket.png" alt="">
 							Basket (<span class="quantity-in-basket">0</span>)
@@ -46,8 +48,48 @@
 				</div>
 			</div>
 		</header>
-		<div class="order-sent">ORDER SENT</div>
-		<div class="thanks-word">Thank you, and happy shopping :)</div>
+		<div class="path in-product-path">
+			<a href="index.html">HOME </a> / <a href="men.html">MEN</a> / <a href="">COATS</a> / <a href="">Double-Layered Top</a>
+		</div>
+		<div class="current-stuff">
+			<div class="big-img"></div>
+			<div class="stuff-title">Double-Layered Top</div>
+			<div class="art-num">Article number 142021512151</div>
+			<div class="stuff-price">€ 99,95</div>
+			<div class="stuff-desc">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+				Maecenas malesuada elit lectus felis, malesuada ultricies. </div>
+		</div>
+		<div class="add-block">
+			<div class="size">Size</div>
+			<div class="size-nums">
+				<div class="size38">38</div>
+				<div class="size39">39</div>
+				<div class="size40">40</div>
+				<div class="size41">41</div>
+				<div class="size42">42</div>
+			</div>
+			<button>ADD TO CARD</button>
+		</div>
+		<div class="product-slider">
+			<div class="container1">
+				<div class="pr-slider">
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+					<div class="photo"></div>
+				</div>
+				<div class="arrows">
+					<div class="prev"></div>
+					<div class="next"></div>
+				</div>
+			</div>
+		</div>
 		<footer>
 			<div class="container1">
 				<div class="collection">
@@ -98,6 +140,8 @@
 		</footer>
 	</div>
 	<script src="scripts/libs/jquery-3.2.1.min.js"></script>
+	<script src="scripts/libs/slick.min.js"></script>
+	<script src="scripts/prod-slider.js"></script>
 	<script src="scripts/serch-box.js"></script>
 </body>
 </html>

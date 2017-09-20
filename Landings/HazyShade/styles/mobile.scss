@@ -11,7 +11,7 @@
 @media (max-width: 1024px){
   header{
     .left-side{
-      width: 55%;
+      width: 65%;
       nav{
         ul{
           li:not(:last-child){
@@ -102,12 +102,12 @@
     .left-side{
       width: 100%;
       .logo{
-        margin-right: 50px;
+        margin-right: 30px;
       }
       nav{
         ul{
           li:not(:last-child){
-            padding-right: 70px;
+            padding-right: 1em;
             padding-bottom: 30px;
           }
         }
@@ -231,7 +231,7 @@
       .search-box{
         width: 352px;
         position: absolute;
-        left: 0;
+        right: 33px;
         top: 80px;
         display: inline-block;
       }
@@ -247,7 +247,7 @@
   .sign-up{
     .email-form{
       input{
-        width: 290px;
+        /*width: 290px;*/
       }
     }
   }
@@ -396,7 +396,9 @@
       font-size: 16px;
     }
     .email-form{
-      width: 190px;
+      input{
+       /*width: 190px;*/
+      }
     }
   }
   .men-cloth{
