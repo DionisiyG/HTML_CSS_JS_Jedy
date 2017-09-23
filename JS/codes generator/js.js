@@ -70,7 +70,7 @@ var generateRU = (function() {
 }());
 
 function sortCodes() {
-	var codes = document.getElementById('codes').value.split(' ').sort();
+	var codes = document.getElementById('codes').value.split(' ').sort(compareNumeric);
 	var field = document.getElementById('txtField2');
 	var noSpaces = document.getElementById('noSpace').checked;
 	if (noSpaces) {
@@ -79,6 +79,10 @@ function sortCodes() {
 		field.innerHTML = codes.join(' ');
 	}
 }
+function compareNumeric(a, b) {
+    return a - b;
+}
+
 
 function combineCodes() {
     var codesArr = document.getElementById('codesComb').value.split(' ');
