@@ -1,0 +1,106 @@
+.logo, .signature, .bag, .clock, .star, .heart, .eye-hover, .diamond, .arc, .phone, .joystick, .plane, .star-black, .magic-wand, .paint-bucket{
+	background: url(../img/sprites.png) no-repeat;
+}
+
+.logo{
+	background-position: -9px -12px ;
+	width: 31px;
+	height: 25px;
+}
+
+.signature{
+	background-position: -59px -7px ;
+	width: 223px;
+	height: 57px;
+}
+
+.bag{
+
+	background-position: -4px -107px ;
+	width: 40px;
+	height: 36px;
+}
+
+.clock{
+	background-position: -55px -103px ;
+	width: 40px;
+	height: 40px;
+}
+
+.star{
+	background-position: -102px -104px ;
+	width: 44px;
+	height: 41px;
+}
+
+.heart{
+	background-position: -154px -105px ;
+	width: 40px;
+	height: 36px;
+}
+
+/*
+.eye-hover{
+	background-position: -3px -157px ;
+	width: 48px;
+	height: 30px;
+	@include vertical-align();
+}
+*/
+
+.diamond{
+	background-position: -4px -205px ;
+	width: 42px;
+	height: 39px;
+	margin: 0 auto;
+}
+
+.arc{
+	background-position: -54px -205px ;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.phone{
+	background-position: -111px -202px ;
+	width: 26px;
+	height: 44px;
+	margin: 0 auto;
+}
+
+.joystick{
+	background-position: -154px -200px ;
+	width: 44px;
+	height: 42px;
+	margin: 0 auto;
+}
+
+.plane{
+	background-position: 0 -253px ;
+	width: 44px;
+	height: 44px;
+	margin: 0 auto;
+}
+
+.star-black{
+	background-position: -50px -253px ;
+	width: 44px;
+	height: 41px;
+	margin: 0 auto;
+}
+
+.magic-wand{
+	background-position: -103px -256px ;
+	width: 39px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.paint-bucket{
+	background-position: -155px -249px ;
+	width: 43px;
+	height: 46px;
+	margin: 0 auto;
+}
+

@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf); }
+@font-face {
+  font-family: 'NunitoSans Regular';
+  src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf); }
+/*_______COMMON STYLES________*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */ }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+li {
+  list-style: none; }
+
+button {
+  color: #ffffff;
+  background-color: #10c9c3;
+  padding: 15px 40px;
+  border: none;
+  font-family: 'Montserrat Medium';
+  cursor: pointer; }
+
+.container {
+  max-width: 90%;
+  margin: 0 auto; }
+  .container::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.montserrat-font {
+  font-family: 'Montserrat Medium'; }
+
+.nunito-font {
+  font-family: 'NunitoSans Regular'; }
+
+.block-title {
+  font-size: 30px;
+  padding-bottom: 35px;
+  text-align: center; }
+
+.text-in-block {
+  font-size: 16px;
+  padding-bottom: 35px;
+  color: #b7b7b7;
+  width: 44%;
+  margin: 0 auto;
+  text-align: center; }
+
+.info-block-container, .work-samples, .work-progress, feedback {
+  margin-bottom: 80px; }
+
+/*_________HEADER___________*/
+header {
+  background-color: #e9e9e9;
+  padding: 40px 0; }
+  header::after {
+    content: '';
+    display: block;
+    clear: both; }
+  header .logo {
+    float: left; }
+  header ul {
+    float: right;
+    letter-spacing: -4px; }
+    header ul li {
+      display: inline-block;
+      letter-spacing: normal; }
+      header ul li:not(:last-child) {
+        padding-right: 30px; }
+
+/*_________INFO BLOCK_________*/
+.info-block-container {
+  background-color: #e9e9e9; }
+  .info-block-container .info-block {
+    width: 41%;
+    float: right;
+    padding: 145px 0; }
+    .info-block-container .info-block .title, .info-block-container .info-block .text {
+      padding-bottom: 35px; }
+    .info-block-container .info-block .title {
+      font-size: 38px; }
+    .info-block-container .info-block .text {
+      font-size: 18px;
+      color: #b4b4b4; }
+
+/*___________ABOUT US___________*/
+.about-us .signature {
+  margin: 0 auto 90px auto; }
+
+/*__________SKILLS________*/
+.skills-container {
+  background-color: #e9e9e9; }
+  .skills-container:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .skills-container .skills {
+    width: 50%;
+    float: left;
+    background: #f8f9f9;
+    padding: 160px 70px 140px 0px;
+    position: relative; }
+    .skills-container .skills:after {
+      display: block;
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 500px;
+      background: #f8f9f9;
+      left: -500px;
+      top: 0; }
+    .skills-container .skills .title {
+      font-size: 30px;
+      padding-bottom: 30px; }
+    .skills-container .skills .skills-data {
+      /*.seventy-five:after{
+        width: 75%;
+      }
+      .ninety:after{
+        width: 90%;
+      }
+      .sixty-five:after{
+        width: 65%;
+      }*/ }
+      .skills-container .skills .skills-data .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background: #d8d8d8;
+        margin: 15px 0 30px 0; }
+        .skills-container .skills .skills-data .progress-bar:after {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 100%;
+          background-color: #10c9c3; }
+  .skills-container .skills-right-block {
+    float: right;
+    width: 50%;
+    height: 574px;
+    background-color: #e9e9e9; }
+
+/*___________STATISTIC___________*/
+.statistic {
+  background-color: #10c9c3; }
+  .statistic .statistic-container {
+    width: 25%;
+    float: left;
+    padding: 80px 0;
+    color: #ffffff;
+    font-family: 'Montserrat Medium'; }
+    .statistic .statistic-container .img {
+      float: left;
+      margin-right: 25px; }
+    .statistic .statistic-container .quantity {
+      margin-bottom: 5px; }
+    .statistic .statistic-container .info {
+      font-size: 12px; }
+
+/*_____________WORK SAMPLES_________*/
+.work-samples .eye-hover {
+  background-position: -3px -157px;
+  width: 48px;
+  height: 30px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto; }
+.work-samples .row .sample {
+  width: 25%;
+  height: 300px;
+  float: left;
+  background: #dddddd; }
+.work-samples .row1 .sample:nth-child(odd) {
+  background: #838383; }
+.work-samples .row2 .sample:nth-child(even) {
+  background: #838383; }
+.work-samples .row3 {
+  display: none; }
+  .work-samples .row3 .sample:nth-child(odd) {
+    background: #838383; }
+.work-samples .more {
+  text-align: center;
+  background: #f5f5f5;
+  color: #cccccc;
+  line-height: 100px;
+  cursor: pointer;
+  font-family: "Montserrat Medium"; }
+
+/*______________WORK PROCESS________*/
+.work-process .container {
+  text-align: center; }
+.work-process iframe {
+  width: 90%;
+  height: 550px; }
+.work-process .video {
+  position: relative; }
+.work-process .start-video {
+  position: absolute;
+  z-index: 33333333333;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+  .work-process .start-video:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 42%;
+    top: 40%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #ffffff;
+    border-bottom: 10px solid transparent; }
+
+/*__________TECHNOLOGIES________*/
+.services {
+  background: #f5f5f5;
+  padding-bottom: 80px; }
+  .services .service-container {
+    width: 25%;
+    float: left;
+    height: 200px;
+    text-align: center;
+    padding-top: 90px; }
+    .services .service-container .serv-title {
+      text-transform: uppercase;
+      font-family: "Montserrat Medium";
+      color: #363636;
+      font-size: 12px;
+      margin-bottom: 10px; }
+    .services .service-container .serv-text {
+      font-family: "NunitoSans Regular";
+      color: #c3c3c3;
+      font-size: 16px; }
+    .services .service-container .img {
+      margin-bottom: 25px; }
+
+/*__________REVIEWS_________________*/
+.testimonials {
+  background: #10c9c3;
+  /*___slider style_____*/ }
+  .testimonials .testimonial-container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 170px 0 130px 0;
+    width: 65%; }
+    .testimonials .testimonial-container .testimonial-author, .testimonials .testimonial-container .testimonial-text {
+      font-family: "Montserrat Medium";
+      color: #ffffff; }
+    .testimonials .testimonial-container .testimonial-text {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    .testimonials .testimonial-container .testimonial-author {
+      font-size: 12px; }
+  .testimonials .slider {
+    width: 65%;
+    margin: 0 auto; }
+  .testimonials .slick-dots li button:before {
+    top: -80px;
+    font-size: 30px;
+    color: #b0e8e6; }
+  .testimonials .slick-dots li.slick-active button:before {
+    font-size: 50px;
+    color: #ffffff; }
+
+/*________CLIENTS_________*/
+.clients {
+  text-align: center;
+  padding: 55px 0; }
+  .clients .client-logo {
+    float: left;
+    width: 25%; }
+
+/*____________FEEDBACK_____________*/
+.feedback {
+  background: #f5f5f5;
+  padding: 80px 0; }
+  .feedback form {
+    width: 59%;
+    margin: 0 auto;
+    text-align: center; }
+    .feedback form .contact-info, .feedback form .message-title, .feedback form .message-text {
+      margin-bottom: 25px; }
+      .feedback form .contact-info input, .feedback form .contact-info textarea, .feedback form .message-title input, .feedback form .message-title textarea, .feedback form .message-text input, .feedback form .message-text textarea {
+        border: none;
+        padding: 15px; }
+        .feedback form .contact-info input::-webkit-input-placeholder, .feedback form .contact-info textarea::-webkit-input-placeholder, .feedback form .message-title input::-webkit-input-placeholder, .feedback form .message-title textarea::-webkit-input-placeholder, .feedback form .message-text input::-webkit-input-placeholder, .feedback form .message-text textarea::-webkit-input-placeholder {
+          font-family: "NunitoSans Regular"; }
+        .feedback form .contact-info input:-moz-placeholder, .feedback form .contact-info textarea:-moz-placeholder, .feedback form .message-title input:-moz-placeholder, .feedback form .message-title textarea:-moz-placeholder, .feedback form .message-text input:-moz-placeholder, .feedback form .message-text textarea:-moz-placeholder {
+          font-family: "NunitoSans Regular"; }
+        .feedback form .contact-info input::-moz-placeholder, .feedback form .contact-info textarea::-moz-placeholder, .feedback form .message-title input::-moz-placeholder, .feedback form .message-title textarea::-moz-placeholder, .feedback form .message-text input::-moz-placeholder, .feedback form .message-text textarea::-moz-placeholder {
+          font-family: "NunitoSans Regular"; }
+        .feedback form .contact-info input:-ms-input-placeholder, .feedback form .contact-info textarea:-ms-input-placeholder, .feedback form .message-title input:-ms-input-placeholder, .feedback form .message-title textarea:-ms-input-placeholder, .feedback form .message-text input:-ms-input-placeholder, .feedback form .message-text textarea:-ms-input-placeholder {
+          font-family: "NunitoSans Regular"; }
+        .feedback form .contact-info input:focus::-webkit-input-placeholder, .feedback form .contact-info textarea:focus::-webkit-input-placeholder, .feedback form .message-title input:focus::-webkit-input-placeholder, .feedback form .message-title textarea:focus::-webkit-input-placeholder, .feedback form .message-text input:focus::-webkit-input-placeholder, .feedback form .message-text textarea:focus::-webkit-input-placeholder {
+          opacity: 0;
+          transition: opacity 1s ease; }
+        .feedback form .contact-info input:focus:-moz-placeholder, .feedback form .contact-info textarea:focus:-moz-placeholder, .feedback form .message-title input:focus:-moz-placeholder, .feedback form .message-title textarea:focus:-moz-placeholder, .feedback form .message-text input:focus:-moz-placeholder, .feedback form .message-text textarea:focus:-moz-placeholder {
+          opacity: 0;
+          transition: opacity 1s ease; }
+        .feedback form .contact-info input:focus::-moz-placeholder, .feedback form .contact-info textarea:focus::-moz-placeholder, .feedback form .message-title input:focus::-moz-placeholder, .feedback form .message-title textarea:focus::-moz-placeholder, .feedback form .message-text input:focus::-moz-placeholder, .feedback form .message-text textarea:focus::-moz-placeholder {
+          opacity: 0;
+          transition: opacity 1s ease; }
+        .feedback form .contact-info input:focus:-ms-input-placeholder, .feedback form .contact-info textarea:focus:-ms-input-placeholder, .feedback form .message-title input:focus:-ms-input-placeholder, .feedback form .message-title textarea:focus:-ms-input-placeholder, .feedback form .message-text input:focus:-ms-input-placeholder, .feedback form .message-text textarea:focus:-ms-input-placeholder {
+          opacity: 0;
+          transition: opacity 1s ease; }
+    .feedback form .contact-info input {
+      width: 46%; }
+      .feedback form .contact-info input:not(:last-child) {
+        margin-right: 25px; }
+    .feedback form .message-title input {
+      width: calc(100% - 25px); }
+    .feedback form .message-text textarea {
+      width: calc(100% - 25px);
+      height: 160px;
+      resize: none; }
+
+/*___________FOOTER____________*/
+footer {
+  background: #141414;
+  color: #9b9b9b;
+  padding: 70px  0;
+  font-family: "NunitoSans Regular";
+  font-size: 15px; }
+  footer a {
+    color: #9b9b9b; }
+  footer .copyright, footer .contact-info, footer .menu {
+    float: left; }
+  footer .copyright {
+    width: 35%; }
+    footer .copyright .comp-name {
+      font-family: "Montserrat Medium";
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #f0d6d6; }
+  footer .contact-info {
+    width: 25%; }
+  footer .menu {
+    width: 11%; }
+  footer .social {
+    width: 15%;
+    float: right; }
+  footer .menu .column-1, footer .menu .column-2 {
+    width: 50px; }
+  footer .menu .column-1 {
+    float: left; }
+  footer .menu .column-2 {
+    float: right; }
+
+@media (min-width: 1024px) {
+  button:hover {
+    opacity: 0.5; }
+
+  header a:hover {
+    color: #10c9c3; }
+
+  .work-samples .row .sample:hover {
+    cursor: pointer;
+    background-color: #252525; }
+
+  footer a:hover {
+    opacity: 0.5; } }
+
+/*# sourceMappingURL=main.css.map */
