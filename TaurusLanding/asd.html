@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		body {
+			padding: 30px;
+		}
+
+		a {
+			display: inline-block;
+			margin-bottom: 20px;
+			color: #000;
+			font-family: Arial, sans-serif;
+		}
+	</style>
+	<script>
+        $(document).ready(function() {
+            $('#play-video').on('click', function(ev) {
+
+                $("#video")[0].src += "&autoplay=1";
+                ev.preventDefault();
+
+            });
+        });
+	</script>
+</head>
+<body>
+<a href="#" id="clickMe">PLAY</a>
+
+<iframe id="iframe" width="1280" height="720" src="//www.youtube.com/embed/F0naUkyEkmM"
+		data-autoplay-src="//www.youtube.com/embed/F0naUkyEkmM?autoplay=1"></iframe>
+</body>
+</html>

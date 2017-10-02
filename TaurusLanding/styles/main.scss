@@ -82,7 +82,7 @@ button{
   margin: 0 auto;
   text-align: center;
 }
-.info-block-container, .work-samples, .work-progress, feedback{
+.info-block-container, .work-samples, .work-progress, .feedbac1k{
   margin-bottom: 80px;
 }
 /*_________HEADER___________*/
@@ -125,6 +125,18 @@ header{
     .text{
       font-size: 18px;
       color: #b4b4b4;
+    }
+    .contact-us{
+      color: #ffffff;
+      background-color: $bg-button;
+      border: none;
+      font-family: 'Montserrat Medium';
+      cursor: pointer;
+      width: 166px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 14px;
     }
   }
 }
@@ -169,30 +181,30 @@ header{
         height: 5px;
         background: #d8d8d8;
         margin: 15px 0 30px 0;
-        &:after{
-          content: '';
-          position: absolute;
-          display: block;
-          height: 100%;
-          background-color: #10c9c3;
-        }
       }
-      /*.seventy-five:after{
-        width: 75%;
-      }
-      .ninety:after{
-        width: 90%;
-      }
-      .sixty-five:after{
-        width: 65%;
-      }*/
     }
+  }
+  .fill{
+    background-color: #10c9c3;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 100%;
   }
   .skills-right-block{
     float: right;
     width: 50%;
     height: 574px;
     background-color: $grey;
+  }
+  .start{
+    width: 0px;
+    background: #aae0aa;
+    -webkit-animation: eighty 2s ease-out forwards;
+    -moz-animation: eighty 2s ease-out forwards;
+    -ms-animation: eighty 2s ease-out forwards;
+    -o-animation: eighty 2s ease-out forwards;
+    animation: eighty 2s ease-out forwards;
   }
 }
 /*___________STATISTIC___________*/
@@ -213,24 +225,30 @@ header{
     }
     .info{
       font-size: 12px;
+      overflow: hidden;
     }
   }
 }
 /*_____________WORK SAMPLES_________*/
 .work-samples{
-  .eye-hover{
-    background-position: -3px -157px ;
-    width: 48px;
-    height: 30px;
-    @include vertical-align();
-    margin: 0 auto;
-  }
   .row{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
     .sample{
+      display: flex;
       width:25%;
       height: 300px;
       float: left;
       background: #dddddd;
+    }
+    .eye-hover{
+      background-position: -3px -157px ;
+      width: 48px;
+      height: 30px;
+      @include vertical-align();
+      margin: 0 auto;
+      display: none;
     }
   }
   .row1{
@@ -266,19 +284,22 @@ header{
   iframe{
     width: 90%;
     height: 550px;
+    margin-bottom: 80px;
   }
-  .video{
+  .video-container{
     position: relative;
   }
   .start-video{
     position: absolute;
     z-index: 33333333333;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80px;
     height: 80px;
     @include border-radius(50%);
+    background: #10c9c3;
+    cursor: pointer;
     &:after{
       content: '';
       display: block;
@@ -342,8 +363,14 @@ header{
   }
 
   /*___slider style_____*/
+  .slick-initialized{
+    .slick-slide{
+      outline: none;
+    }
+  }
   .slider{
     width: 65%;
+    outline: none;
     margin: 0 auto;
   }
   .slick-dots{
@@ -388,26 +415,31 @@ header{
           font-family: "NunitoSans Regular";
         }
         &:focus{
-          @include placeholder{opacity: 0; transition: opacity 1s ease;}
+          @include placeholder{
+            opacity: 0;
+            transition: opacity 1s ease;}
         }
       }
     }
     .contact-info{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
         input{
           width: 46%;
           &:not(:last-child){
-            margin-right: 25px;
+           /* margin-right: 25px;*/
           }
         }
       }
     .message-title{
       input{
-        width: calc(100% - 25px);
+        width: 100%;
       }
     }
     .message-text{
       textarea{
-        width: calc(100% - 25px);
+        width: 100%;
         height: 160px;
         resize: none;
       }
@@ -458,6 +490,71 @@ footer{
     }
   }
 }
+@media (max-width: 1280px){
+.work-samples{
+  .row{
+    .sample{
+      height: 250px;
+    }
+  }
+}
+  .services{
+    .service-container{
+      .serv-text{
+        font-size: 14px;
+      }
+    }
+  }
+  footer{
+    .menu{
+      width: 20%;
+    }
+  }
+}
+@media (max-width: 1024px){
+  header{
+    ul{
+      li{
+        font-size: 12px;
+        &:not(:last-child){
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+  .info-block-container{
+    .info-block{
+      width: 50%;
+      padding: 100px 0;
+    }
+  }
+  .text-in-block{
+    width: 70%;
+  }
+  .work-samples{
+    .row{
+      .sample{
+        height: 190px;
+      }
+    }
+  }
+  footer{
+    .menu{
+      width: 20%;
+    }
+  }
+
+  .work-process {
+    iframe {
+      height: 350px;
+    }
+  }
+  footer{
+    a:hover{
+      opacity: 0.5;
+    }
+  }
+}
 @media (min-width: 1024px) {
   button:hover{
     opacity: 0.5;
@@ -467,18 +564,199 @@ footer{
       color: #10c9c3;
     }
   }
+  .info-block{
+    .contact-us:hover{
+      opacity: 0.5;
+    }
+  }
   .work-samples{
     .row{
       .sample:hover{
         cursor: pointer;
         background-color: #252525;
+        .eye-hover{
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  header{
+    ul{
+      li{
+        font-size: 9px;
+        &:not(:last-child){
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+  .info-block-container{
+    .info-block{
+      padding: 70px 0;
+      .title{
+        font-size: 30px;
+      }
+      .text{
+        font-size: 15px;
+      }
+    }
+
+  }
+  .skills-container{
+    .skills{
+      padding: 75px 15px 160px 0px;
+      .title{
+        font-size: 22px;
+      }
+    }
+    .skills-right-block{
+      height: 0;
+    }
+  }
+  .statistic{
+    .statistic-container{
+      padding: 15px 0;
+      width: 50%;
+      .img{
+        margin-right: 10px;
+      }
+    }
+  }
+  .work-samples{
+    .row{
+      .sample{
+        height: 150px;
+      }
+    }
+  }
+  .work-process{
+   iframe{
+     height: 250px;
+   }
+    .start-video{
+      top:37%;
+    }
+  }
+  .testimonials{
+    .testimonial-container{
+      padding: 50px 0 100px 0;
+      .testimonial-text{
+        font-size: 18px;
+      }
+    }
+  }
+  .feedback{
+    margin-bottom: 0;
+  }
+  footer{
+    .copyright{
+      width:43%;
+    }
+    .contact-info{
+      width:30%;
+    }
+    .menu{
+      display: none;
+    }
+  }
+}
+@media (max-width: 480px){
+  button{
+    padding: 9px 17px;
+  }
+  .info-block-container, .work-samples, .work-progress{
+    margin-bottom: 40px;
+  }
+  .text-in-block{
+    width: 100%;
+  }
+  header{
+    ul{
+      width: 70%;
+    }
+  }
+  .info-block-container{
+    .info-block{
+      width: 100%;
+      text-align: center;
+      padding: 25px 0;
+      .contact-us{
+        margin: 0 auto;
+      }
+    }
+  }
+  .about-us{
+    .signature{
+      margin: 0px auto 40px auto;
+    }
+  }
+  .skills-container{
+    padding: 5px 0;
+    .skills{
+      padding: 40px 10px 40px 10px;
+      width: 100%;
+      float: none;
+      position: static;
+      .title{
+        text-align: center;
+      }
+    }
+    .skills-right-block{
+      width: 100%;
+      height: 50px;
+      float: none;
+    }
+  }
+  .statistic{
+    .statistic-container{
+      .img{
+        margin-right: 15px;
+      }
+    }
+  }
+  .work-samples{
+    .more{
+      line-height: 50px;
+    }
+    .row{
+      .sample{
+        height: 100px;
+      }
+    }
+  }
+  .services{
+    padding-bottom: 40px;
+    .service-container{
+      width: 50%;
+      padding-top: 40px;
+    }
+  }
+  .clients{
+    padding: 40px 0;
+    .client-logo{
+      width: 50%;
+      height: 100px;
+    }
+  }
+  .feedback{
+    padding: 40px 0;
+    input,textarea{
+      @include placeholder{
+        font-size: 10px;
       }
     }
   }
   footer{
-    a:hover{
-      opacity: 0.5;
+    .contact-info, .copyright{
+      width: 50%;
+    }
+    .menu, .social{
+      display: none;
     }
   }
 }
+@media (max-width: 320px){}
+
 

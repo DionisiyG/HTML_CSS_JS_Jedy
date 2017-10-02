@@ -8,6 +8,7 @@
 	<link href="styles/sprites.css" rel="stylesheet" type="text/css">
 	<link href="styles/libs/slick.css" rel="stylesheet" type="text/css">
 	<link href="styles/libs/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="styles/libs/barfiller.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header>
@@ -39,7 +40,7 @@
 					20 years of combined experience, and know a thing or two
 					about designing websites and mobile apps.
 				</div>
-				<button class="contact-us">CONTACT US</button>
+				<div class="contact-us">CONTACT US</div>
 			</div>
 		</div>
 	</div>
@@ -57,28 +58,28 @@
 	<div class="skills-container montserrat-font">
 		<div class="container">
 			<div class="skills">
-				<div class="title">
+				<div class="title" id="bar-animate">
 					Professional Skills
 				</div>
 				<div class="skills-data">
 					<span class="skills-title">UI/UX DESIGN</span>
-					<span class="skills-percent">75&#37;</span>
-					<div class="progress-bar seventy-five">
-						<div class="bar"></div>
+					<span class="skills-percent" >75%</span>
+					<div class="progress-bar ">
+						<span class="fill" data-percentage="75%"></span>
 					</div>
 				</div>
 				<div class="skills-data">
 					<span class="skills-title">WEB DEVELOPMENT</span>
-					<span class="skills-percent ninety">90&#37;</span>
-					<div class="progress-bar ninety">
-						<div class="bar"></div>
+					<span class="skills-percent tip">90%</span>
+					<div class="progress-bar ">
+						<span class="fill" data-percentage="90%"></span>
 					</div>
 				</div>
 				<div class="skills-data">
 					<span class="skills-title">MARKETING</span>
-					<span class="skills-percent">65&#37;</span>
-					<div class="progress-bar sixty-five">
-						<div class="bar"></div>
+					<span class="skills-percent">65%</span>
+					<div class="progress-bar ">
+						<span class="fill" data-percentage="65%"></span>
 					</div>
 				</div>
 			</div>
@@ -111,44 +112,56 @@
 	</div>
 	<div id="work" class="work-samples">
 		<div class="row1 row">
-			<div class="sample sample1">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample2">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample3">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample4">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
 		</div>
 		<div class="row2 row">
-			<div class="sample sample5">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample6">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample7">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample8">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
 		</div>
 		<div class="row3 hidden-row row">
-			<div class="sample sample9">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample10">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample11">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
-			<div class="sample sample12">
+			<div class="sample">
+				<div class="eye-hover"></div>
 				<div class="some-content"></div>
 			</div>
 		</div>
@@ -165,9 +178,9 @@
 				Was years it seasons was there form he in in them together over that,
 				third sixth gathered female creeping bearing behold years.
 			</div>
-			<div class="video">
-				<div id="player"></div>
-				<button class="start-video"></button>
+			<div class="video-container">
+				<iframe class="video" src="https://www.youtube.com/embed/VIkr-RcQ4l0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<a class="start-video"></a>
 			</div>
 		</div>
 	</div>
@@ -327,7 +340,7 @@
 				<div class="message-text">
 					<textarea placeholder="Your Comment"></textarea>
 				</div>
-				<button class="send">SEND MESSAGE</button>
+				<button class="send" type="submit">SEND MESSAGE</button>
 			</form>
 		</div>
 	</div>
@@ -375,5 +388,6 @@
 	<script src="scripts/libs/jquery-3.2.1.min.js"></script>
 	<script src="scripts/libs/slick.js"></script>
 	<script src="scripts/script.js"></script>
+	<script src="scripts/libs/jquery.barfiller.js"></script>
 </body>
 </html>
