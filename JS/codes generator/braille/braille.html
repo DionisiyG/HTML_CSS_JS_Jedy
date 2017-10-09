@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>code generator</title>
+	<link href="css.css" rel="stylesheet">
+	<title>Braille</title>
+	<link href="braille.css" rel="stylesheet">
+	<script src="../libs/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="title">
+		<a href="http://ru.wikipedia.org/wiki/Шрифт_Брайля">Шрифт Брайля</a>
+	</div>
+
+	<div class="results">
+		&nbsp;брайль: <span class="return braille"></span><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;анг: <span class="return norm en"></span><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;рус: <span class="return norm ru"></span><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;циф: <span class="return norm int"></span><br/>
+		inv анг: <span class="return inv en"></span><br/>
+		inv рус: <span class="return inv ru"></span><br/>
+		inv циф: <span class="return inv int"></span>
+	</div>
+	<div class="chars">
+		<div class="char" title="1">
+			<a title="1" href="javascript:void(0)"></a>
+			<a title="4" href="javascript:void(0)"></a>
+			<a title="2" href="javascript:void(0)"></a>
+			<a title="5" href="javascript:void(0)"></a>
+			<a title="3" href="javascript:void(0)"></a>
+			<a title="6" href="javascript:void(0)"></a>
+		</div>
+	</div>
+
+	<!--"|" - символ начала цифр
+	"_" - символа нет в библиотеке-->
+	<a href="javascript:void(0)" class="clear">Clear</a><br>
+	<a href="../index.html" class="go-back">Go back</a>
+
+</div>
+<script src="braille.js"></script>
+</body>
+</html>
