@@ -69,6 +69,6 @@ div.wrapper {
 .go-back{
     color:#000;
     position: fixed;
-    bottom:15px;
+    top:15px;
     left: 30px;
 }
