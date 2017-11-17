@@ -14,7 +14,6 @@ class Animal {
         this.name = value;
     }
 }
-
 class Wolf extends Animal{
     eat(){
         console.log("I am gonna eat, om-nom-nom");
